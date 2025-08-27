@@ -1,0 +1,239 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+export interface Props {
+  title: string;
+  date: string;
+  author: string;
+  category: string;
+  readTime: string;
+}
+
+const { title, date, author, category, readTime } = Astro.props;
+---
+
+<BaseLayout title={title}>
+  <main class="blog-post">
+    <div class="container">
+      <!-- Article Header -->
+      <header class="article-header">
+        <div class="article-meta">
+          <span class="category-tag">{category}</span>
+          <span class="read-time">{readTime}</span>
+          <span class="publish-date">{date}</span>
+        </div>
+        
+        <h1 class="article-title">{title}</h1>
+        
+        <div class="author-info">
+          <div class="author-avatar">
+            <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <div class="author-details">
+            <strong>{author}</strong>
+            <span>GoVal Expert</span>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Article Content -->
+      <article class="article-content">
+        <slot />
+      </article>
+      
+      <!-- Navigation -->
+      <nav class="article-nav">
+        <a href="/blog" class="back-to-blog">← Back to Blog</a>
+      </nav>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .blog-post {
+    background: #ffffff;
+    padding: 2rem 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .article-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .article-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .category-tag {
+    background: #6366f1;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .read-time,
+  .publish-date {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .article-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #111827;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .author-avatar {
+    width: 3rem;
+    height: 3rem;
+    background: #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+  }
+  
+  .author-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .author-details strong {
+    color: #111827;
+    font-weight: 600;
+  }
+  
+  .author-details span {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .article-content {
+    line-height: 1.7;
+    font-size: 1.125rem;
+    color: #374151;
+  }
+  
+  .article-content h1,
+  .article-content h2,
+  .article-content h3,
+  .article-content h4 {
+    color: #111827;
+    margin: 2rem 0 1rem;
+    font-weight: 700;
+  }
+  
+  .article-content h2 {
+    font-size: 1.75rem;
+  }
+  
+  .article-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .article-content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .article-content ul,
+  .article-content ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+  }
+  
+  .article-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .article-content blockquote {
+    border-left: 4px solid #6366f1;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    background: #f8f9fa;
+    font-style: italic;
+  }
+  
+  .article-content pre {
+    background: #1f2937;
+    color: #e5e7eb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+  
+  .article-content code {
+    background: #f3f4f6;
+    color: #1f2937;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+  }
+  
+  .article-content pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+  }
+  
+  .article-nav {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+  }
+  
+  .back-to-blog {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  
+  .back-to-blog:hover {
+    color: #4338ca;
+  }
+  
+  @media (max-width: 768px) {
+    .article-title {
+      font-size: 2rem;
+    }
+    
+    .article-content {
+      font-size: 1rem;
+    }
+    
+    .author-info {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

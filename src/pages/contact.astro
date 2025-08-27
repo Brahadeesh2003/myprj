@@ -1,0 +1,207 @@
+---
+// src/pages/contact.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Contact Us - GoVal">
+  <Navigation />
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Contact GoVal</h1>
+      <p>Have something to say? We are here to help. Fill up the form or email us directly at <a href="mailto:bdsh2003@gmail.com">bdsh2003@gmail.com</a>.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container contact-layout">
+      <!-- Left Info Panel -->
+      <div class="contact-info">
+        <h2>Contact Details</h2>
+        <ul>
+          <li><strong>Address:</strong> Life Sciences Hub, Bangalore, India</li>
+          <li><strong>Email:</strong> <a href="mailto:bdsh2003@gmail.com">bdsh2003@gmail.com</a></li>
+          <li><strong>Phone:</strong> +91 (987) 654 3210</li>
+        </ul>
+      </div>
+
+      <!-- Right Form Panel -->
+      <div class="contact-form-container">
+        <div id="form-message" class="alert hidden"></div>
+
+        <form id="contact-form" class="contact-form">
+          <!-- Web3Forms hidden fields -->
+          <input type="hidden" name="access_key" value="1342cce4-8f26-4476-a251-697b21d3daf9" />
+          <input type="hidden" name="subject" value="New Contact Submission - GoVal" />
+          <input type="hidden" name="redirect" value="" />
+          <input type="checkbox" name="botcheck" class="hidden" />
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required maxlength="100" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required maxlength="100" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" required maxlength="20" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required maxlength="2000"></textarea>
+            <div id="message-count" class="char-count">0 / 2000 characters</div>
+          </div>
+
+          <button type="submit" id="submit-btn" class="btn btn-primary">
+            <span id="btn-text">Send Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-info li {
+    margin-bottom: 0.5rem;
+  }
+  .hidden {
+    display: none;
+  }
+  .alert {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .alert-success {
+    background: #f0fdf4;
+    color: #166534;
+  }
+  .alert-error {
+    background: #fef2f2;
+    color: #7f1d1d;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-family: inherit;
+  }
+  input:focus, textarea:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+  }
+  .char-count {
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-align: right;
+  }
+  .btn-primary {
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .btn-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = /** @type {HTMLElement|null} */(document.getElementById('btn-text'));
+    const messageDiv = /** @type {HTMLElement|null} */(document.getElementById('form-message'));
+    const messageField = /** @type {HTMLTextAreaElement|null} */(document.getElementById('message'));
+    const messageCount = /** @type {HTMLElement|null} */(document.getElementById('message-count'));
+
+    if (!(form instanceof HTMLFormElement) || !submitBtn || !btnText || !messageDiv) return;
+
+    // Character counter
+    if (messageField instanceof HTMLTextAreaElement && messageCount) {
+      messageField.addEventListener('input', () => {
+        const len = messageField.value.length;
+        messageCount.textContent = `${len} / 2000 characters`;
+        messageCount.style.color = len > 1900 ? '#dc2626' : '#6b7280';
+      });
+    }
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      if (submitBtn instanceof HTMLButtonElement) {
+        submitBtn.disabled = true;
+      }
+      btnText.textContent = 'Sending...';
+      messageDiv.className = 'hidden';
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: new FormData(form)
+        });
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          showMessage('✅ Message sent successfully. Thank you!', 'success');
+          form.reset();
+          if (messageCount) messageCount.textContent = '0 / 2000 characters';
+        } else {
+          throw new Error(result.message || `HTTP ${response.status}`);
+        }
+      } catch (err) {
+        console.error(err);
+        if (submitBtn instanceof HTMLButtonElement) {
+          (submitBtn instanceof HTMLButtonElement) && (submitBtn.disabled = false);
+        }
+        btnText.textContent = 'Send Message';
+        (submitBtn instanceof HTMLButtonElement) && (submitBtn.disabled = false);
+        btnText.textContent = 'Send Message';
+      }
+    });
+
+    function showMessage(msg: string, type: string) {
+      if (!messageDiv) return;
+      messageDiv.className = `alert alert-${type}`;
+      messageDiv.textContent = msg;
+      messageDiv.classList.remove('hidden');
+      if (type === 'success') {
+        setTimeout(() => messageDiv.classList.add('hidden'), 8000);
+      }
+      messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+</script>
