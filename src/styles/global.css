@@ -1,7 +1,15 @@
 /* src/styles/global.css */
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 /* Import CSS variables */
 @import './variables.css';
+
+/* Font Variables */
+:root {
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
 
 /* Reset & Box Sizing */
 *,
@@ -10,11 +18,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Base HTML & Body */
 html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-family);
   font-size: 16px;
   scroll-behavior: smooth;
   background-color: var(--gray-50);
@@ -22,30 +33,37 @@ html {
 }
 
 body {
+  font-family: var(--font-family);
+  font-weight: 400;
   line-height: 1.6;
   background-color: #ffffff;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family);
+  font-weight: 700;
   color: var(--gray-900);
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
+h1 { font-size: 2.5rem; font-weight: 800; }
+h2 { font-size: 2rem; font-weight: 700; }
+h3 { font-size: 1.5rem; font-weight: 600; }
+h4 { font-size: 1.25rem; font-weight: 600; }
 
 /* Paragraphs */
 p {
+  font-family: var(--font-family);
   margin-bottom: var(--spacing-md);
   color: var(--gray-700);
+  line-height: 1.6;
 }
 
 /* Links */
 a {
+  font-family: var(--font-family);
   color: var(--blue-primary);
   text-decoration: none;
   transition: color 0.2s ease;
@@ -66,6 +84,7 @@ a:focus {
   padding: var(--spacing-sm) var(--spacing-lg);
   border: none;
   border-radius: var(--radius-md);
+  font-family: var(--font-family);
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -130,6 +149,7 @@ a:focus {
   padding-top: var(--spacing-3xl);
   padding-bottom: var(--spacing-3xl);
   text-align: center;
+  background-color: #ffffff;
 }
 
 /* Typography Utilities */
@@ -157,7 +177,7 @@ input,
 textarea,
 select,
 button {
-  font-family: inherit;
+  font-family: var(--font-family);
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -189,11 +209,34 @@ textarea:focus {
   color: var(--gray-100);
 }
 
+/* Navigation */
+nav {
+  font-family: var(--font-family);
+}
+
+nav a {
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+/* Ensure consistent font across all elements */
+* {
+  font-family: var(--font-family);
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   html { font-size: 14px; }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.25rem; }
 }
 
 @media (max-width: 480px) {
   html { font-size: 13px; }
+  
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.125rem; }
 }
