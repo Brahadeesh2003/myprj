@@ -1,0 +1,221 @@
+---
+// src/pages/portfolios/equipment-validation-iot-edc.astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+---
+<BaseLayout title="Equipment Validation with IoT - GoVal Portfolio">
+  <Navigation />
+
+  <!-- Hero Section -->
+  <section class="portfolio-hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Equipment Validation</div>
+        <h1>Equipment Validation with IoT: Streamlining Electronic Data Capture</h1>
+        <p>How a KSA-based quality consulting company implemented GoVal's IoT-enabled validation solution to automate equipment validation and maintenance activities for their pharmaceutical clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Content -->
+  <section class="section case-study-content">
+    <div class="container">
+      <div class="content-grid">
+        <!-- Main Content -->
+        <div class="main-content">
+          <h2>The Challenge</h2>
+          <p>The customer is a KSA-based quality consulting company providing consultancy to healthcare and food industries. The company, established in 2013, has a group of consultants located globally from varied expertise and backgrounds.</p>
+          
+          <p>They needed to implement GoVal solution for one of their pharmaceutical customers to automate validation and maintenance activities, specifically focusing on equipment validation with IoT integration for real-time data capture.</p>
+
+          <h2>The Solution</h2>
+          <ul>
+            <li><strong>IoT Device Integration:</strong> Connected equipment sensors for continuous monitoring</li>
+            <li><strong>Automated Data Capture:</strong> Real-time equipment parameter logging</li>
+            <li><strong>Digital Validation Protocols:</strong> Paperless validation workflows</li>
+            <li><strong>Maintenance Scheduling:</strong> AI-powered predictive maintenance alerts</li>
+          </ul>
+
+          <h2>Results Achieved</h2>
+          <div class="results-grid">
+            <div class="result-card">
+              <div class="result-number">75%</div>
+              <div class="result-text">Reduction in validation time</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">100%</div>
+              <div class="result-text">Paperless validation process</div>
+            </div>
+            <div class="result-card">
+              <div class="result-number">50%</div>
+              <div class="result-text">Decrease in compliance costs</div>
+            </div>
+          </div>
+
+          <h2>Key Benefits</h2>
+          <p>The implementation of GoVal's IoT-enabled validation solution resulted in significant improvements in efficiency, accuracy, and compliance for the pharmaceutical client.</p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="info-card">
+            <h3>Project Details</h3>
+            <div class="info-item">
+              <strong>Industry:</strong> Pharmaceutical
+            </div>
+            <div class="info-item">
+              <strong>Location:</strong> Saudi Arabia
+            </div>
+            <div class="info-item">
+              <strong>Solution:</strong> Equipment Validation + IoT
+            </div>
+            <div class="info-item">
+              <strong>Timeline:</strong> 6 months
+            </div>
+          </div>
+
+          <div class="cta-card">
+            <h3>Need Similar Results?</h3>
+            <p>Contact our team to learn how GoVal can transform your validation processes.</p>
+            <a href="/contact" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+  .section { padding: 4rem 0; background: #ffffff; }
+
+  /* Hero */
+  .portfolio-hero {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    padding: 4rem 0;
+    text-align: center;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .portfolio-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  .portfolio-hero p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Content */
+  .content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+  .main-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  .main-content p, .main-content li {
+    line-height: 1.7;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  .main-content ul {
+    margin-bottom: 2rem;
+  }
+  .main-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Results Grid */
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  .result-card {
+    background: #f3f4f6;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+  }
+  .result-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #3b82f6;
+  }
+  .result-text {
+    color: #4b5563;
+    font-weight: 500;
+  }
+
+  /* Sidebar */
+  .info-card, .cta-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+  }
+  .info-card h3, .cta-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  .info-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .info-item:last-child {
+    border-bottom: none;
+  }
+  .cta-card p {
+    margin-bottom: 1rem;
+    color: #4b5563;
+  }
+  .btn {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .btn:hover {
+    background: #1d4ed8;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .portfolio-hero h1 {
+      font-size: 2rem;
+    }
+    .results-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -5,44 +5,75 @@ import Footer from '../components/Footer.astro';
 
 const posts = [
   {
-    slug: 'smarter-validation',
-    title: 'Smarter Approach To Implement Paperless Validation Solution For Your Organization',
-    date: 'July 23, 2021',
-    readTime: '8 min read',
-    category: 'Digital Validation',
+    slug: 'revolutionizing-validation-with-ai',
+    category: 'Artificial Intelligence',
+    author: 'Sankar Reddy',
+    date: 'April 10, 2025',
+    title: 'Revolutionizing Validation with AI: GoVal’s Intelligent Approach',
+    excerpt: 'In the dynamic landscape of the life sciences industry, ensuring the quality and compliance of computer systems is paramount. Traditional methods are time-consuming and error-prone...',
+    image: '/images/blog-ai-validation.png',
   },
   {
-    slug: 'digital-automation',
-    title: 'How GoVal can help the organization to go for digital validation and get rid of manual processes',
-    date: 'July 1, 2021',
-    readTime: '6 min read',
-    category: 'Digital Validation',
+    slug: 'smart-implementation-paperless-validation',
+    category: 'Paperless Validation',
+    author: 'Sundar Raman',
+    date: 'March 15, 2025',
+    title: 'Smart Implementation of Paperless Validation: A Strategic Approach | GoVal',
+    excerpt: 'Implementing a paperless validation solution is crucial for modern life science organizations seeking to streamline GxP compliance and enhance efficiency...',
+    image: '/images/blog-paperless-strategy.png',
+  },
+  {
+    slug: 'streamline-test-case-management',
+    category: 'Paperless Validation, Computer System Validation',
+    author: 'Sundar Raman',
+    date: 'March 10, 2025',
+    title: 'Streamline Test Case Management: A Guide with GoVal',
+    excerpt: 'In the world of computer system validation (CSV), efficient test case management is paramount. Manual processes are often riddled with delays and inconsistencies...',
+    image: '/images/blog-test-case-management.png',
+  },
+  {
+    slug: 'digital-validation-traceability-audits',
+    category: 'Paperless Validation',
+    author: 'Vishnu Priya',
+    date: 'March 5, 2025',
+    title: 'Digital Validation: Transforming Life Sciences with Traceability & Audits',
+    excerpt: 'In the fast-paced world of life sciences, the transition from paper to digital validation is no longer optional. It’s essential for maintaining audit readiness...',
+    image: '/images/blog-traceability-audits.png',
+  },
+  {
+    slug: 'revolutionize-computer-system-validation',
+    category: 'Computer System Validation',
+    author: 'Vishnu Priya',
+    date: 'January 7, 2025',
+    title: 'Revolutionize Computer System Validation in Life Sciences with GoVal',
+    excerpt: 'In the demanding pharma and life sciences sectors, robust computer system validation is essential for compliance and efficiency. GoVal simplifies the process...',
+    image: '/images/blog-csv-revolution.png',
   },
 ];
 ---
-<BaseLayout title="Blog - GoVal">
+<BaseLayout title="Blog – GoVal">
   <Navigation />
 
-  <section class="hero">
+  <section class="posts-list">
     <div class="container">
       <h1>GoVal Blog</h1>
-      <p>Expert insights on paperless validation and digital automation.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
       {posts.map(post => (
-        <article class="post-card">
-          <div class="post-meta">
-            <span class="category-tag">{post.category}</span>
-            <span class="read-time">{post.readTime}</span>
-            <span class="publish-date">{post.date}</span>
+        <article class="post-item">
+          <a href={`/blog/${post.slug}/`} class="post-image-link">
+            <img src={post.image} alt={post.title} class="post-image" />
+          </a>
+          <div class="post-details">
+            <div class="post-category">{post.category}</div>
+            <h2 class="post-title">
+              <a href={`/blog/${post.slug}/`}>{post.title}</a>
+            </h2>
+            <div class="post-meta">
+              <span class="post-author">By {post.author}</span>
+              <span class="post-date">{post.date}</span>
+            </div>
+            <p class="post-excerpt">{post.excerpt}</p>
+            <a href={`/blog/${post.slug}/`} class="read-more">Read More</a>
           </div>
-          <h2 class="post-title">
-            <a href={`/blog/${post.slug}/`}>{post.title}</a>
-          </h2>
-          <a href={`/blog/${post.slug}/`} class="read-more">Read More →</a>
         </article>
       ))}
     </div>
@@ -52,69 +83,107 @@ const posts = [
 </BaseLayout>
 
 <style>
-  .hero {
-    background: #f9fafb;
-    padding: 3rem 0;
+  .posts-list {
+    background: #fff;
+    padding: 4rem 0;
+  }
+  .posts-list h1 {
     text-align: center;
-  }
-  .hero h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     color: #111827;
-  }
-  .hero p {
-    color: #4b5563;
-    font-size: 1rem;
-  }
-  .section {
-    padding: 2rem 0;
   }
   .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     padding: 0 1rem;
   }
-  .post-card {
-    background: white;
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
-  .post-meta {
+  .post-item {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .post-image-link {
+    flex-shrink: 0;
+    width: 45%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .post-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    display: block;
+  }
+  .post-image-link:hover .post-image {
+    transform: scale(1.05);
+  }
+  .post-details {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+  .post-category {
     font-size: 0.875rem;
     color: #6b7280;
-    margin-bottom: 0.75rem;
-  }
-  .category-tag {
-    background: #6366f1;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
-  .read-time, .publish-date {
-    color: #6b7280;
-  }
   .post-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+    margin: 0 0 0.5rem;
   }
   .post-title a {
-    color: #111827;
+    color: #1a56db;
     text-decoration: none;
   }
   .post-title a:hover {
-    color: #6366f1;
+    text-decoration: underline;
+  }
+  .post-meta {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+  }
+  .post-meta span + span::before {
+    content: '•';
+    margin: 0 0.5rem;
+  }
+  .post-excerpt {
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 1rem;
   }
   .read-more {
     font-weight: 600;
-    color: #6366f1;
+    color: #1a56db;
     text-decoration: none;
+    align-self: flex-start;
   }
   .read-more:hover {
-    color: #4338ca;
+    text-decoration: underline;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .post-item {
+      flex-direction: column;
+    }
+    .post-image-link,
+    .post-details {
+      width: 100%;
+    }
+    .post-image {
+      height: 220px;
+    }
+  }
+  @media (max-width: 640px) {
+    .posts-list h1 { font-size: 2rem; }
+    .post-image { height: 180px; }
+    .post-title { font-size: 1.5rem; }
   }
 </style>

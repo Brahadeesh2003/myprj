@@ -1,54 +1,62 @@
 ---
 // src/pages/blog/index.astro
-import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 
-// Fetch and sort all blog posts by date descending
-const posts = await getCollection('blog');
-posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+// Define posts array
+const posts = [
+  {
+    slug: 'smarter-validation',
+    title: 'Smarter Approach To Implement Paperless Validation Solution For Your Organization',
+    date: 'July 23, 2021',
+    readTime: '8 min read',
+    category: 'Digital Validation',
+    image: '/images/smarter-validation.jpg',
+    excerpt: 'Discover how a paperless validation solution can streamline processes, reduce risk, and improve compliance in your organization.',
+  },
+  {
+    slug: 'digital-automation',
+    title: 'How GoVal can help the organization to go for digital validation and get rid of manual processes',
+    date: 'July 1, 2021',
+    readTime: '6 min read',
+    category: 'Digital Validation',
+    image: '/images/digital-automation.jpg',
+    excerpt: 'Learn how GoVal’s platform automates validation workflows to eliminate manual paperwork and accelerate time-to-market.',
+  },
+];
 ---
-<BaseLayout title="Blog - GoVal Digital Validation Insights">
+<BaseLayout title="Blog – GoVal">
   <Navigation />
 
-  <!-- Blog Hero Section -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-badge">[ Expert Insights & Industry Knowledge ]</div>
-        <h1 class="hero-title">GoVal Blog</h1>
-        <p class="hero-subtitle">
-          Stay ahead of the curve with expert insights on digital validation, regulatory compliance, and industry best practices from our team of validation experts.
-        </p>
-      </div>
+  <section class="blog-intro">
+    <div class="container">
+      <h1>Our Blog</h1>
+      <p>Expert insights and practical guidance on digital validation and regulatory compliance.</p>
     </div>
   </section>
 
-  <!-- Latest Articles Listing -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Latest Articles</h2>
-      <p class="section-subtitle">Expert insights and practical guidance for digital validation professionals.</p>
-
-      <div class="posts-grid">
-        {posts.map(post => (
-          <article class="post-card">
+  <section class="posts-section">
+    <div class="container posts-grid">
+      {posts.map(post => (
+        <article class="post-card">
+          <a href={`/blog/${post.slug}/`} class="post-image-link">
+            <img src={post.image} alt={post.title} class="post-image" />
+          </a>
+          <div class="post-content">
             <div class="post-meta">
-              <span class="category-tag">{post.data.category}</span>
-              <span class="read-time">{post.data.readTime}</span>
-              <span class="publish-date">{post.data.date}</span>
+              <span class="category">{post.category}</span>
+              <span class="read-time">{post.readTime}</span>
+              <span class="date">{post.date}</span>
             </div>
-            <h3 class="post-title">
-              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-            </h3>
-            <p class="post-excerpt">{post.data.excerpt}</p>
-            <div class="post-footer">
-              <a href={`/blog/${post.slug}/`} class="read-more">Read More →</a>
-            </div>
-          </article>
-        ))}
-      </div>
+            <h2 class="post-title">
+              <a href={`/blog/${post.slug}/`}>{post.title}</a>
+            </h2>
+            <p class="post-excerpt">{post.excerpt}</p>
+            <a href={`/blog/${post.slug}/`} class="read-more">Read More →</a>
+          </div>
+        </article>
+      ))}
     </div>
   </section>
 
@@ -56,114 +64,49 @@ posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).get
 </BaseLayout>
 
 <style>
-  /* Global background */
-  html, body { background: #ffffff; }
+  .blog-intro { background:#f9fafb; padding:4rem 0; text-align:center; }
+  .blog-intro h1 { font-size:2.5rem; margin-bottom:0.5rem; color:#111827; }
+  .blog-intro p { color:#4b5563; }
 
-  /* Hero */
-  .hero {
-    padding: 5rem 0;
-    text-align: center;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  .hero-badge {
-    background: rgba(99,102,241,0.1);
-    color: #6366f1;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    display: inline-block;
-    margin-bottom: 1rem;
-  }
-  .hero-title {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    color: #111827;
-  }
-  .hero-subtitle {
-    color: #6b7280;
-    font-size: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  /* Section titles */
-  .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #111827;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  .section-subtitle {
-    color: #6b7280;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  /* Posts grid */
+  .posts-section { background:#ffffff; padding:4rem 0; }
   .posts-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display:grid;
+    gap:2rem;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
   }
-
   .post-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
+    background:#fff; border-radius:0.75rem; box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s,box-shadow 0.2s;
+  }
+  .post-card:hover { transform:translateY(-4px); box-shadow:0 8px 30px rgba(0,0,0,0.1); }
+  .post-image-link { display:block; overflow:hidden; }
+  .post-image {
+    width:100%; height:250px; object-fit:cover; transition:transform 0.3s;
+  }
+  .post-card:hover .post-image { transform:scale(1.05); }
+  .post-content {
+    padding:1.5rem; flex:1; display:flex; flex-direction:column;
   }
   .post-meta {
-    display: flex;
-    gap: 0.5rem;
-    font-size: 0.75rem;
-    color: #6b7280;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
+    display:flex; flex-wrap:wrap; gap:0.5rem; font-size:0.75rem;
+    color:#6b7280; margin-bottom:1rem;
   }
-  .category-tag {
-    background: #6366f1;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
-    text-transform: uppercase;
+  .category {
+    background:#6366f1; color:#fff; padding:0.25rem 0.75rem;
+    border-radius:1rem; text-transform:uppercase; font-weight:600;
   }
-  .post-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-  }
-  .post-title a {
-    color: #111827;
-    text-decoration: none;
-  }
-  .post-title a:hover {
-    color: #6366f1;
-  }
-  .post-excerpt {
-    flex-grow: 1;
-    color: #4b5563;
-    margin-bottom: 1rem;
-  }
-  .post-footer {
-    text-align: right;
-  }
+  .read-time, .date { color:#6b7280; }
+  .post-title { font-size:1.25rem; font-weight:700; margin-bottom:0.75rem; }
+  .post-title a { color:#111827; text-decoration:none; }
+  .post-title a:hover { color:#6366f1; }
+  .post-excerpt { color:#4b5563; flex:1; margin-bottom:1rem; }
   .read-more {
-    color: #6366f1;
-    font-weight: 600;
-    text-decoration: none;
+    align-self:flex-start; color:#6366f1; font-weight:600; text-decoration:none;
   }
-  .read-more:hover {
-    color: #4338ca;
-  }
+  .read-more:hover { color:#4338ca; }
 
-  /* Responsive */
-  @media (max-width: 640px) {
-    .hero-title { font-size: 2rem; }
-    .posts-grid { grid-template-columns: 1fr; }
+  @media(max-width:640px) {
+    .blog-intro h1 { font-size:2rem; }
+    .posts-grid { grid-template-columns:1fr; }
   }
 </style>
