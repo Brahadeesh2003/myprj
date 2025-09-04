@@ -17,7 +17,7 @@ import Footer from '../components/Footer.astro';
         </div>
 
         <h1 class="hero-title fade-in-up">
-          Digitize Your Validation<br>
+          Digitize Your Validation process<br>
           Stay Compliant,<br>
           <span class="text-primary">Stay Ahead.</span>
         </h1>
@@ -138,6 +138,45 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
+  <!-- Key Benefits Section -->
+  <section class="section">
+    <div class="container key-benefits-container">
+      <!-- Left: Key Benefits Text -->
+      <div class="key-benefits-text fade-in-up">
+        <p class="subtitle">[ KEY BENEFITS AT A GLANCE ]</p>
+        <h2>
+          Why Choose <span class="highlight">GoVal</span> for Your Paperless Validation System?
+        </h2>
+        <p class="description">
+          GoVal's digital validation system revolutionizes life science validation with a secure, paperless approach.
+          Achieve rapid GxP compliance through automated workflows and real-time audit trails.
+          Our platform ensures robust data management, driving efficiency and productivity while meeting CFR Part 11 and Annex 11 requirements.
+        </p>
+        <ul class="benefits-list">
+          <li><input type="checkbox" checked disabled /> <strong>Accelerated GxP Compliance:</strong> Automated workflows and real-time audit trails.</li>
+          <li><input type="checkbox" checked disabled /> <strong>100% Paperless Validation:</strong> Eliminate manual processes and reduce errors.</li>
+          <li><input type="checkbox" checked disabled /> <strong>Enhanced Audit Readiness:</strong> System-generated reports and real-time data access.</li>
+          <li><input type="checkbox" checked disabled /> <strong>Secure Data Integrity:</strong> Cloud-based platform with robust data management.</li>
+          <li><input type="checkbox" checked disabled /> <strong>CFR Part 11 & Annex 11 Compliance:</strong> Built-in tools for regulatory adherence.</li>
+        </ul>
+        <div class="actions">
+          <a href="/get-started" class="btn-primary">GET STARTED</a>
+          <button type="button" aria-label="Play GoVal introduction video" class="btn-video" onclick="window.open('https://www.youtube.com/watch?v=DtwVfiOTdCc', '_blank')">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="24" fill="#F5F5F5"/>
+              <path d="M19 17v14l12-7z" fill="#FF5722"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Main Image -->
+      <div class="key-benefits-image fade-in-up">
+        <img src="/images/home-benefit-main.png" alt="GoVal digital validation related meeting" />
+      </div>
+    </div>
+  </section>
+
   <!-- Core Capabilities Section -->
   <section class="section bg-light">
     <div class="container">
@@ -244,7 +283,7 @@ import Footer from '../components/Footer.astro';
           Join leading pharmaceutical companies who trust GoVal for their digital validation needs.
         </p>
         <div class="cta-buttons">
-          <a href="/contact" class="btn btn-primary btn-lg">
+          <a href="/contact-us" class="btn btn-primary btn-lg">
             Get Started Today
           </a>
           <a href="/demo" class="btn btn-secondary btn-lg">
@@ -379,7 +418,7 @@ import Footer from '../components/Footer.astro';
 
   .bg-gradient-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    color: rgb(111, 68, 171);
   }
 
   .container {
@@ -470,6 +509,99 @@ import Footer from '../components/Footer.astro';
     color: var(--gray-600);
     line-height: 1.6;
   }
+  
+  /* Key Benefits Section Styles */
+  .section {
+    padding: 5rem 0;
+  }
+  .key-benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .key-benefits-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  .subtitle {
+    color: #2563eb;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #111827;
+  }
+  .highlight {
+    color: #2563eb;
+  }
+  .description {
+    font-size: 1.125rem;
+    margin-bottom: 1.75rem;
+    color: #475569;
+  }
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  .benefits-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #334155;
+    font-size: 1rem;
+  }
+  .benefits-list input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+  .actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .btn-primary {
+    background-color: #ff5722;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn-primary:hover {
+    background-color: #e64a19;
+  }
+  .btn-video {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .key-benefits-image {
+    flex: 1;
+    max-width: 420px;
+  }
+  .key-benefits-image img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
 
   /* AI Features */
   .ai-feature {
@@ -512,9 +644,9 @@ import Footer from '../components/Footer.astro';
     max-width: 800px;
     margin: 0 auto;
     padding: 3rem 2rem;
-    background: white;
+    background: rgb(253, 253, 253);
     border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.08);
   }
 
   .cta-title {
@@ -558,24 +690,24 @@ import Footer from '../components/Footer.astro';
 
   .btn-primary {
     background: var(--blue-primary);
-    color: white;
+    color: rgb(3, 2, 2);
   }
 
   .btn-primary:hover {
     background: var(--blue-secondary);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 8px 25px rgba(140, 0, 255, 0.979);
   }
 
   .btn-secondary {
-    background: white;
+    background: rgb(255, 255, 255);
     color: var(--blue-primary);
     border-color: var(--blue-primary);
   }
 
   .btn-secondary:hover {
     background: var(--blue-primary);
-    color: white;
+    color: rgb(106, 0, 255);
   }
 
   .btn-outline {
@@ -586,7 +718,7 @@ import Footer from '../components/Footer.astro';
 
   .btn-outline:hover {
     background: var(--blue-primary);
-    color: white;
+    color: rgb(255, 255, 255);
   }
 
   .btn-white {
@@ -604,7 +736,7 @@ import Footer from '../components/Footer.astro';
   }
 
   .text-white {
-    color: white;
+    color: rgb(255, 255, 255);
   }
 
   .opacity-90 {
@@ -732,6 +864,71 @@ import Footer from '../components/Footer.astro';
     .cta-container {
       padding: 2rem 1.5rem;
       margin: 0 1rem;
+    }
+  }
+    /* Media Queries - Responsive */
+  @media (max-width: 1024px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      min-height: auto;
+    }
+    .hero-right {
+      margin-top: 3rem;
+    }
+    .hero-left {
+      justify-content: center;
+    }
+    .hero-title {
+      font-size: 2.75rem;
+    }
+    .hero-subtitle {
+      max-width: 100%;
+    }
+    .hero-buttons {
+      justify-content: center;
+    }
+    .key-benefits-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .key-benefits-image {
+      max-width: 100%;
+      margin-top: 2rem;
+    }
+    .key-benefits-text {
+      min-width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .hero {
+      padding: 3rem 0;
+    }
+    .hero-title {
+      font-size: 2.25rem;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+    .section {
+      padding: 3rem 0;
+    }
+    .btn-primary {
+      width: 100%;
+      text-align: center;
+    }
+    .btn-video {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 1.75rem;
+    }
+    .hero-subtitle {
+      font-size: 0.95rem;
     }
   }
 
