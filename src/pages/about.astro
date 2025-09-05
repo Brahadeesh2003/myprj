@@ -10,14 +10,14 @@ import Footer from '../components/Footer.astro';
   <!-- Hero / Intro Section -->
   <section class="about-hero">
     <div class="container hero-grid">
-      <div class="hero-image">
-        <img src="/images/about1.jpg" alt="Team collaborating on digital validation" />
-      </div>
       <div class="hero-text">
         <h1>Driving Innovation in Life Science Validation</h1>
         <p>
           GoVal was founded on the principle that validation should be efficient, compliant, and accessible. We recognized the challenges faced by life science companies relying on outdated, paper-based systems. With a team of validation and technology experts, we developed a robust digital platform to revolutionize the industry.
         </p>
+      </div>
+      <div class="hero-image">
+        <img src="/images/about1.jpg" alt="Team collaborating on digital validation" />
       </div>
     </div>
   </section>
@@ -63,7 +63,7 @@ import Footer from '../components/Footer.astro';
     <div class="container text-center">
       <h2>Ready to Transform Your Validation Journey?</h2>
       <p>Join leading life science organizations who trust GoVal for their digital validation solutions. Let’s get started!</p>
-      <a href="/contact" class="btn btn-primary btn-lg">Get Started</a>
+      <a href="/contact-us" class="btn btn-primary btn-lg">Talk to Us</a>
     </div>
   </section>
 
@@ -78,38 +78,133 @@ import Footer from '../components/Footer.astro';
 
   /* Hero */
   .about-hero .hero-grid {
-    display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
-  .hero-image img { width: 100%; max-width: 500px; border-radius: 0.75rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-  .hero-text h1 { font-size: 2.5rem; margin-bottom: 1rem; color: #111827; }
-  .hero-text p { color: #4b5563; line-height: 1.6; }
+  .hero-image {
+    order: 2;
+  }
+  .hero-text {
+    order: 1;
+    flex: 1;
+  }
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  .hero-text p {
+    color: #4b5563;
+    line-height: 1.6;
+  }
 
   /* Mission & Vision */
   .mission-vision .mv-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 2rem;
   }
-  .mv-card { background: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-  .mv-card h2 { font-size: 1.75rem; margin-bottom: 1rem; color: #111827; }
-  .mv-card p { color: #4b5563; line-height: 1.6; }
+  .mv-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .mv-card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  .mv-card p {
+    color: #4b5563;
+    line-height: 1.6;
+  }
 
   /* Principles & Values */
   .principles-values .pv-grid {
-    display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
-  .pv-image img { width: 100%; max-width: 500px; border-radius: 0.75rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-  .pv-text h2 { font-size: 2rem; margin-bottom: 1rem; color: #111827; }
-  .pv-text ul { list-style: none; padding: 0; }
-  .pv-text li { margin-bottom: 0.75rem; font-size: 1rem; color: #4b5563; }
-  .pv-text li strong { color: #111827; }
+  .pv-image {
+    order: 1;
+    flex: 1;
+  }
+  .pv-text {
+    order: 2;
+    flex: 1;
+  }
+  .pv-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  }
+  .pv-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  .pv-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  .pv-text li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  .pv-text li strong {
+    color: #111827;
+  }
 
   /* CTA */
-  .cta-section h2 { font-size: 2rem; margin-bottom: 1rem; color: #111827; }
-  .cta-section p { margin-bottom: 2rem; color: #4b5563; }
-  .btn-lg { padding: 1rem 2rem; font-size: 1rem; }
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  .cta-section p {
+    margin-bottom: 2rem;
+    color: #4b5563;
+  }
+  .btn-primary {
+  background-color: #ff5722 !important;
+  color: #ffffff !important;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-primary {
+  text-decoration: none !important;
+}
+
+.btn-primary:hover {
+  text-decoration: none !important;
+}
+.btn-primary:hover {
+  background-color: #e64a19 !important;
+  transform: translateY(-2px);
+}
 
   /* Responsive */
   @media (max-width: 768px) {
-    .about-hero .hero-grid, .principles-values .pv-grid { flex-direction: column; text-align: center; }
+    .about-hero .hero-grid,
+    .principles-values .pv-grid {
+      flex-direction: column;
+      text-align: center;
+    }
     .pv-text ul { text-align: left; }
   }
 </style>

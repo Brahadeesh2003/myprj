@@ -7,81 +7,137 @@ import Footer from '../../components/Footer.astro';
 <BaseLayout title="Equipment Validation with IoT - GoVal Portfolio">
   <Navigation />
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Download PDF and Image Right -->
   <section class="portfolio-hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">Equipment Validation</div>
-        <h1>Equipment Validation with IoT: Streamlining Electronic Data Capture</h1>
-        <p>How a KSA-based quality consulting company implemented GoVal's IoT-enabled validation solution to automate equipment validation and maintenance activities for their pharmaceutical clients.</p>
+    <div class="container hero-flex">
+      <div class="hero-text">
+        <div class="hero-badge">IOT EQUIPMENT VALIDATION</div>
+        <h1>Revolutionizing Electronic Data Capture</h1>
+        <p class="hero-intro">
+          A leading quality consulting firm in the Kingdom of Saudi Arabia (KSA), serving the healthcare and food industries, faced the challenge of modernizing pharmaceutical equipment validation for their clients.
+        </p>
+        <div class="hero-buttons">
+          <a href="/GoVal-Case-studies-2.pdf" download class="btn btn-primary">
+            Download Product Presentation
+            <svg class="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </a>
+          <a href="/contact" class="btn btn-secondary">
+            Talk to Our Consultant
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/images/equipment-hero.jpg" alt="IoT Equipment Validation" />
       </div>
     </div>
   </section>
 
-  <!-- Case Study Content -->
-  <section class="section case-study-content">
+  <!-- Confronting Validation Challenges Section -->
+  <section class="section confronting-challenges">
     <div class="container">
-      <div class="content-grid">
-        <!-- Main Content -->
-        <div class="main-content">
-          <h2>The Challenge</h2>
-          <p>The customer is a KSA-based quality consulting company providing consultancy to healthcare and food industries. The company, established in 2013, has a group of consultants located globally from varied expertise and backgrounds.</p>
-          
-          <p>They needed to implement GoVal solution for one of their pharmaceutical customers to automate validation and maintenance activities, specifically focusing on equipment validation with IoT integration for real-time data capture.</p>
+      <p class="section-label">[ FROM MANUAL TO DIGITAL ]</p>
+      <h2>Confronting Validation Challenges: Inventory, Data, and IoT Integration</h2>
+      <p>Our client struggled with managing equipment validation across their numerous locations. They required solutions to:</p>
+      <ul class="challenge-list">
+        <li><strong>Consolidate Equipment Inventory:</strong> Unified management of equipment inventory to ensure precise monitoring across sites.</li>
+        <li><strong>Digitize Paper Logs:</strong> Paper-based temperature and humidity records converted to fully digital paperless documentation.</li>
+        <li><strong>Optimize Equipment Oversight:</strong> Electronic register for tracking equipment status and periodic reviews to boost efficiency.</li>
+        <li><strong>Incorporate IoT Technology:</strong> IoT-enabled devices automatically capturing essential equipment data.</li>
+        <li><strong>Automate Protocol Execution:</strong> Automated test protocol execution, deviation recording, traceability matrices, and summary reports.</li>
+        <li><strong>Strengthen Data Accuracy:</strong> Automation to reduce manual input errors and enhance reliability.</li>
+      </ul>
+    </div>
+  </section>
 
-          <h2>The Solution</h2>
-          <ul>
-            <li><strong>IoT Device Integration:</strong> Connected equipment sensors for continuous monitoring</li>
-            <li><strong>Automated Data Capture:</strong> Real-time equipment parameter logging</li>
-            <li><strong>Digital Validation Protocols:</strong> Paperless validation workflows</li>
-            <li><strong>Maintenance Scheduling:</strong> AI-powered predictive maintenance alerts</li>
-          </ul>
+  <!-- GoVal's Integrated Solution Section with new icons -->
+  <section class="section integrated-solution-alt">
+    <div class="container">
+      <div class="solution-head">
+        <p class="section-label">[ GOVAL'S INTEGRATED SOLUTION ]</p>
+        <h2>Digitalizing Validation with IoT</h2>
+        <p>GoVal's platform delivered a comprehensive solution, enabling a digital validation approach for their Commissioning and Qualification processes. Key features included:</p>
+      </div>
 
-          <h2>Results Achieved</h2>
-          <div class="results-grid">
-            <div class="result-card">
-              <div class="result-number">75%</div>
-              <div class="result-text">Reduction in validation time</div>
-            </div>
-            <div class="result-card">
-              <div class="result-number">100%</div>
-              <div class="result-text">Paperless validation process</div>
-            </div>
-            <div class="result-card">
-              <div class="result-number">50%</div>
-              <div class="result-text">Decrease in compliance costs</div>
-            </div>
+      <div class="feature-card-main-grid">
+        <div class="feature-card-main">
+          <div class="feature-icon-main" aria-hidden="true" focusable="false" >
+            <!-- Icon: Stacked Papers Document (like first image) -->
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><path d="M5 3h14v2H5V3zm0 6h14v2H5v-2zm0 6h14v2H5v-2z"/></svg>
           </div>
-
-          <h2>Key Benefits</h2>
-          <p>The implementation of GoVal's IoT-enabled validation solution resulted in significant improvements in efficiency, accuracy, and compliance for the pharmaceutical client.</p>
+          <h3>Digitized Validation Workflows</h3>
+          <p>Transformed their validation approach, streamlining Commissioning and Qualification activities.</p>
         </div>
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <div class="info-card">
-            <h3>Project Details</h3>
-            <div class="info-item">
-              <strong>Industry:</strong> Pharmaceutical
-            </div>
-            <div class="info-item">
-              <strong>Location:</strong> Saudi Arabia
-            </div>
-            <div class="info-item">
-              <strong>Solution:</strong> Equipment Validation + IoT
-            </div>
-            <div class="info-item">
-              <strong>Timeline:</strong> 6 months
-            </div>
+        <div class="feature-card-main">
+          <div class="feature-icon-main" aria-hidden="true" focusable="false">
+            <!-- Icon: Document with image type -->
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><path d="M19 2H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2zm-9 14H7l3-4 2 3 3-4 1 2v3H10z"/></svg>
           </div>
+          <h3>Integrated Electronic Data Capture</h3>
+          <p>Seamlessly integrated Rombee IoT devices for automated temperature and humidity data capture.</p>
+        </div>
 
-          <div class="cta-card">
-            <h3>Need Similar Results?</h3>
-            <p>Contact our team to learn how GoVal can transform your validation processes.</p>
-            <a href="/contact" class="btn btn-primary">Get Started</a>
+        <div class="feature-card-main">
+          <div class="feature-icon-main" aria-hidden="true" focusable="false">
+            <!-- Icon: Stack of disks (database like) -->
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.657 4.031 3 9 3s9-1.343 9-3V5"/></svg>
           </div>
+          <h3>Real-Time Data Processing</h3>
+          <p>Enabled immediate processing and analysis of temperature and humidity data, providing instant insights.</p>
+        </div>
+
+        <div class="feature-card-main">
+          <div class="feature-icon-main" aria-hidden="true" focusable="false">
+            <!-- Icon: Gear -->
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.14 12.94c.04-.3.07-.61.07-.94s-.03-.64-.08-.94l2.03-1.58a.5.5 0 00.12-.6l-1.9-3.29a.5.5 0 00-.6-.22l-2.39.96a7.028 7.028 0 00-1.63-.94l-.36-2.54A.5.5 0 0014 3h-4a.5.5 0 00-.5.42l-.36 2.54c-.58.24-1.12.56-1.63.94l-2.39-.96a.5.5 0 00-.6.22l-1.9 3.29a.5.5 0 00.12.6l2.03 1.58c-.05.3-.08.61-.08.94s.03.64.08.94l-2.03 1.58a.5.5 0 00-.12.6l1.9 3.29a.5.5 0 00.6.22l2.39-.96c.51.38 1.05.7 1.63.94l.36 2.54a.5.5 0 00.5.42h4a.5.5 0 00.5-.42l.36-2.54a7.028 7.028 0 001.63-.94l2.39.96a.5.5 0 00.6-.22l1.9-3.29a.5.5 0 00-.12-.6l-2.03-1.58zM12 15.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z"/></svg>
+          </div>
+          <h3>Automated Calibration and Maintenance</h3>
+          <p>Facilitated calibration and preventive maintenance activities for equipment across multiple sites, improving efficiency.</p>
+        </div>
+
+        <div class="feature-card-main">
+          <div class="feature-icon-main" aria-hidden="true" focusable="false">
+            <!-- Icon: Lock -->
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="11" width="12" height="10" rx="2"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/></svg>
+          </div>
+          <h3>GMP and GxP Compliance</h3>
+          <p>We enabled seamless implementation of GMP standards and provided tools for GxP assessments, supporting GAMP classification.</p>
+        </div>
+
+        <div class="feature-card-main">
+          <div class="feature-icon-main" aria-hidden="true" focusable="false">
+            <!-- Icon: Hourglass/Timer -->
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><path d="M6 2h12v4l-4 4 4 4v4H6v-4l4-4-4-4V2z"/></svg>
+          </div>
+          <h3>Regulatory Compliance</h3>
+          <p>Streamlined compliance with 21 CFR Part 11 and Annex 11 was facilitated by our platform's electronic records, signature, access, and audit trail capabilities.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Proven Benefits Section -->
+  <section class="section proven-benefits">
+    <div class="container">
+      <p class="section-label">[ GOVAL'S PROVEN BENEFITS ]</p>
+      <h2>Driving Compliance and Efficiency</h2>
+      <p>GoVal's implementation delivered significant business benefits, transforming our client's validation processes:</p>
+      <ul class="benefits-list">
+        <li><strong>Complete Paperless Transformation:</strong> 100% elimination of paper records with a fully digital VLMS.</li>
+        <li><strong>Enhanced Compliance & Risk Management:</strong> Adoption of risk-based GxP, GAMP guidance, and tailored validation support.</li>
+        <li><strong>Robust Digital Validation Compliance:</strong> Comprehensive adherence to regulatory standards digitally.</li>
+        <li><strong>Accurate and Real-Time Data:</strong> Automated charts and reports with precise temperature and humidity readings.</li>
+        <li><strong>Error Reduction:</strong> Significantly lowered human errors by automating data entry and validations.</li>
+        <li><strong>Streamlined Field Inspections & Audit Readiness:</strong> IoT and mobile solutions simplifying field audits and compliance tracking.</li>
+      </ul>
     </div>
   </section>
 
@@ -89,133 +145,278 @@ import Footer from '../../components/Footer.astro';
 </BaseLayout>
 
 <style>
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-  .section { padding: 4rem 0; background: #ffffff; }
-
-  /* Hero */
-  .portfolio-hero {
-    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .section {
     padding: 4rem 0;
-    text-align: center;
+    background: #fff;
+  }
+  .portfolio-hero {
+    background: linear-gradient(135deg, #0d2950 0%, #082656 100%);
+    padding: 4.5rem 1rem 5rem;
+    color: #fff;
+  }
+  .hero-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-text {
+    flex: 1 1 600px;
+    max-width: 600px;
   }
   .hero-badge {
-    display: inline-block;
-    background: #3b82f6;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.17em;
+    color: #ff9500;
   }
   .portfolio-hero h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    color: #111827;
+    font-size: 2.75rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
   }
-  .portfolio-hero p {
-    font-size: 1.25rem;
-    color: #4b5563;
-    max-width: 800px;
+  .hero-intro {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 1.7rem;
+    color: #e8eaf5;
+  }
+  .hero-buttons a.btn {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.13rem;
+  }
+  .btn-primary,
+  .btn-secondary {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-primary:focus,
+  .btn-secondary:focus,
+  .btn-primary:active,
+  .btn-secondary:active {
+  text-decoration: none;
+}
+  .btn {
+    border-radius: 0.65rem;
+    font-weight: 700;
+    transition: background .18s, color .18s, box-shadow .22s;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-primary {
+    background: #ff9500;
+    color: #fff;
+    box-shadow: 0 5px 20px #ff980026;
+    padding: 0.9rem 2rem;
+  }
+  .btn-primary:hover {
+    background: #fa7905;
+    color: #fff;
+  }
+  .btn-secondary {
+    background: transparent;
+    color: #ff9500;
+    border: 2px solid #ff9500;
+    padding: 0.87rem 2rem;
+  }
+  .btn-secondary:hover {
+    background: #ff9500;
+    color: #fff;
+  }
+  .icon-download, .icon-arrow {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+  }
+  .hero-image {
+    flex: 1 1 500px;
+    text-align: right;
+  }
+  .hero-image img {
+    max-width: 480px;
+    max-height: 450px;
+    border-radius: 18px;
+    box-shadow: 0 8px 34px rgba(0,0,0,0.13);
+  }
+  .confronting-challenges {
+    max-width: 900px;
     margin: 0 auto;
+    color: #1f2937;
   }
-
-  /* Content */
-  .content-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-  }
-  .main-content h2 {
-    font-size: 1.75rem;
+  .section-label {
+    font-size: 0.85rem;
+    font-weight: 650;
+    color: #ff9500;
     margin-bottom: 1rem;
-    color: #111827;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
-  .main-content p, .main-content li {
-    line-height: 1.7;
+  .confronting-challenges h2 {
+    font-size: 2.08rem;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+  }
+  .challenge-list {
+    list-style: disc inside;
+    line-height: 1.8;
     color: #4b5563;
+    font-size: 1.04rem;
+  }
+  .challenge-list li {
     margin-bottom: 1rem;
   }
-  .main-content ul {
-    margin-bottom: 2rem;
+  .challenge-list strong {
+    color: #1b263b;
   }
-  .main-content li {
-    margin-bottom: 0.5rem;
-  }
-
-  /* Results Grid */
-  .results-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin: 2rem 0;
-  }
-  .result-card {
-    background: #f3f4f6;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
+  .integrated-solution-alt .solution-head {
+    max-width: 750px;
+    margin: 0 auto 2.5rem;
     text-align: center;
   }
-  .result-number {
+  .integrated-solution-alt .solution-head h2 {
     font-size: 2rem;
-    font-weight: 800;
-    color: #3b82f6;
+    font-weight: 900;
+    margin-bottom: 0.8rem;
+    color: #172240;
   }
-  .result-text {
-    color: #4b5563;
-    font-weight: 500;
+  .integrated-solution-alt .section-label {
+    color: #1686ad;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
   }
-
-  /* Sidebar */
-  .info-card, .cta-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  .integrated-solution-alt .solution-head p {
+    color: #232e47;
+    font-size: 1.08rem;
+    margin-bottom: 0;
+  }
+  .feature-card-main-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 2rem;
+    justify-items: stretch;
+    margin-top: 1.7rem;
+  }
+  .feature-card-main {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4.5px 26px rgb(0 0 0 / 0.10);
+    padding: 1.6rem 1.18rem 1.18rem 1.18rem;
+    text-align: center;
+    transition: box-shadow 0.19s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-card-main:hover {
+    box-shadow: 0 12px 40px #ffa3001a;
+  }
+  .feature-icon-main {
+    margin: 0 auto 0.87rem;
+  }
+  .feature-card-main h3 {
+    color: #173659;
+    font-size: 1.17rem;
+    font-weight: 750;
+    margin-bottom: 0.45rem;
+  }
+  .feature-card-main p {
+    color: #333a4a;
+    font-size: 1rem;
+    line-height: 1.52;
+  }
+  .proven-benefits {
+    max-width: 850px;
+    margin: 2.5rem auto 0;
+    text-align: center;
+  }
+  .proven-benefits .section-label {
+    color: #ff9500;
+    font-weight: 650;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  .proven-benefits h2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .proven-benefits p {
+    font-size: 1.08rem;
     margin-bottom: 2rem;
+    color: #42506b;
   }
-  .info-card h3, .cta-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: #111827;
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 710px;
+    text-align: left;
   }
-  .info-item {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #e5e7eb;
+  .benefits-list li {
+    position: relative;
+    padding-left: 2.25rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.02rem;
+    font-weight: 500;
+    color: #596273;
   }
-  .info-item:last-child {
-    border-bottom: none;
+  .benefits-list li strong {
+    color: #172240;
+    font-weight: 700;
   }
-  .cta-card p {
-    margin-bottom: 1rem;
-    color: #4b5563;
+  .benefits-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: #ff9500;
+    font-weight: 900;
+    font-size: 1.13rem;
   }
-  .btn {
-    display: inline-block;
-    background: #3b82f6;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.2s;
-  }
-  .btn:hover {
-    background: #1d4ed8;
-  }
-
-  /* Responsive */
-  @media (max-width: 768px) {
-    .content-grid {
-      grid-template-columns: 1fr;
-      gap: 2rem;
+  @media (max-width: 1024px) {
+    .hero-flex {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-    .portfolio-hero h1 {
-      font-size: 2rem;
+    .hero-text {
+      max-width: 90%;
     }
-    .results-grid {
+    .hero-image img {
+      max-width: 300px;
+    }
+    .feature-card-main-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem 1.5rem;
+    }
+  }
+  @media (max-width: 700px) {
+    .feature-card-main-grid {
       grid-template-columns: 1fr;
+    }
+    .hero-image img {
+      margin: 1rem auto 0 auto;
+      max-width: 260px;
     }
   }
 </style>
