@@ -140,15 +140,15 @@ import Footer from '../components/Footer.astro';
       <div class="section-header">
         <h2 class="section-title">
           GoVal AI - Take the Advantage of AI power
-          <img src="/images/ai-stars.png" alt="AI Stars" class="ai-decoration" />
+          
         </h2>
         <p class="section-subtitle">
           Experience the next generation of validation with Artificial Intelligence (AI) driving efficiency, accuracy, and compliance.
         </p>
       </div>
-
       <div class="text-center" style="margin-top: 3rem;">
         <a href="/goval-ai" class="btn btn-ai-blue btn-lg" aria-label="Explore GoVal AI">
+          <img src="/images/ai-stars.png" alt="AI Icon" class="ai-icon" />
           <span>Explore GoVal AI</span>
         </a>
       </div>
@@ -502,7 +502,7 @@ import Footer from '../components/Footer.astro';
 
   /* Primary Button (Orange) */
   .btn-primary {
-    background: linear-gradient(135deg, #1c04f0 0%, #2929fb 50%, #140ceb 100%);
+    background: linear-gradient(135deg, #1c04f0 0%, #0000ff 50%, #140ceb 100%);
     color: white;
     box-shadow: 0 6px 20px rgba(255, 87, 34, 0.3);
   }
@@ -515,17 +515,29 @@ import Footer from '../components/Footer.astro';
 
   /* AI Blue Button */
   .btn-ai-blue {
-    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #1d4ed8 100%);
+    background: linear-gradient(135deg, #043eee 0%, #135fd1 50%, #3160d5 100%);
     color: white;
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
   }
 
   .btn-ai-blue:hover {
-    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #1e40af 100%);
+    background: linear-gradient(135deg, #0044ff 0%, #2563eb 50%, #1e40af 100%);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
   }
+    /* AI Button Icon */
+  .ai-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
 
+  /* Ensure btn-ai-blue handles inline image and text alignment */
+  .btn-ai-blue {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
   /* Secondary Button */
   .btn-secondary {
     background: white;
