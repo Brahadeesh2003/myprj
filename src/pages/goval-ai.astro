@@ -1,77 +1,72 @@
 ---
-// src/pages/goval-ai.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
+
 <BaseLayout title="GoVal AI - Intelligent Validation Automation">
   <Navigation />
-  <!-- Hero Section with Image on Right -->
+
+  <!-- Hero Section -->
   <section class="hero-ai">
     <div class="container">
       <div class="hero-content">
-        <!-- Left Content -->
         <div class="hero-text">
           <div class="hero-badge">[ Next Generation AI-Powered Validation ]</div>
           <h1>
             GoVal AI<br/>
-            <span class="text-gradient">Intelligent Validation</span><br/>
+            Intelligent Validation<br/>
             at Scale
           </h1>
           <p class="hero-description">
-            Experience the power of artificial intelligence in validation processes. GoVal AI automates complex assessments, generates intelligent test cases, and accelerates compliance while maintaining the highest standards of accuracy.
+            Experience the power of Artificial Intelligence (AI) in validation processes. GoVal AI automates complex assessments, generates intelligent test cases, and accelerates compliance while maintaining the highest standards of accuracy.
           </p>
           <div class="hero-buttons">
-            <a href="/contact-us" class="btn btn-primary">
-              Try GoVal AI ⚡
+            <a href="/contact-us" class="btn btn-ai-blue btn-lg">
+              Book a Demo
             </a>
-            
           </div>
         </div>
-        <!-- Right Image -->
-        <div class="hero-image">
-          <img src="/images/AI.jpg" alt="GoVal AI Intelligent Validation" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section -->
+  <section class="section capabilities">
+    <div class="container">
+      <h2 class="capabilities-title">What GoVal AI can do for you?</h2>
+      <div class="capabilities-grid">
+        <div class="capability-card">
+          <h3>Validate URS & Specifications</h3>
+          <p>Take a help from GoVal to validate URS, functional and design specifications</p>
+        </div>
+        <div class="capability-card">
+          <h3>AI-Driven Risk Assessment</h3>
+          <p>Automatically categorize GxP risk levels using machine learning models trained on thousands of validation projects.</p>
+        </div>
+        <div class="capability-card">
+          <h3>Test Case Management</h3>
+          <p>Generate comprehensive test protocols instantly based on system requirements and historical project data.</p>
+        </div>
+        <div class="capability-card">
+          <h3>Intelligent Insights</h3>
+          <p>GoVal AI empowers you to query validation records and deliver an analytical edge to your validation process.</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- Features Section -->
-  <section class="section features">
-    <div class="container">
-      <div class="features-grid">
-        <article class="feature-card">
-          <div class="feature-icon">🤖</div>
-          <h3>AI-Driven Risk Assessment</h3>
-          <p>Automatically categorize GxP risk levels using machine learning models trained on thousands of validation projects.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-icon">📝</div>
-          <h3>Auto Test Case Generation</h3>
-          <p>Generate comprehensive test protocols instantly based on system requirements and historical project data.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-icon">📈</div>
-          <h3>Predictive Timelines</h3>
-          <p>Get accurate completion estimates and resource recommendations to optimize planning and reduce delays.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-icon">🔍</div>
-          <h3>Intelligent Insights</h3>
-          <p>Interactive dashboards deliver real-time analytics, highlighting bottlenecks and compliance metrics.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-  <!-- Call to Action -->
-  <section class="section cta-section">
+
+  <!-- CTA Section -->
+  <section class="section cta-ai">
     <div class="container">
       <div class="cta-content">
         <h2>Ready to Accelerate Your Validation?</h2>
         <p>Experience the power of AI in your validation workflows and achieve compliance faster than ever.</p>
-        <a href="/contact-us" class="btn btn-primary btn-lg">Get Started with GoVal AI</a>
+        <a href="/contact-us" class="btn btn-ai-blue btn-lg">Book a Demo</a>
       </div>
     </div>
   </section>
+
   <Footer />
 </BaseLayout>
 
@@ -89,23 +84,18 @@ import Footer from '../components/Footer.astro';
   .hero-ai {
     background: #ffffff;
     padding: 6rem 0;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
   }
   .hero-content {
     display: flex;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
+    justify-content: center;
   }
   .hero-text {
-    flex: 1;
-    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
   }
   .hero-badge {
     display: inline-block;
-    background: rgba(255, 87, 34, 0.1);
+    background: rgba(161, 170, 240, 0.1);
     color: #070707;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
@@ -120,12 +110,6 @@ import Footer from '../components/Footer.astro';
     margin-bottom: 1.5rem;
     color: #111827;
   }
-  .text-gradient {
-    background: linear-gradient(135deg, #0256ff 0%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
   .hero-description {
     font-size: 1.25rem;
     color: #4b5563;
@@ -134,106 +118,45 @@ import Footer from '../components/Footer.astro';
   }
   .hero-buttons {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .btn {
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.875rem 1.5rem;
-    border-radius: 0.625rem;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
-    position: relative;
-    overflow: hidden;
   }
-  .btn-primary {
-    background: linear-gradient(135deg, #0054ef 0%);
-    color: white;
-  }
- 
-  .btn-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
-    z-index: 1;
-  }
-  .btn-primary:hover::before {
-    left: 100%;
-  }
-  .btn-secondary {
-    background: white;
-    color: #0c0a0a;
-    border: 2px solid #ff5722;
-    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.15);
-  }
-  .btn-secondary:hover {
-    background: #060606;
-    color: white;
-    box-shadow: 0 6px 20px rgba(255, 87, 34, 0.5);
-    transform: translateY(-3px);
-  }
-  /* Hero Image */
-  .hero-image {
-    flex: 0 0 400px;
+  /* Capabilities Section */
+  .capabilities-title {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 2rem;
   }
-  .hero-image img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  }
-  /* Features Section */
-  .features {
-    background: #f9fafb;
-  }
-  .features-grid {
+  .capabilities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-  .feature-card {
-    background: rgb(239, 239, 239);
+  .capability-card {
+    background: #f9fafb;
     padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     text-align: center;
     transition: transform 0.2s ease;
   }
-  .feature-card:hover {
+  .capability-card:hover {
     transform: translateY(-5px);
   }
-  .feature-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  .feature-card h3 {
+  .capability-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: #111827;
   }
-  .feature-card p {
+  .capability-card p {
     color: #4b5563;
     line-height: 1.6;
   }
   /* CTA Section */
-  .cta-section {
-    background: linear-gradient(135deg, #fafafa 0%, #f4f4f4 100%);
-    color: rgb(0, 0, 0);
+  .cta-ai {
+    background: #f3f4f6;
   }
   .cta-content {
     text-align: center;
@@ -244,59 +167,71 @@ import Footer from '../components/Footer.astro';
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: #111827;
   }
   .cta-content p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: #4b5563;
+  }
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.5rem;
+    border-radius: 0.625rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
   }
   .btn-lg {
     padding: 1rem 2rem;
     font-size: 1.125rem;
   }
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero-content {
-      flex-direction: column;
-      text-align: center;
-    }
-    .hero-text h1 {
-      font-size: 2.5rem;
-    }
-    .hero-image {
-      flex: none;
-      max-width: 300px;
-    }
-    .hero-buttons {
-      justify-content: center;
-    }
-    .btn {
-      padding: 0.75rem 1.25rem;
-    }
-    .features-grid {
+  .btn-ai-blue {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #1d4ed8 100%);
+    color: white;
+    box-shadow: 0 6px 20px rgba(37,99,235,0.3);
+  }
+  .btn-ai-blue:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #1e40af 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37,99,235,0.5);
+  }
+  .btn-ai-blue::before {
+    content:'';
+    position:absolute;
+    top:0;left:-100%;
+    width:100%;height:100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);
+    transition:left 0.5s ease;
+    z-index:1;
+  }
+  .btn-ai-blue:hover::before {
+    left:100%;
+  }
+  /* Responsive */
+  @media (max-width:768px){
+    .capabilities-grid {
       grid-template-columns: 1fr;
     }
-    .cta-content h2 {
-      font-size: 2rem;
-    }
-  }
-  @media (max-width: 480px) {
     .hero-ai {
-      padding: 4rem 0;
+      padding:4rem 0;
     }
     .hero-text h1 {
-      font-size: 2rem;
-    }
-    .hero-description {
-      font-size: 1.125rem;
-    }
-    .hero-buttons {
-      flex-direction: column;
-      width: 100%;
+      font-size:2.5rem;
     }
     .btn {
-      width: 100%;
-      justify-content: center;
+      width:100%;
+      justify-content:center;
+    }
+    .cta-content h2 {
+      font-size:2rem;
     }
   }
 </style>

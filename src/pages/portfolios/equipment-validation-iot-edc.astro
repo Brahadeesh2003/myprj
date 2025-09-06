@@ -1,13 +1,13 @@
 ---
-// src/pages/portfolios/equipment-validation-iot-edc.astro
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 ---
+
 <BaseLayout title="Equipment Validation with IoT - GoVal Portfolio">
   <Navigation />
 
-  <!-- Hero Section with Download PDF and Image Right -->
+  <!-- Hero Section with full-cover right image -->
   <section class="portfolio-hero">
     <div class="container hero-flex">
       <div class="hero-text">
@@ -17,14 +17,6 @@ import Footer from '../../components/Footer.astro';
           A leading quality consulting firm in the Kingdom of Saudi Arabia (KSA), serving the healthcare and food industries, faced the challenge of modernizing pharmaceutical equipment validation for their clients.
         </p>
         <div class="hero-buttons">
-          <a href="/GoVal-Case-studies-2.pdf" download class="btn btn-primary">
-            Download Product Presentation
-            <svg class="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-          </a>
           <a href="/contact" class="btn btn-secondary">
             Talk to Our Consultant
             <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -34,7 +26,7 @@ import Footer from '../../components/Footer.astro';
           </a>
         </div>
       </div>
-      <div class="hero-image">
+      <div class="hero-image-cover">
         <img src="/images/equipment-hero.jpg" alt="IoT Equipment Validation" />
       </div>
     </div>
@@ -68,54 +60,43 @@ import Footer from '../../components/Footer.astro';
 
       <div class="feature-card-main-grid">
         <div class="feature-card-main">
-          <div class="feature-icon-main" aria-hidden="true" focusable="false" >
-            <!-- Icon: Stacked Papers Document (like first image) -->
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><path d="M5 3h14v2H5V3zm0 6h14v2H5v-2zm0 6h14v2H5v-2z"/></svg>
+          <div class="feature-icon-main">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316"><path d="M5 3h14v2H5V3zm0 6h14v2H5v-2zm0 6h14v2H5v-2z"/></svg>
           </div>
           <h3>Digitized Validation Workflows</h3>
           <p>Transformed their validation approach, streamlining Commissioning and Qualification activities.</p>
         </div>
-
         <div class="feature-card-main">
-          <div class="feature-icon-main" aria-hidden="true" focusable="false">
-            <!-- Icon: Document with image type -->
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><path d="M19 2H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2zm-9 14H7l3-4 2 3 3-4 1 2v3H10z"/></svg>
+          <div class="feature-icon-main">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316"><path d="M19 2H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2zm-9 14H7l3-4 2 3 3-4 1 2v3H10z"/></svg>
           </div>
           <h3>Integrated Electronic Data Capture</h3>
           <p>Seamlessly integrated Rombee IoT devices for automated temperature and humidity data capture.</p>
         </div>
-
         <div class="feature-card-main">
-          <div class="feature-icon-main" aria-hidden="true" focusable="false">
-            <!-- Icon: Stack of disks (database like) -->
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.657 4.031 3 9 3s9-1.343 9-3V5"/></svg>
+          <div class="feature-icon-main">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.657 4.031 3 9 3s9-1.343 9-3V5"/></svg>
           </div>
           <h3>Real-Time Data Processing</h3>
           <p>Enabled immediate processing and analysis of temperature and humidity data, providing instant insights.</p>
         </div>
-
         <div class="feature-card-main">
-          <div class="feature-icon-main" aria-hidden="true" focusable="false">
-            <!-- Icon: Gear -->
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.14 12.94c.04-.3.07-.61.07-.94s-.03-.64-.08-.94l2.03-1.58a.5.5 0 00.12-.6l-1.9-3.29a.5.5 0 00-.6-.22l-2.39.96a7.028 7.028 0 00-1.63-.94l-.36-2.54A.5.5 0 0014 3h-4a.5.5 0 00-.5.42l-.36 2.54c-.58.24-1.12.56-1.63.94l-2.39-.96a.5.5 0 00-.6.22l-1.9 3.29a.5.5 0 00.12.6l2.03 1.58c-.05.3-.08.61-.08.94s.03.64.08.94l-2.03 1.58a.5.5 0 00-.12.6l1.9 3.29a.5.5 0 00.6.22l2.39-.96c.51.38 1.05.7 1.63.94l.36 2.54a.5.5 0 00.5.42h4a.5.5 0 00.5-.42l.36-2.54a7.028 7.028 0 001.63-.94l2.39.96a.5.5 0 00.6-.22l1.9-3.29a.5.5 0 00-.12-.6l-2.03-1.58zM12 15.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z"/></svg>
+          <div class="feature-icon-main">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.14 12.94c.04-.3.07-.61.07-.94s-.03-.64-.08-.94l2.03-1.58a.5.5 0 00.12-.6l-1.9-3.29a.5.5 0 00-.6-.22l-2.39.96a7.028 7.028 0 00-1.63-.94l-.36-2.54A.5.5 0 0014 3h-4a.5.5 0 00-.5.42l-.36 2.54c-.58.24-1.12.56-1.63.94l-2.39-.96a.5.5 0 00-.6.22l-1.9 3.29a.5.5 0 00.12.6l2.03 1.58c-.05.3-.08.61-.08.94s.03.64.08.94l-2.03 1.58a.5.5 0 00-.12.6l1.9 3.29a.5.5 0 00.6.22l2.39-.96c.51.38 1.05.7 1.63.94l.36 2.54a.5.5 0 00.5.42h4a.5.5 0 00.5-.42l.36-2.54a7.028 7.028 0 001.63-.94l2.39.96a.5.5 0 00.6-.22l1.9-3.29a.5.5 0 00-.12-.6l-2.03-1.58zM12 15.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z"/></svg>
           </div>
           <h3>Automated Calibration and Maintenance</h3>
           <p>Facilitated calibration and preventive maintenance activities for equipment across multiple sites, improving efficiency.</p>
         </div>
-
         <div class="feature-card-main">
-          <div class="feature-icon-main" aria-hidden="true" focusable="false">
-            <!-- Icon: Lock -->
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="11" width="12" height="10" rx="2"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/></svg>
+          <div class="feature-icon-main">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316"><rect x="6" y="11" width="12" height="10" rx="2"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/></svg>
           </div>
           <h3>GMP and GxP Compliance</h3>
           <p>We enabled seamless implementation of GMP standards and provided tools for GxP assessments, supporting GAMP classification.</p>
         </div>
-
         <div class="feature-card-main">
-          <div class="feature-icon-main" aria-hidden="true" focusable="false">
-            <!-- Icon: Hourglass/Timer -->
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg"><path d="M6 2h12v4l-4 4 4 4v4H6v-4l4-4-4-4V2z"/></svg>
+          <div class="feature-icon-main">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#f97316"><path d="M6 2h12v4l-4 4 4 4v4H6v-4l4-4-4-4V2z"/></svg>
           </div>
           <h3>Regulatory Compliance</h3>
           <p>Streamlined compliance with 21 CFR Part 11 and Annex 11 was facilitated by our platform's electronic records, signature, access, and audit trail capabilities.</p>
@@ -144,175 +125,202 @@ import Footer from '../../components/Footer.astro';
   <Footer />
 </BaseLayout>
 
+
 <style>
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  .section {
-    padding: 4rem 0;
-    background: #fff;
-  }
+  html { font-size: 100%; }
+  body { font-size: 1rem; }
+
   .portfolio-hero {
-    background: linear-gradient(135deg, #0d2950 0%, #082656 100%);
-    padding: 4.5rem 1rem 5rem;
+    background: linear-gradient(135deg, #16407d 0%, #092143 100%);
     color: #fff;
+    padding: 3rem 0;
+    font-size: 1.1rem;
   }
   .hero-flex {
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    gap: 2.5rem;
+    align-items: stretch;
+    min-height: 400px;
   }
   .hero-text {
-    flex: 1 1 600px;
+    flex: 1 1 46%;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    z-index: 2;
   }
   .hero-badge {
     font-weight: 700;
     font-size: 1.05rem;
     margin-bottom: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 0.17em;
+    letter-spacing: 0.19em;
     color: #ff9500;
   }
-  .portfolio-hero h1 {
-    font-size: 2.75rem;
+  .hero-text h1 {
+    font-size: 2.7rem;
     font-weight: 900;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.13;
   }
   .hero-intro {
-    font-size: 1.15rem;
+    font-size: 1.10rem;
     line-height: 1.6;
-    margin-bottom: 1.7rem;
-    color: #e8eaf5;
+    margin-bottom: 1.85rem;
+    color: #e1eaf8;
   }
-  .hero-buttons a.btn {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+  }
+  .btn {
+    font-weight: 700;
+    border-radius: 0.55em;
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
-    font-size: 1.13rem;
-  }
-  .btn-primary,
-  .btn-secondary {
-  text-decoration: none;
-  font-weight: 700;
-}
-
-  .btn-primary:hover,
-  .btn-secondary:hover,
-  .btn-primary:focus,
-  .btn-secondary:focus,
-  .btn-primary:active,
-  .btn-secondary:active {
-  text-decoration: none;
-}
-  .btn {
-    border-radius: 0.65rem;
-    font-weight: 700;
-    transition: background .18s, color .18s, box-shadow .22s;
-    cursor: pointer;
+    gap: 0.56em;
+    text-decoration: none;
+    font-size: 1.05rem;
+    padding: 0.73em 1.43em;
     border: none;
-  }
-  .btn-primary {
-    background: #ff9500;
-    color: #fff;
-    box-shadow: 0 5px 20px #ff980026;
-    padding: 0.9rem 2rem;
-  }
-  .btn-primary:hover {
-    background: #fa7905;
-    color: #fff;
+    transition: background .2s, color .2s;
+    box-shadow: none;
   }
   .btn-secondary {
-    background: transparent;
     color: #ff9500;
     border: 2px solid #ff9500;
-    padding: 0.87rem 2rem;
+    background: transparent;
   }
   .btn-secondary:hover {
     background: #ff9500;
     color: #fff;
   }
-  .icon-download, .icon-arrow {
-    width: 22px;
-    height: 22px;
-    vertical-align: middle;
+  .icon-arrow {
+    width: 24px;
+    height: 24px;
   }
-  .hero-image {
-    flex: 1 1 500px;
-    text-align: right;
+  .hero-image-cover {
+    flex: 1 1 54%;
+    display: flex;
+    align-items: stretch;
+    height: auto;
+    min-width: 0;
+    /* Avoid squishing at small screens, allows proper shrinking/scrolling */
   }
-  .hero-image img {
-    max-width: 480px;
-    max-height: 450px;
-    border-radius: 18px;
-    box-shadow: 0 8px 34px rgba(0,0,0,0.13);
+  .hero-image-cover img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 22px;
+    align-self: stretch;
+    min-height: 340px;
+    background: #0d2950;
+    box-shadow: 0 11px 32px rgba(0,0,0,0.13);
+    display: block;
   }
-  .confronting-challenges {
+  @media (max-width: 1100px) {
+    .hero-flex {
+      flex-direction: column;
+      text-align: center;
+      gap: 2.5rem;
+      min-height: unset;
+    }
+    .hero-text {
+      max-width: 100%;
+      padding: 0 1rem 0 1rem;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-image-cover {
+      width: 100%;
+      min-width: 0;
+    }
+    .hero-image-cover img {
+      min-height: 220px;
+      height: 320px;
+      max-width: 99vw;
+    }
+  }
+  /* Main Content Sections */
+  .section-label {
+    color: #2176c7;
+    font-weight: 750;
+    letter-spacing: 0.14em;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+  .confronting-challenges,
+  .integrated-solution-alt,
+  .proven-benefits {
+    padding: 2.5rem 0 0.5rem 0;
+    font-size: 1.06rem;
+    color: #18253d;
+  }
+  .confronting-challenges h2,
+  .proven-benefits h2,
+  .integrated-solution-alt h2 {
+    font-size: 2.0rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+    color: #11305b;
+  }
+  .confronting-challenges .container,
+  .integrated-solution-alt .container,
+  .proven-benefits .container {
     max-width: 900px;
     margin: 0 auto;
-    color: #1f2937;
-  }
-  .section-label {
-    font-size: 0.85rem;
-    font-weight: 650;
-    color: #ff9500;
-    margin-bottom: 1rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-  .confronting-challenges h2 {
-    font-size: 2.08rem;
-    font-weight: 800;
-    margin-bottom: 1.25rem;
+    padding: 0 1rem;
   }
   .challenge-list {
-    list-style: disc inside;
-    line-height: 1.8;
-    color: #4b5563;
-    font-size: 1.04rem;
+    list-style: disc;
+    margin-left: 1.2rem;
+    margin-bottom: 1.6rem;
+    color: #30456b;
+    font-size: 1.05rem;
   }
-  .challenge-list li {
-    margin-bottom: 1rem;
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.2rem auto;
+    max-width: 710px;
+    text-align: left;
   }
-  .challenge-list strong {
-    color: #1b263b;
+  .benefits-list li {
+    position: relative;
+    padding-left: 2.25rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.06rem;
+    font-weight: 500;
+    color: #425273;
   }
-  .integrated-solution-alt .solution-head {
-    max-width: 750px;
-    margin: 0 auto 2.5rem;
-    text-align: center;
-  }
-  .integrated-solution-alt .solution-head h2 {
-    font-size: 2rem;
-    font-weight: 900;
-    margin-bottom: 0.8rem;
+  .benefits-list li strong {
     color: #172240;
-  }
-  .integrated-solution-alt .section-label {
-    color: #1686ad;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
     font-weight: 700;
-    text-transform: uppercase;
   }
-  .integrated-solution-alt .solution-head p {
-    color: #232e47;
-    font-size: 1.08rem;
-    margin-bottom: 0;
+  .benefits-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: #ff9500;
+    font-weight: 900;
+    font-size: 1.13rem;
   }
   .feature-card-main-grid {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 1.2rem auto 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem 2rem;
+    gap: 2.2rem;
     justify-items: stretch;
-    margin-top: 1.7rem;
   }
   .feature-card-main {
     background: #fff;
@@ -333,7 +341,7 @@ import Footer from '../../components/Footer.astro';
   }
   .feature-card-main h3 {
     color: #173659;
-    font-size: 1.17rem;
+    font-size: 1.19rem;
     font-weight: 750;
     margin-bottom: 0.45rem;
   }
@@ -343,80 +351,51 @@ import Footer from '../../components/Footer.astro';
     line-height: 1.52;
   }
   .proven-benefits {
-    max-width: 850px;
-    margin: 2.5rem auto 0;
+    max-width: 950px;
+    margin: 2rem auto 2.5rem;
+    padding-bottom: 2.7rem;
     text-align: center;
   }
   .proven-benefits .section-label {
     color: #ff9500;
     font-weight: 650;
-    font-size: 0.85rem;
+    font-size: 0.89rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
   }
   .proven-benefits h2 {
     font-weight: 900;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.1rem;
+    margin-bottom: 0.9rem;
   }
   .proven-benefits p {
-    font-size: 1.08rem;
-    margin-bottom: 2rem;
+    font-size: 1.09rem;
     color: #42506b;
+    margin-bottom: 1.5rem;
   }
-  .benefits-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 710px;
-    text-align: left;
-  }
-  .benefits-list li {
-    position: relative;
-    padding-left: 2.25rem;
-    margin-bottom: 1.2rem;
-    font-size: 1.02rem;
-    font-weight: 500;
-    color: #596273;
-  }
-  .benefits-list li strong {
-    color: #172240;
-    font-weight: 700;
-  }
-  .benefits-list li::before {
-    content: '✔';
-    position: absolute;
-    left: 0;
-    top: 0.2rem;
-    color: #ff9500;
-    font-weight: 900;
-    font-size: 1.13rem;
-  }
-  @media (max-width: 1024px) {
-    .hero-flex {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .hero-text {
-      max-width: 90%;
-    }
-    .hero-image img {
-      max-width: 300px;
-    }
+  @media (max-width: 1100px) {
     .feature-card-main-grid {
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem 1.5rem;
     }
+    .hero-image-cover img { max-width: 99vw; }
   }
-  @media (max-width: 700px) {
+  @media (max-width: 850px) {
     .feature-card-main-grid {
       grid-template-columns: 1fr;
+      gap: 1.2rem 0;
     }
-    .hero-image img {
-      margin: 1rem auto 0 auto;
-      max-width: 260px;
+    .hero-image-cover img {
+      max-width: 96vw;
+      min-height: 160px;
     }
+  }
+  @media (max-width: 700px) {
+    .hero-flex { flex-direction: column; }
+    .hero-text { padding: 0 0.5rem 0 0.5rem; }
+    .hero-image-cover { width: 100%; }
+    .hero-image-cover img { margin: 1rem auto 0 auto; }
+    .proven-benefits { padding-left: 8px; padding-right: 8px; }
   }
 </style>

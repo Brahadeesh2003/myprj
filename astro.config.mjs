@@ -11,5 +11,5 @@ export default defineConfig({
   },
   trailingSlash: 'ignore',
   base: '/',
-  site: 'https://govalsma.netlify.app'
+  site: 'https://goval.app'
 });
