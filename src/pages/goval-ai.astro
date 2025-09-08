@@ -31,7 +31,7 @@ import Footer from '../components/Footer.astro';
     <div class="container">
       <h2 class="capabilities-title">What GoVal AI can do for you?</h2>
       <div class="capabilities-grid">
-        <div class="capability-card">
+        <div class="capability-card card-blue">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" class="icon-svg">
               <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -40,7 +40,7 @@ import Footer from '../components/Footer.astro';
           <h3>Validate URS & Specifications</h3>
           <p>Take a help from GoVal AI to validate URS, functional and design specifications</p>
         </div>
-        <div class="capability-card">
+        <div class="capability-card card-green">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" class="icon-svg">
               <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -49,7 +49,7 @@ import Footer from '../components/Footer.astro';
           <h3>AI-Driven Risk Assessment</h3>
           <p>Automatically categorize GxP risk levels using machine learning models trained on thousands of validation projects.</p>
         </div>
-        <div class="capability-card">
+        <div class="capability-card card-yellow">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" class="icon-svg">
               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -58,7 +58,7 @@ import Footer from '../components/Footer.astro';
           <h3>Test Case Management</h3>
           <p>Generate comprehensive test protocols instantly based on system requirements and historical project data.</p>
         </div>
-        <div class="capability-card">
+        <div class="capability-card card-purple">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" class="icon-svg">
               <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
@@ -125,7 +125,7 @@ import Footer from '../components/Footer.astro';
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    color: #111827;
+    color: #000000;
   }
   .hero-description {
     font-size: 1.25rem;
@@ -176,26 +176,34 @@ import Footer from '../components/Footer.astro';
   .capability-card h3,
   .capability-card p {
     transition: color 0.3s ease;
-    color: #111827;
   }
   .capability-card p {
     color: #4b5563;
   }
+
+  /* Individual card colors */
+  .card-blue .card-icon { background: #3b82f6; }
+  .card-green .card-icon { background: #10b981; }
+  .card-yellow .card-icon { background: #f59e0b; }
+  .card-purple .card-icon { background: #8b5cf6; }
+
   /* Hover State */
-  .capability-card:hover {
-    background-color: #729dd5;
-    color: white;
-  }
+  .capability-card.card-blue:hover { background-color: #3b82f6; }
+  .capability-card.card-green:hover { background-color: #10b981; }
+  .capability-card.card-yellow:hover { background-color: #f59e0b; }
+  .capability-card.card-purple:hover { background-color: #8b5cf6; }
+
   .capability-card:hover .card-icon {
     background-color: white;
   }
   .capability-card:hover .icon-svg {
-    fill: #4b77b9;
+    fill: currentColor;
   }
   .capability-card:hover h3,
   .capability-card:hover p {
     color: white;
   }
+
   /* CTA Section */
   .cta-ai {
     background: #f3f4f6;
