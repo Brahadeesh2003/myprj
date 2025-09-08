@@ -3,10 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
-
 <BaseLayout title="GoVal AI - Intelligent Validation Automation">
   <Navigation />
-
   <!-- Hero Section -->
   <section class="hero-ai">
     <div class="container">
@@ -14,7 +12,7 @@ import Footer from '../components/Footer.astro';
         <div class="hero-text">
           <div class="hero-badge">[ Next Generation AI-Powered Validation ]</div>
           <h1>
-            GoVal AI<br/>
+            GoVal AI <img src="/images/ai-stars1.png" alt="AI Icon" class="ai-header-icon" /><br/>
             Intelligent Validation<br/>
             at Scale
           </h1>
@@ -25,7 +23,6 @@ import Footer from '../components/Footer.astro';
       </div>
     </div>
   </section>
-
   <!-- Capabilities Section -->
   <section class="section capabilities">
     <div class="container">
@@ -70,7 +67,6 @@ import Footer from '../components/Footer.astro';
       </div>
     </div>
   </section>
-
   <!-- CTA Section -->
   <section class="section cta-ai">
     <div class="container">
@@ -81,10 +77,8 @@ import Footer from '../components/Footer.astro';
       </div>
     </div>
   </section>
-
   <Footer />
 </BaseLayout>
-
 <style>
   .container {
     max-width: 1200px;
@@ -93,7 +87,7 @@ import Footer from '../components/Footer.astro';
   }
   .section {
     padding: 4rem 0;
-    background: #ffffff;
+    background: #fbfbfb;
   }
   /* Hero Section */
   .hero-ai {
@@ -105,13 +99,13 @@ import Footer from '../components/Footer.astro';
     justify-content: flex-start;
   }
   .hero-text {
-    max-width: 600px;
+    max-width: 100%;
     text-align: left;
   }
   .hero-badge {
     display: inline-block;
     background: rgba(247, 247, 248, 0.1);
-    color: #070707;
+    color: #111111;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     font-size: 0.875rem;
@@ -127,11 +121,18 @@ import Footer from '../components/Footer.astro';
     margin-bottom: 1.5rem;
     color: #000000;
   }
+  .ai-header-icon {
+    width: 3.8rem;
+    height: 3.5rem;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+  }
   .hero-description {
     font-size: 1.25rem;
     color: #4b5563;
     line-height: 1.7;
     margin-bottom: 2rem;
+    width: 100%;
   }
   /* Capabilities Section */
   .capabilities-title {
@@ -180,19 +181,16 @@ import Footer from '../components/Footer.astro';
   .capability-card p {
     color: #4b5563;
   }
-
   /* Individual card colors */
   .card-blue .card-icon { background: #3b82f6; }
   .card-green .card-icon { background: #10b981; }
   .card-yellow .card-icon { background: #f59e0b; }
   .card-purple .card-icon { background: #8b5cf6; }
-
   /* Hover State */
   .capability-card.card-blue:hover { background-color: #3b82f6; }
   .capability-card.card-green:hover { background-color: #10b981; }
   .capability-card.card-yellow:hover { background-color: #f59e0b; }
   .capability-card.card-purple:hover { background-color: #8b5cf6; }
-
   .capability-card:hover .card-icon {
     background-color: white;
   }
@@ -203,7 +201,6 @@ import Footer from '../components/Footer.astro';
   .capability-card:hover p {
     color: white;
   }
-
   /* CTA Section */
   .cta-ai {
     background: #f3f4f6;
@@ -275,6 +272,10 @@ import Footer from '../components/Footer.astro';
     }
     .hero-text h1 {
       font-size:2.5rem;
+    }
+    .ai-header-icon {
+      width: 2.5rem;
+      height: 2.5rem;
     }
     .btn {
       width:100%;

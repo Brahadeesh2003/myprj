@@ -3,29 +3,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
-
 <BaseLayout title="GoVal Solution Offerings - Digital Validation Solutions">
   <Navigation />
-
   <!-- Pricing Hero Section -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-content">
+  <section class="hero hero-left-slight">
+    <div class="container hero-container-left-slight">
+      <div class="hero-content hero-content-left-slight">
         <div class="hero-badge">
-          [ GoVal Solution Offerings ]
+          [ GO VAL SOLUTION OFFERINGS ]
         </div>
-
-        <h1 class="hero-title">
+        <h1 class="hero-title hero-title-left">
           Select the Ideal Solution for Your GxP Compliance Goals
         </h1>
-
-        <p class="hero-subtitle">
-          GoVal delivers flexible, scalable deployment models tailored to your organization—whether you’re a growing startup or an established enterprise—so you can meet GxP requirements efficiently and confidently. Our solutions support a wide range of industries, including pharmaceuticals, biotechnology, medical devices, clinical research laboratories, contract manufacturing organizations (CMOs), nutraceuticals, and food and beverage companies, helping teams streamline validation, reduce compliance risk, and stay audit-ready.
+        <p class="hero-subtitle hero-desc-full">
+          GoVal delivers flexible, scalable deployment models tailored to your organization—whether you’re a growing startup or an established enterprise—so you can meet GxP requirements efficiently and confidently. Our solutions support a wide range of industries, including pharmaceuticals, biotechnology, medical devices, clinical research laboratories, contract manufacturing organizations (CMOs), nutraceuticals, and food beverage companies, helping teams streamline validation, reduce compliance risk, and stay audit-ready.
         </p>
       </div>
     </div>
   </section>
-
   <!-- Pricing Options Section -->
   <section class="section">
     <div class="container">
@@ -43,7 +38,6 @@ import Footer from '../components/Footer.astro';
               Unlock GoVal Cloud, designed for teams from 10 to 50 users. Discover the right fit for your needs or reach out to us directly for a personalized quote.
             </p>
           </div>
-
           <div class="option-content">
             <div class="feature-list">
               <div class="feature-category">
@@ -74,13 +68,11 @@ import Footer from '../components/Footer.astro';
                 </ul>
               </div>
             </div>
-
             <div class="pricing-info">
               <div class="pricing-note">
                 <strong>GoVal SaaS Pricing</strong>
                 <p>Contact us for personalized quotes based on your specific requirements, user count, and feature needs.</p>
               </div>
-
               <div class="contact-action">
                 <a href="/contact-us" class="btn btn-primary btn-lg">
                   <span>Get SaaS Quote</span>
@@ -92,14 +84,13 @@ import Footer from '../components/Footer.astro';
             </div>
           </div>
         </div>
-
         <!-- On-Premise Option -->
         <div class="pricing-option featured">
           <div class="featured-badge"></div>
           <div class="option-header">
             <div class="option-icon onprem">
               <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m-5 0v-4a2 2 0 012-2h10a2 2 0 012 2v4m-14 0h14"/>
               </svg>
             </div>
             <h2 class="option-title">GoVal On-Premise</h2>
@@ -107,44 +98,41 @@ import Footer from '../components/Footer.astro';
               Deploy GoVal On-Premise in your data center or any major cloud (AWS, Azure, GCP). Minimum 50 user licenses required.
             </p>
           </div>
-
           <div class="option-content">
             <div class="feature-list">
               <div class="feature-category">
-                <h4>🏢 Enterprise Deployment</h4>
+                <h4>🏢 Cloud or On-Prem Deployment</h4>
                 <ul>
                   <li>Your data center or private cloud</li>
                   <li>AWS, Azure, GCP compatibility</li>
                   <li>Complete data sovereignty</li>
-                  <li>Custom security configurations</li>
+                  <li>Custom security settings</li>
                 </ul>
               </div>
               <div class="feature-category">
-                <h4>👥 Minimum 50 User Licenses</h4>
+                <h4>👥 Minimum 50 Users</h4>
                 <ul>
-                  <li>Enterprise-scale deployment</li>
+                  <li>Enterprise scale</li>
                   <li>Unlimited concurrent users</li>
                   <li>Advanced user management</li>
-                  <li>Department-level permissions</li>
+                  <li>Department level permissions</li>
                 </ul>
               </div>
               <div class="feature-category">
-                <h4>⚙️ Advanced Features</h4>
+                <h4>🛠️ Features</h4>
                 <ul>
-                  <li>Custom integrations and APIs</li>
-                  <li>Advanced reporting and analytics</li>
-                  <li>Custom workflows and templates</li>
-                  <li>Priority support and training</li>
+                  <li>Custom integrations & APIs</li>
+                  <li>Advanced reports & analytics</li>
+                  <li>Custom workflows & templates</li>
+                  <li>Priority support & training</li>
                 </ul>
               </div>
             </div>
-
             <div class="pricing-info">
               <div class="pricing-note">
                 <strong>Enterprise Pricing</strong>
-                <p>Customized pricing based on user count, deployment requirements, and support level. Includes installation, training, and ongoing support.</p>
+                <p>Custom pricing based on user count, deployment, and support. Includes install, training, and support.</p>
               </div>
-
               <div class="contact-action">
                 <a href="/contact-us" class="btn btn-primary btn-lg">
                   <span>Get Enterprise Quote</span>
@@ -159,140 +147,300 @@ import Footer from '../components/Footer.astro';
       </div>
     </div>
   </section>
-
   <!-- FAQ Section -->
   <section class="section bg-light">
     <div class="container">
       <div class="section-header centered">
-        
         <h2 class="faq-title">Frequently Asked Questions (FAQ)</h2>
-
       </div>
-
       <div class="faq-list">
         <details class="faq-item" open>
           <summary>Does GoVal software provide annual subscriptions?</summary>
           <div class="faq-answer">
-            <p>Yes, we do. For Annual Subscriptions, the customer will be billed for the selected pricing plan and the user counts. Annual subscriptions may offer a discount depending on the number of users purchased.</p>
-            <p><strong>Note:</strong> At this moment, we have not published pricing plans on our website. Request our customers to approach us <a href="mailto:info@govalidation.com">info@govalidation.com</a> for the pricing plans and attractive offers.</p>
+            <p>Yes, annual subscriptions are available with flexible pricing.</p>
+            <p>Contact us at <a href="mailto:info@govalidation.com">info@govalidation.com</a> for details.</p>
           </div>
         </details>
-
         <details class="faq-item">
-          <summary>Do I need to pay for a year upfront for GoVal?</summary>
+          <summary>Is upfront payment required?</summary>
           <div class="faq-answer">
-            <p>GoVal VLMS Subscription plans are billed annually by default. And since we focus on your long-term success, we want to encourage the customers to sign annual plans to avail discount offers.</p>
-
+            <p>Annual plans require upfront payment to qualify for discounts.</p>
           </div>
         </details>
-
         <details class="faq-item">
-          <summary>What is the price for GoVal in my local currency?</summary>
+          <summary>Pricing in local currency?</summary>
           <div class="faq-answer">
-            <p>As exchange rates are constantly fluctuating, the prices displayed are in USD only.  For information on the price of GoVal in your local currency please contact our sales department <a href="mailto:info@govalidation.com">info@govalidation.com</a>. </p>
+            <p>Prices are in USD. Contact sales for local currency quotes.</p>
           </div>
         </details>
-
         <details class="faq-item">
-          <summary>What payment methods do you accept?</summary>
+          <summary>Accepted payment methods?</summary>
           <div class="faq-answer">
-            <p>As of now , we accept payments via only wire transfer. The details of our bank will be shared with the customer when they sign for the subscription plans.</p>
-            <p>
-            In future, the subscriptions can be payable by credit card (MasterCard, Visa, or American Express) and other available mediums.</p>
+            <p>Currently, we accept wire transfers; credit card payments coming soon.</p>
           </div>
         </details>
-
         <details class="faq-item">
-          <summary>Service Level agreement</summary>
-            <div class="faq-answer">
-              <p>✓ To ensure uninterrupted service, SLA based support is provided to our customers. The customers can log the problem ticket via GoVal support portal – <a href="https://support.govalidation.com" target="_blank">support.govalidation.com</a>.</p>
-              <p>✓ All problem tickets logged with the support team (via e-mail or support portal tickets) are assigned a severity level from 1 to 4 based on the impact on customer business.</p>
-              <p>✓ The customer determines the initial severity level when placing a request for assistance. Severity levels may be changed after initial contact and assessment of the issue by a GoValidation support team, provided the customer agrees.</p>
-              <p><strong>Note:</strong> Response and Resolution Times are based on the problem severity levels.</p>
-              <p>✓ We provide standard support from 9AM to 6PM EST weekdays via email (<a href="mailto:support@govalidation.com">support@govalidation.com</a>) and support portal – <a href="https://support.govalidation.com" target="_blank">support.govalidation.com</a>.</p>
-            </div>
+          <summary>Service Level Agreement?</summary>
+          <div class="faq-answer">
+            <p>Support access via GoVal portal with SLA and defined ticket severities.</p>
+          </div>
         </details>
       </div>
     </div>
   </section>
-
   <Footer />
-</BaseLayout>
+
 
 <style>
-  /* Global Styles */
-  html, body { background: #ffffff; margin: 0; padding: 0; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-  .section { padding: 5rem 0; }
-  .bg-light { background: #ffffff; }
+  html, body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .section {
+    padding: 4rem 0;
+  }
+  .bg-light {
+    background: #fff;
+  }
+  .hero {
+    background: #fff;
+    padding: 6rem 0 3rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .hero-left {
+  text-align: left;
+  }
 
-  /* Hero Section */
-  .hero { background: #ffffff; padding: 5rem 0; border-bottom: 1px solid #e5e7eb; }
-  .hero-container { text-align: center; }
-  .hero-content { max-width: 900px; margin: 0 auto; }
-  .hero-badge { background: rgba(255, 255, 255, 0.1); color: #000000; border:1px solid rgba(255, 254, 255, 0.2); padding:0.5rem 1rem; border-radius:2rem; font-size:0.875rem; letter-spacing: 0.1rem; font-weight:700; display:inline-block; margin-bottom:1.5rem; text-transform: uppercase ; }
-  .hero-title { font-size:3rem; font-weight:800; color:#000000; margin-bottom:1rem;}
-  .hero-subtitle { font-size:1.125rem; color:#4b5563; line-height:1.6; max-width:800px; margin:0 auto;}
-
-  /* Pricing Options */
-  .pricing-options { display:grid; grid-template-columns:repeat(auto-fit,minmax(500px,1fr)); gap:3rem; }
-  .pricing-option { background:white; border-radius:1rem; padding:3rem; box-shadow:0 4px 20px rgba(0,0,0,0.08); border:1px solid rgba(0,0,0,0.05); transition:all 0.3s ease; position: relative; }
-  .pricing-option:hover { transform:translateY(-5px); box-shadow:0 20px 40px rgba(255, 255, 255, 0.15); }
-  .pricing-option.featured { border:2px solid #fcfcfc; transform:scale(1.02); }
-
-  .featured-badge { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:#ffffff; color:white; padding:0.5rem 1.5rem; border-radius:2rem; font-size:0.875rem; font-weight:600; }
-
-  .option-header { text-align:center; margin-bottom:2.5rem; padding-bottom:2rem; border-bottom:1px solid #e5e7eb; }
-  .option-icon { width:5rem; height:5rem; border-radius:1rem; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem; color:white; }
-  .option-icon.saas { background:linear-gradient(135deg,#3b82f6 0%,#1d4ed8 100%); }
-  .option-icon.onprem { background:linear-gradient(135deg,#6366f1 0%,#4338ca 100%); }
-  .option-title { font-size:1.75rem; font-weight:700; color:#111827; margin-bottom:1rem; }
-  .option-subtitle { color:#4b5563; line-height:1.6; margin-bottom:1.5rem; }
-
-  .option-content { display:flex; flex-direction:column; gap:2rem; }
-  .feature-list { display:flex; flex-direction:column; gap:2rem; }
-  .feature-category { background:#f9fafb; padding:1.5rem; border-radius:0.75rem; }
-  .feature-category h4 { font-size:1rem; font-weight:600; color:#111827; margin-bottom:1rem; }
-  .feature-category ul { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.5rem; }
-  .feature-category li { color:#4b5563; font-size:0.9rem; display:flex; align-items:center; gap:0.5rem; }
-  .feature-category li::before { content:"•"; color:#151618; font-weight:bold; }
-
-  .pricing-info { background:#f9fafb; padding:2rem; border-radius:0.75rem; text-align:center; }
-  .pricing-note strong { display:block; font-size:1.125rem; color:#111827; margin-bottom:0.5rem; }
-  .pricing-note p { color:#4b5563; font-size:0.95rem; line-height:1.5; }
-
-  .contact-action a { display:inline-block; }
-
-  /* FAQ Section */
-  .section-header.centered { text-align:center; }
-  .faq-pretitle { color:#030303; font-size:0.875rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem; }
-  .faq-title { font-size:2.5rem; font-weight:700; color:#111827; margin-bottom:1rem; }
-  .faq-subtitle { font-size:1rem; color:#4b5563; margin-bottom:2rem; }
-  .faq-list { max-width:800px; margin:0 auto; }
-  .faq-item { border:1px solid #e5e7eb; border-left:4px solid transparent; border-radius:0.5rem; margin-bottom:1rem; background:#ffffff; transition:border-color 0.3s ease; overflow:hidden; }
-  .faq-item[open] { border-left-color:#2563eb; }
-  .faq-item summary { list-style:none; cursor:pointer; padding:1rem 1.5rem; font-weight:600; display:flex; justify-content:space-between; align-items:center; }
-  .faq-item summary::-webkit-details-marker { display:none; }
-  .faq-item summary::after { content:'+'; font-size:1.25rem; transition:transform 0.2s ease; }
-  .faq-item[open] summary::after { content:'–'; }
-  .faq-answer { padding:0 1.5rem 1rem; color:#4b5563; font-size:0.95rem; line-height:1.6; }
-
-  /* Buttons */
-  .btn { display:inline-flex; align-items:center; justify-content:center; padding:0.875rem 1.5rem; border-radius:0.625rem; font-weight:700; text-decoration:none; transition:all 0.3s ease; border:2px solid transparent; cursor:pointer; position:relative; overflow:hidden; }
-  .btn-lg { padding:1rem 2rem; font-size:1.125rem; }
-  .btn-primary { background:linear-gradient(135deg,#f1270c 0%,#f6443b 50%,#d8521d 100%); color:white; }
-  .btn-primary:hover { background:linear-gradient(135deg,#d8621d 0%,#eb6025 50%,#af4e1e 100%); transform:translateY(-2px); }
-  .btn-primary::before { content:''; position:absolute; top:0; left:-100%; width:100%; height:100%; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent); transition:left 0.5s ease; z-index:1; }
-  .btn-primary:hover::before { left:100%; }
-
-  /* Responsive */
-  @media(max-width:768px){
-    .pricing-options { grid-template-columns:1fr; }
-    .hero { padding:3rem 0; }
-    .hero-title { font-size:2.5rem; }
-    .section { padding:3rem 0; }
-    .faq-list { }
-    .btn { width:100%; justify-content:center; }
-    .faq-pretitle, .faq-title, .faq-subtitle { text-align:center; }
+  .hero-badge,
+  .hero-title,
+  .hero-subtitle {
+   text-align: left;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(252, 252, 252, 0.05);
+    color: #222;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    font-size: 01rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  .hero-container {
+   justify-content: flex-start;
+  }
+   .hero-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+  .hero-title-gentle-left {
+    text-align: left;
+  }
+  .hero-desc-gentle-left {
+    width: 100%;
+    max-width: none;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #4b5563;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .pricing-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 3rem;
+  }
+  .pricing-option {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+  }
+  .pricing-option:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+  }
+  .option-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .option-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    fill: #fff;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .option-icon.saas {
+    background: linear-gradient(45deg, #e60404, #ed3e1b);
+  }
+  .option-icon.onprem {
+    background: linear-gradient(45deg, #f12202, #f91c03);
+  }
+  .option-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #222;
+  }
+  .option-subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
+  }
+  .feature-list {
+    margin-top: 2rem;
+  }
+  .feature-category {
+    margin-bottom: 2rem;
+  }
+  .feature-category h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #151414;
+  }
+  .feature-category ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
+  .feature-category ul li {
+    margin-bottom: 0.25rem;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  .pricing-info {
+    margin-top: 2rem;
+    background: #f5f5f5;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-align: center;
+  }
+  .pricing-info strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .pricing-info p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .contact-action a {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient(45deg, #ef0a06, #f62904);
+    color: white;
+    border: none;
+    transition: background 0.3s, transform 0.15s ease-in-out;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .btn svg {
+    stroke: white;
+  }
+  .btn:hover {
+    background: linear-gradient(45deg, #f23703, #fb4103);
+    transform: translateY(-2px);
+  }
+  .section-header.centered {
+    text-align: center;
+  }
+  .faq-title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border: 1px solid #ddd;
+    border-left: 4px solid transparent;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  .faq-item[open] {
+    border-left-color: #3911ff;
+  }
+  .faq-item summary {
+    background: #f9f9f9;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq-item summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  .faq-item[open] summary::after {
+    content: '-';
+  }
+  .faq-answer {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  @media (max-width: 768px) {
+    .pricing-options {
+      grid-template-columns: 1fr;
+    }
+    .container {
+      padding: 0 1rem;
+    }
+    .hero,
+    .section {
+      padding: 3rem 0;
+    }
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+    .faq-title {
+      font-size: 1.5rem;
+    }
   }
 </style>

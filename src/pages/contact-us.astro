@@ -4,23 +4,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
-
 <BaseLayout title="Contact Us – GoVal">
   <Navigation />
   <section class="contact-section">
     <h1 class="section-title">Get in Touch with GoVal</h1>
-      <p class="section-subtitle">We'd love to hear from you! Whether you have questions about our solutions, need a demo, or want to discuss how GoVal can help streamline your validation processes, our team is here to assist you.</p>
-  <!-- Left: Contact Form -->
-  
-  <div class="contact-form-container">
-      <h2>Contact Us</h2>
-      <p>Have questions or need a demo? Fill out the form below and our team will get back to you shortly.</p>
+    <p class="section-subtitle">We'd love to hear from you! Whether you have questions about our solutions, need a demo, or want to discuss how GoVal can help streamline your validation processes, our team is here to assist you.</p>
 
+    <!-- Left: Contact Form (unchanged except country input to select) -->
+    <div class="contact-form-container">
+      <h2>Contact Us</h2>
       <form id="contactForm" class="contact-form" novalidate action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="1342cce4-8f26-4476-a251-697b21d3daf9" />
         <input type="hidden" name="email_to" value="bdsh200@gmail.com" />
         <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you" />
-
         <div class="form-group">
           <label for="name">Name *</label>
           <input type="text" id="name" name="name" required />
@@ -38,7 +34,205 @@ import Footer from '../components/Footer.astro';
         </div>
         <div class="form-group">
           <label for="country">Country</label>
-          <input type="text" id="country" name="country" placeholder="Enter Country" />
+          <select id="country" name="country" aria-label="Select Country">
+            <option value="" disabled selected>Select Country</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Azerbaijan">Azerbaijan</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Bahrain">Bahrain</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Belarus">Belarus</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Belize">Belize</option>
+            <option value="Benin">Benin</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+            <option value="Botswana">Botswana</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Brunei">Brunei</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Burkina Faso">Burkina Faso</option>
+            <option value="Burundi">Burundi</option>
+            <option value="Cambodia">Cambodia</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="Canada">Canada</option>
+            <option value="Cape Verde">Cape Verde</option>
+            <option value="Central African Republic">Central African Republic</option>
+            <option value="Chad">Chad</option>
+            <option value="Chile">Chile</option>
+            <option value="China">China</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Comoros">Comoros</option>
+            <option value="Congo (Brazzaville)">Congo (Brazzaville)</option>
+            <option value="Congo (Kinshasa)">Congo (Kinshasa)</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Djibouti">Djibouti</option>
+            <option value="Dominica">Dominica</option>
+            <option value="Dominican Republic">Dominican Republic</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Egypt">Egypt</option>
+            <option value="El Salvador">El Salvador</option>
+            <option value="Equatorial Guinea">Equatorial Guinea</option>
+            <option value="Eritrea">Eritrea</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Eswatini">Eswatini</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Fiji">Fiji</option>
+            <option value="Finland">Finland</option>
+            <option value="France">France</option>
+            <option value="Gabon">Gabon</option>
+            <option value="Gambia">Gambia</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Germany">Germany</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Greece">Greece</option>
+            <option value="Grenada">Grenada</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Guinea">Guinea</option>
+            <option value="Guinea-Bissau">Guinea-Bissau</option>
+            <option value="Guyana">Guyana</option>
+            <option value="Haiti">Haiti</option>
+            <option value="Honduras">Honduras</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Iceland">Iceland</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Iran">Iran</option>
+            <option value="Iraq">Iraq</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Israel">Israel</option>
+            <option value="Italy">Italy</option>
+            <option value="Jamaica">Jamaica</option>
+            <option value="Japan">Japan</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Kazakhstan">Kazakhstan</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Kiribati">Kiribati</option>
+            <option value="Korea, North">Korea, North</option>
+            <option value="Korea, South">Korea, South</option>
+            <option value="Kosovo">Kosovo</option>
+            <option value="Kuwait">Kuwait</option>
+            <option value="Kyrgyzstan">Kyrgyzstan</option>
+            <option value="Laos">Laos</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Lebanon">Lebanon</option>
+            <option value="Lesotho">Lesotho</option>
+            <option value="Liberia">Liberia</option>
+            <option value="Libya">Libya</option>
+            <option value="Liechtenstein">Liechtenstein</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Madagascar">Madagascar</option>
+            <option value="Malawi">Malawi</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Maldives">Maldives</option>
+            <option value="Mali">Mali</option>
+            <option value="Malta">Malta</option>
+            <option value="Marshall Islands">Marshall Islands</option>
+            <option value="Mauritania">Mauritania</option>
+            <option value="Mauritius">Mauritius</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Micronesia">Micronesia</option>
+            <option value="Moldova">Moldova</option>
+            <option value="Monaco">Monaco</option>
+            <option value="Mongolia">Mongolia</option>
+            <option value="Montenegro">Montenegro</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Mozambique">Mozambique</option>
+            <option value="Myanmar">Myanmar</option>
+            <option value="Namibia">Namibia</option>
+            <option value="Nauru">Nauru</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Nicaragua">Nicaragua</option>
+            <option value="Niger">Niger</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="North Macedonia">North Macedonia</option>
+            <option value="Norway">Norway</option>
+            <option value="Oman">Oman</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Palau">Palau</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Panama">Panama</option>
+            <option value="Papua New Guinea">Papua New Guinea</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Peru">Peru</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Poland">Poland</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Qatar">Qatar</option>
+            <option value="Romania">Romania</option>
+            <option value="Russia">Russia</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+            <option value="Saint Lucia">Saint Lucia</option>
+            <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+            <option value="Samoa">Samoa</option>
+            <option value="San Marino">San Marino</option>
+            <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+            <option value="Saudi Arabia">Saudi Arabia</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Serbia">Serbia</option>
+            <option value="Seychelles">Seychelles</option>
+            <option value="Sierra Leone">Sierra Leone</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Slovakia">Slovakia</option>
+            <option value="Slovenia">Slovenia</option>
+            <option value="Solomon Islands">Solomon Islands</option>
+            <option value="Somalia">Somalia</option>
+            <option value="South Africa">South Africa</option>
+            <option value="South Sudan">South Sudan</option>
+            <option value="Spain">Spain</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Suriname">Suriname</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Syria">Syria</option>
+            <option value="Taiwan">Taiwan</option>
+            <option value="Tajikistan">Tajikistan</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Timor-Leste">Timor-Leste</option>
+            <option value="Togo">Togo</option>
+            <option value="Tonga">Tonga</option>
+            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+            <option value="Tunisia">Tunisia</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Turkmenistan">Turkmenistan</option>
+            <option value="Tuvalu">Tuvalu</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Uzbekistan">Uzbekistan</option>
+            <option value="Vanuatu">Vanuatu</option>
+            <option value="Vatican City">Vatican City</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Yemen">Yemen</option>
+            <option value="Zambia">Zambia</option>
+            <option value="Zimbabwe">Zimbabwe</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="organization">Organization</label>
@@ -62,37 +256,69 @@ import Footer from '../components/Footer.astro';
         <p id="form-message" aria-live="polite" role="alert" class="form-message"></p>
       </form>
     </div>
-
-    <!-- Right: Contact Info Aligned Left -->
-    <div class="contact-info-wrapper">
-      
-      <img src="/images/contact-illustration.png" alt="Contact Us Illustration" style="max-width: 100%; height: auto; margin-bottom: 20px;" />
-    
-      <div class="contact-info">
-      
-        <div class="contact-item">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#C86428" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
-            <polyline points="3 7 12 13 21 7"></polyline>
-          </svg>
-      <div class="contact-text">
-        <div class="contact-label">Email</div>
-        <p>Sales Enquiry:</p>
-        <a href="mailto:info@govalidation.com">info@govalidation.com</a>
+    <!-- Right: image on top, details below in separate container -->
+    <div class="right-container">
+      <div class="contact-image-container">
+        <img src="/images/customer-support.png" alt="Customer Support" />
       </div>
-    </div>
-        </div>
-        <div class="contact-item">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.21.38 2.39.74 3.5a2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.11.36 2.29.61 3.5.73a2 2 0 0 1 1.71 2z"></path>
-          </svg>
-          <div class="contact-text">
-            <div class="contact-label">Phone</div>
-            <div class="phone-numbers">
-              <span>+1 (408) 457 0086</span>
-              <span>+1 (908) 656 8258</span>
-              <span>+91 99000 23710</span>
-              <span>+91 90081 50710</span>
+      <div class="contact-info-container">
+        <div class="contact-info">
+          <!-- Email block -->
+          <div class="contact-item">
+            <span class="svg-icon email" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C86428" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
+                <polyline points="3 7 12 13 21 7"></polyline>
+              </svg>
+            </span>
+            <div class="contact-text">
+              <span class="contact-label">Email:</span>
+              <span class="compact-contact">
+                <strong>Sales Enquiry:</strong> <a href="mailto:info@govalidation.com">info@govalidation.com</a>
+              </span>
+              <span class="compact-contact">
+                <strong>Technical Support:</strong> <a href="mailto:support@govalidation.com">support@govalidation.com</a>
+              </span>
+            </div>
+          </div>
+          <!-- Locations block -->
+          <div class="contact-item">
+            <span class="svg-icon location" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3266B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10.75c0 6-9 10.75-9 10.75S3 16.75 3 10.75a9 9 0 1 1 18 0z"></path>
+                <circle cx="12" cy="10.75" r="3"></circle>
+              </svg>
+            </span>
+            <div class="contact-text">
+              <span class="contact-label">Locations:</span>
+              <!-- INDIA -->
+              <span class="compact-contact">
+                <strong>INDIA</strong><br/>
+                1st Floor, Prestige Samrah Plaza, St Marks Road, Shanthala Nagar, Ashok Nagar, Bengaluru 560 001, India
+              </span>
+              <span class="compact-contact">
+                <span class="svg-inline phone" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.21.38 2.39.74 3.5a2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.11.36 2.29.61 3.5.73a2 2 0 0 1 1.71 2z"></path>
+                  </svg>
+                </span>
+                <strong>Phone:</strong> +91 99000 23710, +91 90081 50710
+              </span>
+              <!-- one-line space between location groups -->
+              <span class="spacer-line" aria-hidden="true"></span>
+              <!-- USA -->
+              <span class="compact-contact">
+                <strong>USA</strong><br/>
+                7232 BROADWAY STE 306, JACKSON HEIGHTS NY 11372, USA
+              </span>
+              <span class="compact-contact">
+                <span class="svg-inline phone" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.21.38 2.39.74 3.5a2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.11.36 2.29.61 3.5.73a2 2 0 0 1 1.71 2z"></path>
+                  </svg>
+                </span>
+                <strong>Phone:</strong> +1 (408) 457-0086, +1 (908) 656-8258
+              </span>
             </div>
           </div>
         </div>
@@ -100,7 +326,6 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
   <Footer />
-
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const form = document.getElementById('contactForm');
@@ -111,121 +336,73 @@ import Footer from '../components/Footer.astro';
         { el: form.phone, errorId: 'phone-error', validate: v => /^\+[\d\s\-\(\)]{7,20}$/.test(v), message: 'Please enter a valid phone number with country code' },
         { el: form.consent, errorId: 'consent-error', validate: v => v === true, message: 'You must agree to the terms' },
       ];
-
       function showError(el, errorId, message) {
         el.classList.add('error');
         const errEl = document.getElementById(errorId);
-        if (errEl) {
-          errEl.textContent = message;
-          errEl.classList.add('show');
-        }
+        if (errEl) { errEl.textContent = message; errEl.classList.add('show'); }
       }
       function clearError(el, errorId) {
         el.classList.remove('error');
         const errEl = document.getElementById(errorId);
-        if (errEl) {
-          errEl.textContent = '';
-          errEl.classList.remove('show');
-        }
+        if (errEl) { errEl.textContent = ''; errEl.classList.remove('show'); }
       }
       function validateField(field) {
         if (field.el.type === 'checkbox') {
-          if (!field.el.checked) {
-            showError(field.el, field.errorId, field.message);
-            return false;
-          } else {
-            clearError(field.el, field.errorId);
-            return true;
-          }
+          if (!field.el.checked) { showError(field.el, field.errorId, field.message); return false; }
+          clearError(field.el, field.errorId); return true;
         }
         const value = field.el.value;
-        if (!field.validate(value)) {
-          showError(field.el, field.errorId, field.message);
-          return false;
-        } else {
-          clearError(field.el, field.errorId);
-          return true;
-        }
+        if (!field.validate(value)) { showError(field.el, field.errorId, field.message); return false; }
+        clearError(field.el, field.errorId); return true;
       }
       function validateForm() {
         let valid = true;
-        for (const field of fields) {
-          if (!validateField(field)) valid = false;
-        }
+        for (const field of fields) { if (!validateField(field)) valid = false; }
         return valid;
       }
-
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        if (!validateForm()) {
-          messageEl.textContent = '';
-          return;
-        }
+        if (!validateForm()) { messageEl.textContent = ''; return; }
         try {
           const formData = new FormData(form);
-          const response = await fetch(form.action, {
-            method: form.method,
-            body: formData
-          });
+          await fetch(form.action, { method: form.method, body: formData });
           form.reset();
           messageEl.textContent = 'Thanks for your details. We will be in touch with you very soon!';
           messageEl.style.color = 'green';
-
-          const existingBtn = document.getElementById('product-download-btn');
-          if (existingBtn) existingBtn.remove();
-
+          const existingBtn = document.getElementById('product-download-btn'); if (existingBtn) existingBtn.remove();
           const downloadBtn = document.createElement('button');
-          downloadBtn.type = 'button';
-          downloadBtn.id = 'product-download-btn';
-          downloadBtn.textContent = 'Download our Product Presentation';
-          downloadBtn.className = 'download-btn';
-          downloadBtn.style.marginTop = '10px';
+          downloadBtn.type = 'button'; downloadBtn.id = 'product-download-btn';
+          downloadBtn.textContent = 'Download our Product Presentation'; downloadBtn.className = 'download-btn'; downloadBtn.style.marginTop = '10px';
           messageEl.insertAdjacentElement('afterend', downloadBtn);
-
           downloadBtn.addEventListener('click', () => {
             const link = document.createElement('a');
             link.href = '/files/GoVal-Product-Presentation.pdf';
             link.download = 'GoVal-Product-Presentation.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            document.body.appendChild(link); link.click(); document.body.removeChild(link);
           });
         } catch (error) {
           form.reset();
           messageEl.textContent = 'Thanks for your details. We will be in touch with you very soon!';
           messageEl.style.color = 'green';
-
-          const existingBtn = document.getElementById('product-download-btn');
-          if (existingBtn) existingBtn.remove();
-
+          const existingBtn = document.getElementById('product-download-btn'); if (existingBtn) existingBtn.remove();
           const downloadBtn = document.createElement('button');
-          downloadBtn.type = 'button';
-          downloadBtn.id = 'product-download-btn';
-          downloadBtn.textContent = 'Download our Product Presentation';
-          downloadBtn.className = 'download-btn';
-          downloadBtn.style.marginTop = '10px';
+          downloadBtn.type = 'button'; downloadBtn.id = 'product-download-btn';
+          downloadBtn.textContent = 'Download our Product Presentation'; downloadBtn.className = 'download-btn'; downloadBtn.style.marginTop = '10px';
           messageEl.insertAdjacentElement('afterend', downloadBtn);
-
           downloadBtn.addEventListener('click', () => {
             const link = document.createElement('a');
             link.href = '/files/GoVal-Product-Presentation.pdf';
             link.download = 'GoVal-Product-Presentation.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            document.body.appendChild(link); link.click(); document.body.removeChild(link);
           });
         }
       });
-
       fields.forEach(({ el, errorId }) => {
         el.addEventListener('input', () => clearError(el, errorId));
-        if (el.type === 'checkbox') {
-          el.addEventListener('change', () => clearError(el, errorId));
-        }
+        if (el.type === 'checkbox') el.addEventListener('change', () => clearError(el, errorId));
       });
     });
   </script>
-
   <style>
     .section-title {
       font-size: 2.5rem;
@@ -342,70 +519,110 @@ import Footer from '../components/Footer.astro';
     .error-message.show {
       display: block;
     }
-    /* Contact info */
-    .contact-info-wrapper {
+    /* Right column layout */
+    .right-container {
       flex: 1;
       min-width: 320px;
       max-width: 600px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      gap: 2rem;
+      gap: 1.5rem;
+    }
+    .contact-image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+      margin-bottom: 0;
+    }
+    .contact-info-container {
+      width: 100%;
+      background: #f3f4f6;
+      border-radius: 12px;
+      padding: 18px 18px 15px 18px;
+      box-sizing: border-box;
+      margin-top: 0;
+      margin-bottom: 0;
     }
     .contact-info {
-      width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
     .contact-item {
       display: flex;
-      gap: 12px;
       align-items: flex-start;
-      width: 100%;
-      max-width: 300px;
+      gap: 10px;
+      margin-bottom: 0;
     }
-    .contact-item svg {
+    .svg-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+      margin-right: 5px;
       flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      margin-top: 5px;
+      vertical-align: middle;
+    }
+    .svg-icon.location svg {
+      stroke: #3266B8;
+    }
+    .svg-icon.email svg {
+      stroke: #C86428;
+    }
+    /* Inline phone icon for lines */
+    .svg-inline {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 6px;
+      margin-left: 0;
+    }
+    .svg-inline.phone svg {
+      stroke: #F97316;
+      width: 18px;
+      height: 18px;
     }
     .contact-text {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       text-align: left;
+      font-size: 0.97rem;
+      color: #374151;
+      line-height: 1.5;
+      gap: 0;
     }
     .contact-label {
       font-weight: 700;
-      margin-bottom: 5px;
-      font-size: 1.1rem;
+      margin-bottom: 4px;
+      font-size: 1rem;
+      color: #1f2937;
+      display: block;
+    }
+    .compact-contact {
+      display: block;
+      margin: 0 0 1rem 0;
+      line-height: 1.5;
     }
     .contact-text a {
-      font-weight: 500;
-      font-size: 1rem;
-      color: #256bee;
+      color: #2563eb;
       text-decoration: none;
     }
     .contact-text a:hover,
     .contact-text a:focus {
       text-decoration: underline;
     }
-    .phone-numbers span {
-      display: block;
-      font-size: 1rem;
-      color: #4b5563;
-      white-space: nowrap;
-      margin-bottom: 5px;
+    .contact-text p {
+      margin: 0 0 2px 0;
     }
     @media (max-width: 991px) {
       .contact-section {
         flex-direction: column;
       }
-      .contact-info-wrapper {
+      .right-container {
         max-width: 100%;
-        margin: 0 auto 30px;
+        margin: 0 auto 24px;
       }
       .contact-info {
         align-items: flex-start;
@@ -414,11 +631,8 @@ import Footer from '../components/Footer.astro';
         justify-content: flex-start;
       }
       .contact-text {
-        align-items: flex-start;
         text-align: left;
-      }
-      .phone-numbers span {
-        white-space: normal;
+        font-size: 1rem;
       }
     }
     button.download-btn {

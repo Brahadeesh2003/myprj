@@ -3,10 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
-
 <BaseLayout title="GoVal - Digital Validation Solutions for Life Sciences">
   <Navigation />
-
   <!-- Hero Section with White Background -->
   <section class="hero">
     <div class="hero-container">
@@ -15,17 +13,14 @@ import Footer from '../components/Footer.astro';
         <div class="hero-badge fade-in-up">
           [ EXPERT PAPERLESS VALIDATION FOR PHARMA ]
         </div>
-
         <h1 class="hero-title fade-in-up">
           Digitize Your Validation Process.<br>
           Stay Compliant,<br>
           <span class="text-primary">Stay Ahead.</span>
         </h1>
-
         <p class="hero-subtitle fade-in-up">
           GoVal understands the unique validation challenges of the Life Sciences industry. Our platform is designed to meet the specific needs of pharma, biotech, medical device, CRO, and CMO organizations.
         </p>
-
         <div class="hero-buttons fade-in-up">
           <a href="/contact-us" class="btn btn-primary btn-lg">
             <span>Get Started</span>
@@ -35,7 +30,6 @@ import Footer from '../components/Footer.astro';
           </a>
         </div>
       </div>
-
       <!-- Right Side: Hero Image -->
       <div class="hero-right">
         <div class="hero-image-container fade-in-up">
@@ -49,7 +43,6 @@ import Footer from '../components/Footer.astro';
       </div>
     </div>
   </section>
-
   <!-- Why Choose GoVal Section -->
   <section class="section">
     <div class="container">
@@ -78,7 +71,6 @@ import Footer from '../components/Footer.astro';
           </div>
           <p class="card-text">Automated workflows and real-time audit trails ensure fast and reliable compliance with regulatory standards.</p>
         </div>
-
         <!-- Feature Card 2 -->
         <div class="card fade-in-up card-green">
           <div class="card-header">
@@ -91,7 +83,6 @@ import Footer from '../components/Footer.astro';
           </div>
           <p class="card-text">Eliminate manual processes and reduce errors with complete digital transformation of your validation workflows.</p>
         </div>
-
         <!-- Feature Card 3 -->
         <div class="card fade-in-up card-purple">
           <div class="card-header">
@@ -104,7 +95,6 @@ import Footer from '../components/Footer.astro';
           </div>
           <p class="card-text">System-generated reports and real-time data access for seamless audits and regulatory inspections.</p>
         </div>
-
         <!-- Feature Card 4 -->
         <div class="card fade-in-up card-red">
           <div class="card-header">
@@ -117,7 +107,6 @@ import Footer from '../components/Footer.astro';
           </div>
           <p class="card-text">Cloud-based platform with robust data management and security protocols ensuring data integrity.</p>
         </div>
-
         <!-- Feature Card 5 -->
         <div class="card fade-in-up card-yellow">
           <div class="card-header">
@@ -130,7 +119,6 @@ import Footer from '../components/Footer.astro';
           </div>
           <p class="card-text">Built-in tools for regulatory adherence and global compliance standards across all regions.</p>
         </div>
-
         <!-- Feature Card 6 -->
         <div class="card fade-in-up card-indigo">
           <div class="card-header">
@@ -146,7 +134,6 @@ import Footer from '../components/Footer.astro';
       </div>
     </div>
   </section>
-
   <!-- AI Features Highlight -->
   <section class="section bg-gradient-section">
     <div class="container">
@@ -160,13 +147,12 @@ import Footer from '../components/Footer.astro';
       </div>
       <div class="text-center" style="margin-top: 3rem;">
         <a href="/goval-ai" class="btn btn-ai-blue btn-lg" aria-label="Explore GoVal AI">
-          <img src="/images/ai-stars.png" alt="AI Icon" class="ai-icon" />
           <span>Explore GoVal AI</span>
+          <img src="/images/ai-stars.png" alt="AI Icon" class="ai-icon" />
         </a>
       </div>
     </div>
   </section>
-
   <!-- CTA Section -->
   <section class="section">
     <div class="container">
@@ -180,15 +166,13 @@ import Footer from '../components/Footer.astro';
         
           <a href="/contact-us" class="btn btn-secondary btn-lg">
             Book a Demo
-          </a>
+            </a>
         
       </div>
     </div>
   </section>
-
   <Footer />
 </BaseLayout>
-
 <style>
   /* CSS Variables */
   :root {
@@ -197,18 +181,15 @@ import Footer from '../components/Footer.astro';
     --gray-700: #374151;
     --gray-600: #4b5563;
   }
-
   /* Global White Background */
   * {
     box-sizing: border-box;
   }
-
   html, body {
     background: #ffffff;
     margin: 0;
     padding: 0;
   }
-
   /* Hero Section - Clean White Background */
   .hero {
     background: #fcfcfc;
@@ -216,7 +197,6 @@ import Footer from '../components/Footer.astro';
     overflow: hidden;
     position: relative;
   }
-
   .hero-container {
     max-width: 1280px;
     margin: 0 auto;
@@ -227,14 +207,12 @@ import Footer from '../components/Footer.astro';
     align-items: center;
     min-height: 600px;
   }
-
   /* Left Side - Hero Content */
   .hero-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
   .hero-badge {
     background: rgba(248, 248, 248, 0.1);
     color: var(--blue-primary);
@@ -249,7 +227,6 @@ import Footer from '../components/Footer.astro';
     width: fit-content;
     text-transform: uppercase;
   }
-
   .hero-title {
     font-size: 4rem;
     font-weight: 700;
@@ -258,11 +235,9 @@ import Footer from '../components/Footer.astro';
     color: var(--gray-900);
     letter-spacing: -0.02em;
   }
-
   .text-primary {
     color: var(--blue-primary);
   }
-
   .hero-subtitle {
     font-size: 1.125rem;
     margin-bottom: 2.5rem;
@@ -270,14 +245,12 @@ import Footer from '../components/Footer.astro';
     color: var(--gray-700);
     max-width: 85%;
   }
-
   .hero-buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
   }
-
   /* Right Side - Hero Image */
   .hero-right {
     display: flex;
@@ -285,7 +258,6 @@ import Footer from '../components/Footer.astro';
     justify-content: center;
     position: relative;
   }
-
   .hero-image-container {
     position: relative;
     width: 100%;
@@ -294,7 +266,6 @@ import Footer from '../components/Footer.astro';
     justify-content: center;
     align-items: center;
   }
-
   .hero-image {
     width: 100%;
     height: auto;
@@ -303,32 +274,26 @@ import Footer from '../components/Footer.astro';
     filter: contrast(1.1) brightness(1.05) saturate(1.1);
     transition: all 0.3s ease;
   }
-
   .hero-image:hover {
     transform: scale(1.02);
   }
-
   /* Sections with White Background */
   .section {
     background: #ffffff;
     padding: 5rem 0;
   }
-
   .bg-light {
     background: #f8f9fa;
   }
-
   .bg-gradient-section {
     background: #f5f5f5;
     color: #000000;
   }
-
   .container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1rem;
   }
-
   .section-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -339,12 +304,10 @@ import Footer from '../components/Footer.astro';
     color: var(--gray-900);
     margin-bottom: 1rem;
   }
-
   /* AI section title override */
   .bg-gradient-section .section-title {
     color: #000000;
   }
-
   .section-subtitle {
     font-size: 1.125rem;
     color: var(--gray-600);
@@ -352,12 +315,10 @@ import Footer from '../components/Footer.astro';
     margin: 0 auto;
     line-height: 1.6;
   }
-
   /* AI section subtitle override */
   .bg-gradient-section .section-subtitle {
     color: #666666;
   }
-
   /* AI Decoration Image */
   .ai-decoration {
     width: 40px;
@@ -369,7 +330,6 @@ import Footer from '../components/Footer.astro';
     border-radius: 8px;
     padding: 4px;
   }
-
   @keyframes float {
     0%, 100% { 
       transform: translateY(0px);
@@ -378,25 +338,20 @@ import Footer from '../components/Footer.astro';
       transform: translateY(-10px);
     }
   }
-
   /* Grid System */
   .grid {
     display: grid;
     gap: 2rem;
   }
-
   .grid-cols-1 {
     grid-template-columns: 1fr;
   }
-
   .grid-cols-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-
   /* Cards */
   .card {
     background: white;
@@ -406,19 +361,16 @@ import Footer from '../components/Footer.astro';
     transition: all 0.3s ease;
     border: 1px solid rgba(0, 0, 0, 0.05);
   }
-
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   }
-
   .card-header {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
   }
-
   .card-icon {
     width: 3rem;
     height: 3rem;
@@ -430,14 +382,12 @@ import Footer from '../components/Footer.astro';
     transition: all 0.3s ease;
     flex-shrink: 0;
   }
-
   .card-icon.blue { background: #3b82f6; }
   .card-icon.green { background: #10b981; }
   .card-icon.purple { background: #8b5cf6; }
   .card-icon.red { background: #ef4444; }
   .card-icon.yellow { background: #f59e0b; }
   .card-icon.indigo { background: #6366f1; }
-
   .card-title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -445,43 +395,34 @@ import Footer from '../components/Footer.astro';
     margin: 0;
     transition: color 0.3s ease;
   }
-
   .card-text {
     color: var(--gray-600);
     line-height: 1.6;
     transition: color 0.3s ease;
   }
-
   /* Card Hover Effects */
   .card.card-blue:hover {
     background: #3b82f6;
   }
-
   .card.card-green:hover {
     background: #10b981;
   }
-
   .card.card-purple:hover {
     background: #8b5cf6;
   }
-
   .card.card-red:hover {
     background: #ef4444;
   }
-
   .card.card-yellow:hover {
     background: #f59e0b;
   }
-
   .card.card-indigo:hover {
     background: #6366f1;
   }
-
   .card:hover .card-icon {
     background: white;
     color: #374151;
   }
-
   .card:hover .card-title,
   .card:hover .card-text {
     color: white;
@@ -496,7 +437,6 @@ import Footer from '../components/Footer.astro';
   .section-subtitle {
     margin-bottom: 3rem;
   }
-
   .subtitle {
     color: #000000;
     font-weight: 700;
@@ -505,17 +445,14 @@ import Footer from '../components/Footer.astro';
     font-size: 0.875rem;
     text-transform: uppercase;
   }
-
   h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: #111827;
   }
-
   .highlight {
     color: #2563eb;
   }
-
   /* CTA Section */
   .cta-container {
     text-align: center;
@@ -526,21 +463,18 @@ import Footer from '../components/Footer.astro';
     border-radius: 1rem;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.08);
   }
-
   .cta-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: 1.5rem;
   }
-
   .cta-subtitle {
     font-size: 1.125rem;
     color: var(--gray-600);
     margin-bottom: 2.5rem;
     line-height: 1.6;
   }
-
   /* Buttons */
   .btn {
     display: inline-flex;
@@ -555,59 +489,59 @@ import Footer from '../components/Footer.astro';
     position: relative;
     overflow: hidden;
   }
-
   .btn-lg {
     padding: 1rem 2.5rem;
     font-size: 1rem;
     font-weight: 700;
   }
-
   /* Primary Button (Orange) */
   .btn-primary {
     background: linear-gradient(135deg, #f63303 0%, #ff2200 50%, #ea3a05 100%);
     color: white;
     box-shadow: 0 6px 20px rgba(255, 87, 34, 0.3);
   }
-
   .btn-primary:hover {
     background: linear-gradient(135deg, #f63803 0%, #ef3704 50%, #f13f04 100%);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 87, 34, 0.5);
   }
-
   /* AI Blue Button */
   .btn-ai-blue {
     background: linear-gradient(135deg, #ff2a00 0%, #eb5a25 50%, #f22707 100%);
     color: white;
     box-shadow: 0 6px 20px rgba(235, 77, 37, 0.3);
   }
-
   .btn-ai-blue:hover {
     background: linear-gradient(135deg, #ff2a00 0%, #eb5a25 50%, #f22707 100%);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(235, 60, 37, 0.5);
   }
-  /* AI Button Icon */
+  /* AI Button Icon placed on right side */
   .ai-icon {
-    width: 32px;   /* increased size */
-    height: 32px;
-    margin-left: 1rem; /* moved to left side */
+    width: 30px;
+    height: 30px;
+    margin-left: 1rem; /* Changed from margin-right to margin-left to shift icon right side */
   }
-    /* Secondary Button */
+  /* Ensure btn-ai-blue handles inline image and text alignment */
+  .btn-ai-blue {
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  /* Secondary Button */
   .btn-secondary {
     background: rgb(247, 3, 3);
     color: #f5f2f2;
     border: 2px solid #f14704;
     box-shadow: 0 4px 15px rgba(255, 87, 34, 0.1);
   }
-
   .btn-secondary:hover {
     background: #f63403;
     color: rgb(249, 244, 244);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   }
-
   /* Button Shine Effect */
   .btn::before {
     content: '';
@@ -619,26 +553,21 @@ import Footer from '../components/Footer.astro';
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: all 0.5s ease;
   }
-
   .btn:hover::before {
     left: 100%;
   }
-
   /* Utilities */
   .text-center {
     text-align: center;
   }
-
   /* Animation */
   .fade-in-up {
     animation: fadeInUp 0.8s ease-out;
     animation-fill-mode: both;
   }
-
   .fade-in-up:nth-child(2) { animation-delay: 0.2s; }
   .fade-in-up:nth-child(3) { animation-delay: 0.4s; }
   .fade-in-up:nth-child(4) { animation-delay: 0.6s; }
-
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -649,7 +578,6 @@ import Footer from '../components/Footer.astro';
       transform: translateY(0);
     }
   }
-
   /* Mobile Responsive Design */
   @media (max-width: 1024px) {
     .hero-container {
@@ -658,130 +586,101 @@ import Footer from '../components/Footer.astro';
       text-align: center;
       min-height: auto;
     }
-
     .hero-left {
       order: 1;
     }
-
     .hero-right {
       order: 2;
     }
-
     .hero-title {
       font-size: 2.75rem;
     }
-
     .hero-subtitle {
       max-width: 100%;
     }
-
     .hero-badge {
       margin: 0 auto 2rem;
     }
-
     .hero-buttons {
       justify-content: center;
     }
-
     .grid-cols-2 {
       grid-template-columns: 1fr;
     }
-
     .grid-cols-3 {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-
   @media (max-width: 768px) {
     .hero {
       padding: 3rem 0;
     }
-
     .hero-container {
       gap: 2rem;
       padding: 0 1rem;
     }
-
     .hero-title {
       font-size: 2.25rem;
     }
-
     .hero-subtitle {
       font-size: 1rem;
     }
-
     .section {
       padding: 3rem 0;
     }
-
     .section-title {
       font-size: 2rem;
     }
-
     .cta-title {
       font-size: 2rem;
     }
-
     .btn {
       width: 100%;
       justify-content: center;
     }
-
     .grid-cols-2,
     .grid-cols-3 {
       grid-template-columns: 1fr;
     }
-
     .card {
       padding: 1.5rem;
     }
-
     .cta-container {
       padding: 2rem 1.5rem;
       margin: 0 1rem;
     }
-
     .ai-decoration {
       width: 30px;
       height: 30px;
     }
-
     .card-header {
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
-
     .card-icon {
       margin-bottom: 0.5rem;
     }
   }
-
   @media (max-width: 480px) {
     .hero-title {
       font-size: 1.9rem;
     }
-
     .hero-subtitle {
       font-size: 0.95rem;
     }
-
     .section-title {
       font-size: 1.75rem;
     }
-
     .cta-title {
       font-size: 1.75rem;
     }
-
     .hero-image-container {
       max-width: 280px;
     }
-
     .btn-lg {
       padding: 0.875rem 1.5rem;
     }
-
     .ai-decoration {
       width: 25px;
       height: 25px;
