@@ -125,22 +125,21 @@
   }
 
   /* Mobile-specific Contact Us button adjustments */
-  @media (max-width: 600px) {
-    .nav-cta {
-      padding: 0.4rem 0.8rem !important;
-      font-size: 0.85rem !important;
-      font-weight: 500 !important;
-      border-radius: 0.300rem !important;
-      margin-top: 0.5rem;
-      width: auto !important;
-      display: inline-block !important;
-      text-align: center;
-    }
-    
-    .nav-cta:hover {
-      transform: translateY(-1px) !important;
-    }
+@media (max-width: 767px) {
+  .nav-cta {
+    padding: 0.3rem 0.6rem !important;
+    font-size: 0.8rem !important;
+    border-radius: 0.25rem !important;
+    margin: 0.5rem auto 0 !important;
+    width: auto !important;
+    display: inline-block !important;
   }
+
+  .nav-cta:hover {
+    transform: translateY(0) !important;
+  }
+}
+
 
 
   .nav-toggle {
