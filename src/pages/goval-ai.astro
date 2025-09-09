@@ -30,28 +30,36 @@ import Footer from '../components/Footer.astro';
       <div class="capabilities-grid">
         <div class="capability-card card-blue">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
           </div>
           <h3>Validate URS & Specifications</h3>
           <p>Take a help from GoVal AI to validate URS, functional and design specifications</p>
         </div>
         <div class="capability-card card-green">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
           </div>
           <h3>AI-Driven Risk Assessment</h3>
           <p>Automatically categorize GxP risk levels using machine learning models trained on thousands of validation projects.</p>
         </div>
         <div class="capability-card card-yellow">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
           </div>
           <h3>Test Case Management</h3>
           <p>Generate comprehensive test protocols instantly based on system requirements and historical project data.</p>
         </div>
         <div class="capability-card card-purple">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
           </div>
           <h3>Intelligent Insights</h3>
           <p>GoVal AI empowers you to query validation records and deliver an analytical edge to your validation process.</p>
@@ -117,7 +125,7 @@ import Footer from '../components/Footer.astro';
     width: 3.5rem;
     height: 3.5rem;
     vertical-align: middle;
-    margin-left: 0.4rem;
+    margin-left: .4rem;
   }
   .hero-description {
     font-size: 1.25rem;
@@ -146,7 +154,6 @@ import Footer from '../components/Footer.astro';
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
-    position: relative;
     overflow: hidden;
   }
   .capability-card .card-icon {
@@ -170,31 +177,23 @@ import Footer from '../components/Footer.astro';
   .capability-card p {
     transition: color 0.3s ease;
   }
-  .capability-card p {
-    color: #4b5563;
-  }
+  .capability-card p { color: #4b5563; }
+  /* Individual card colors */
   .card-blue .card-icon { background: #3b82f6; }
   .card-green .card-icon { background: #10b981; }
   .card-yellow .card-icon { background: #f59e0b; }
   .card-purple .card-icon { background: #8b5cf6; }
+  /* Hover State */
   .capability-card.card-blue:hover { background-color: #3b82f6; }
   .capability-card.card-green:hover { background-color: #10b981; }
   .capability-card.card-yellow:hover { background-color: #f59e0b; }
   .capability-card.card-purple:hover { background-color: #8b5cf6; }
-  .capability-card:hover .card-icon {
-    background-color: white;
-  }
-  .capability-card:hover .icon-svg {
-    fill: currentColor;
-  }
+  .capability-card:hover .card-icon { background-color: white; }
+  .capability-card:hover .icon-svg { fill: currentColor; }
   .capability-card:hover h3,
-  .capability-card:hover p {
-    color: white;
-  }
+  .capability-card:hover p { color: white; }
   /* CTA Section */
-  .cta-ai {
-    background: #f3f4f6;
-  }
+  .cta-ai { background: #f3f4f6; }
   .cta-content {
     text-align: center;
     max-width: 600px;
@@ -211,6 +210,7 @@ import Footer from '../components/Footer.astro';
     margin-bottom: 2rem;
     color: #4b5563;
   }
+  /* Buttons */
   .btn {
     display: inline-flex;
     align-items: center;
@@ -222,13 +222,9 @@ import Footer from '../components/Footer.astro';
     transition: all 0.3s ease;
     border: 2px solid transparent;
     cursor: pointer;
-    position: relative;
     overflow: hidden;
   }
-  .btn-lg {
-    padding: 1rem 2rem;
-    font-size: 1.125rem;
-  }
+  .btn-lg { padding: 1rem 2rem; font-size: 1.125rem; }
   .btn-ai-blue {
     background: linear-gradient(135deg, #eb3525 0%, #e22d04 50%, #eb5504 100%);
     color: white;
@@ -242,43 +238,33 @@ import Footer from '../components/Footer.astro';
   .btn-ai-blue::before {
     content:'';
     position:absolute;
-    top:0;left:-100%;
-    width:100%;height:100%;
+    top:0; left:-100%;
+    width:100%; height:100%;
     background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);
     transition:left 0.5s ease;
     z-index:1;
   }
-  .btn-ai-blue:hover::before {
-    left:100%;
-  }
-  @media (max-width:768px){
-    .capabilities-grid {
-      grid-template-columns: 1fr;
-    }
-    .hero-ai {
-      padding:4rem 0;
-    }
-    .hero-text h1 {
-      font-size:2.5rem;
-    }
-    .ai-header-icon {
-      width: 2.5rem;
-      height: 2.5rem;
-    }
-    .btn {
-      width:100%;
-      padding: 0.875rem 1.5rem;
-      justify-content:center;
-    }
-    .cta-content h2 {
-      font-size:2rem;
-    }
-    /* Align Book a Demo button properly on mobile */
+  .btn-ai-blue:hover::before { left:100%; }
+
+  /* Mobile adjustments for CTA alignment and size */
+  @media (max-width: 768px) {
     .cta-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
+      text-align: center;
+      padding: 0 1rem;
     }
+    .cta-content .btn {
+      width: auto;
+      padding: 0.65rem 1.2rem;
+      font-size: 1rem;
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width:768px){
+    .capabilities-grid { grid-template-columns: 1fr; }
+    .hero-ai { padding:4rem 0; }
+    .hero-text h1 { font-size:2.5rem; }
+    .ai-header-icon { width:2.5rem; height:2.5rem; }
+    .btn { width:100%; justify-content:center; }
   }
 </style>
