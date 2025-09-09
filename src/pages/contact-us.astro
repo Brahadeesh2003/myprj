@@ -29,7 +29,7 @@ import Footer from '../components/Footer.astro';
         </div>
         <div class="form-group">
           <label for="phone">Contact Number with Country Code *</label>
-          <input type="tel" id="phone" name="phone" placeholder="+1 408 123 4567" required pattern="^\+[\d\s\-\(\)]{7,20}$" />
+          <input type="tel" id="phone" name="phone" placeholder="" required pattern="^\+[\d\s\-\(\)]{7,20}$" />
           <span class="error-message" id="phone-error"></span>
         </div>
         <div class="form-group">
@@ -294,7 +294,9 @@ import Footer from '../components/Footer.astro';
               <!-- INDIA -->
               <span class="compact-contact">
                 <strong>INDIA</strong><br/>
-                1st Floor, Prestige Samrah Plaza, St Marks Road, Shanthala Nagar, Ashok Nagar, Bengaluru 560 001, India
+                1st Floor, Prestige Samrah Plaza, St Marks Road, 
+                <br>Shanthala Nagar, Ashok Nagar, 
+                <br>Bengaluru 560 001, India
               </span>
               <span class="compact-contact">
                 <span class="svg-inline phone" aria-hidden="true">
@@ -309,7 +311,9 @@ import Footer from '../components/Footer.astro';
               <!-- USA -->
               <span class="compact-contact">
                 <strong>USA</strong><br/>
-                7232 BROADWAY STE 306, JACKSON HEIGHTS NY 11372, USA
+                7232 BROADWAY STE 306,  
+                <br>JACKSON HEIGHTS NY 11372, 
+                <br>USA
               </span>
               <span class="compact-contact">
                 <span class="svg-inline phone" aria-hidden="true">
@@ -452,7 +456,7 @@ import Footer from '../components/Footer.astro';
       margin-bottom: 0.4rem;
       color: #374151;
     }
-    input, textarea {
+    input, textarea, select {
       padding: 0.65rem;
       font-size: 1rem;
       border: 2px solid #e5e7eb;
@@ -462,13 +466,22 @@ import Footer from '../components/Footer.astro';
       transition: border-color 0.3s ease;
       font-family: inherit;
       color: #374151;
+      background-color: #ffffff;
     }
-    input:focus, textarea:focus {
+    select {
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 0.7rem center;
+      background-size: 1em;
+      padding-right: 2.5rem;
+    }
+    input:focus, textarea:focus, select:focus {
       outline: none;
       border-color: #6366f1;
       box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
     }
-    input.error, textarea.error {
+    input.error, textarea.error, select.error {
       border-color: #dc2626 !important;
       box-shadow: 0 0 0 3px rgba(220,38,38,0.4) !important;
     }
