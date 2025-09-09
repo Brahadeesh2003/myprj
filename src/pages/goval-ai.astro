@@ -125,7 +125,8 @@ import Footer from '../components/Footer.astro';
     width: 3.5rem;
     height: 3.5rem;
     vertical-align: middle;
-    margin-left: 0.4rem;
+    margin-left: .4rem;
+    
   }
   .hero-description {
     font-size: 1.25rem;
@@ -278,12 +279,18 @@ import Footer from '../components/Footer.astro';
       height: 2.5rem;
     }
     .btn {
-      width:100%;
-      padding: 0.875rem 1.5rem;
-      justify-content:center;
-    }
-    .cta-content h2 {
-      font-size:2rem;
-    }
+     width: 100%;
+     padding: 0.875rem 1.5rem;
+     justify-content: center;
+     display: flex;
+     align-items: center;
+     margin: 0 auto;
+  }
+  
+  .cta-content {
+    padding: 0 1rem;
+  }
+}
+
   }
 </style>
