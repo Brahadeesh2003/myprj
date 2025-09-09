@@ -29,8 +29,9 @@ import Footer from '../components/Footer.astro';
         <div class="pricing-option">
           <div class="option-header">
             <div class="option-icon saas">
-              <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+              <!-- Crisp cloud icon SVG -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" width="48" height="48">
+                <path d="M18 34h16c4.418 0 8-3.582 8-8 0-4.157-3.176-7.579-7.193-7.977C33.195 13.72 29.067 10 24 10s-9.195 3.72-10.807 8.023C6.176 18.421 3 21.843 3 26c0 4.418 3.582 8 8 8h7z"/>
               </svg>
             </div>
             <h2 class="option-title">GoVal SaaS Subscription</h2>
@@ -74,7 +75,7 @@ import Footer from '../components/Footer.astro';
                 <p>Contact us for personalized quotes based on your specific requirements, user count, and feature needs.</p>
               </div>
               <div class="contact-action">
-                <a href="/contact-us" class="btn btn-primary btn-lg">
+                <a href="/contact-us" class="btn btn-primary btn-lg saas-quote-btn">
                   <span>Get SaaS Quote</span>
                   <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -88,9 +89,20 @@ import Footer from '../components/Footer.astro';
         <div class="pricing-option featured">
           <div class="featured-badge"></div>
           <div class="option-header">
-            <div class="option-icon onprem">
-              <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m-5 0v-4a2 2 0 012-2h10a2 2 0 012 2v4m-14 0h14"/>
+            <div class="option-icon enterprise">
+              <!-- Clear "server" style icon SVG for enterprise, larger & sharp -->
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Server base -->
+                <rect x="10" y="14" width="36" height="10" rx="4"/>
+                <rect x="10" y="24" width="36" height="10" rx="4"/>
+                <rect x="10" y="34" width="36" height="10" rx="4"/>
+                <!-- Server details (lights) -->
+                <circle cx="16" cy="19" r="1.5"/>
+                <circle cx="16" cy="29" r="1.5"/>
+                <circle cx="16" cy="39" r="1.5"/>
+                <line x1="22" y1="19" x2="34" y2="19"/>
+                <line x1="22" y1="29" x2="34" y2="29"/>
+                <line x1="22" y1="39" x2="34" y2="39"/>
               </svg>
             </div>
             <h2 class="option-title">GoVal On-Premise</h2>
@@ -134,7 +146,7 @@ import Footer from '../components/Footer.astro';
                 <p>Custom pricing based on user count, deployment, and support. Includes install, training, and support.</p>
               </div>
               <div class="contact-action">
-                <a href="/contact-us" class="btn btn-primary btn-lg">
+                <a href="/contact-us" class="btn btn-primary btn-lg enterprise-quote-btn">
                   <span>Get Enterprise Quote</span>
                   <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -189,8 +201,6 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
   <Footer />
-
-
 <style>
   html, body {
     background: #fff;
@@ -215,9 +225,8 @@ import Footer from '../components/Footer.astro';
     border-bottom: 1px solid #eaeaea;
   }
   .hero-left {
-  text-align: left;
+    text-align: left;
   }
-
   .hero-badge,
   .hero-title,
   .hero-subtitle {
@@ -236,9 +245,9 @@ import Footer from '../components/Footer.astro';
     text-transform: uppercase;
   }
   .hero-container {
-   justify-content: flex-start;
+    justify-content: flex-start;
   }
-   .hero-title {
+  .hero-title {
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
@@ -272,6 +281,9 @@ import Footer from '../components/Footer.astro';
     box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .pricing-option:hover {
     transform: translateY(-8px);
@@ -282,25 +294,21 @@ import Footer from '../components/Footer.astro';
     margin-bottom: 2rem;
   }
   .option-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
-    fill: #fff;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 0.5rem auto;
+    fill: none;
     border-radius: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .option-icon.saas {
-    background: linear-gradient(45deg, #ffffff, #ffffff);
-  }
-  .option-icon.onprem {
-    background: linear-gradient(45deg, #ffffff, #ffffff);
+    background: #fafbfc;
   }
   .option-title {
     font-size: 1.75rem;
     font-weight: 900;
     color: #222;
+    margin-top: 0.8rem;
   }
   .option-subtitle {
     font-size: 1rem;
@@ -334,6 +342,9 @@ import Footer from '../components/Footer.astro';
     padding: 1rem 2rem;
     border-radius: 0.75rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .pricing-info strong {
     display: block;
@@ -344,8 +355,10 @@ import Footer from '../components/Footer.astro';
     font-size: 0.9rem;
     color: #666;
   }
-  .contact-action a {
-    display: inline-block;
+  .contact-action {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin-top: 1rem;
   }
   .btn {
@@ -362,6 +375,8 @@ import Footer from '../components/Footer.astro';
     transition: background 0.3s, transform 0.15s ease-in-out;
     cursor: pointer;
     font-size: 1rem;
+    min-width: 175px;
+    justify-content: center;
   }
   .btn svg {
     stroke: white;
@@ -418,6 +433,8 @@ import Footer from '../components/Footer.astro';
     color: #555;
     line-height: 1.6;
   }
+
+  /* Mobile: ensure button stays inside the card box */
   @media (max-width: 768px) {
     .pricing-options {
       grid-template-columns: 1fr;
@@ -437,10 +454,24 @@ import Footer from '../components/Footer.astro';
     }
     .btn {
       width: 100%;
+      max-width: 95vw;
+      min-width: 0;
+      margin-top: 0.25rem;
+      font-size: 1rem;
       justify-content: center;
     }
-    .faq-title {
-      font-size: 1.5rem;
+    .pricing-info,
+    .contact-action {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
     }
+    .contact-action {
+      margin-top: 0.75rem;
+    }
+    .option-header { margin-bottom: 1.2rem; }
+    .option-icon { margin-bottom: 0.2rem; }
   }
 </style>
