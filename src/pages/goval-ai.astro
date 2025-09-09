@@ -30,36 +30,28 @@ import Footer from '../components/Footer.astro';
       <div class="capabilities-grid">
         <div class="capability-card card-blue">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" class="icon-svg">
-              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-            </svg>
+            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
           <h3>Validate URS & Specifications</h3>
           <p>Take a help from GoVal AI to validate URS, functional and design specifications</p>
         </div>
         <div class="capability-card card-green">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" class="icon-svg">
-              <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-            </svg>
+            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
           </div>
           <h3>AI-Driven Risk Assessment</h3>
           <p>Automatically categorize GxP risk levels using machine learning models trained on thousands of validation projects.</p>
         </div>
         <div class="capability-card card-yellow">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" class="icon-svg">
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
+            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
           <h3>Test Case Management</h3>
           <p>Generate comprehensive test protocols instantly based on system requirements and historical project data.</p>
         </div>
         <div class="capability-card card-purple">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" class="icon-svg">
-              <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-            </svg>
+            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
           </div>
           <h3>Intelligent Insights</h3>
           <p>GoVal AI empowers you to query validation records and deliver an analytical edge to your validation process.</p>
@@ -125,8 +117,7 @@ import Footer from '../components/Footer.astro';
     width: 3.5rem;
     height: 3.5rem;
     vertical-align: middle;
-    margin-left: .4rem;
-    
+    margin-left: 0.4rem;
   }
   .hero-description {
     font-size: 1.25rem;
@@ -182,12 +173,10 @@ import Footer from '../components/Footer.astro';
   .capability-card p {
     color: #4b5563;
   }
-  /* Individual card colors */
   .card-blue .card-icon { background: #3b82f6; }
   .card-green .card-icon { background: #10b981; }
   .card-yellow .card-icon { background: #f59e0b; }
   .card-purple .card-icon { background: #8b5cf6; }
-  /* Hover State */
   .capability-card.card-blue:hover { background-color: #3b82f6; }
   .capability-card.card-green:hover { background-color: #10b981; }
   .capability-card.card-yellow:hover { background-color: #f59e0b; }
@@ -222,7 +211,6 @@ import Footer from '../components/Footer.astro';
     margin-bottom: 2rem;
     color: #4b5563;
   }
-  /* Buttons */
   .btn {
     display: inline-flex;
     align-items: center;
@@ -263,38 +251,34 @@ import Footer from '../components/Footer.astro';
   .btn-ai-blue:hover::before {
     left:100%;
   }
-  /* Responsive */
-@media (max-width:768px){
-  .capabilities-grid {
-    grid-template-columns: 1fr;
+  @media (max-width:768px){
+    .capabilities-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-ai {
+      padding:4rem 0;
+    }
+    .hero-text h1 {
+      font-size:2.5rem;
+    }
+    .ai-header-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    .btn {
+      width:100%;
+      padding: 0.875rem 1.5rem;
+      justify-content:center;
+    }
+    .cta-content h2 {
+      font-size:2rem;
+    }
+    /* Align Book a Demo button properly on mobile */
+    .cta-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
   }
-  .hero-ai {
-    padding:4rem 0;
-  }
-  .hero-text h1 {
-    font-size:2.5rem;
-  }
-  .ai-header-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  .btn-lg {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0.875rem 1.5rem !important;
-    justify-content: center !important;
-    display: flex !important;
-    align-items: center !important;
-    margin: 0 auto !important;
-    text-align: center !important;
-  }
-  .cta-content {
-    padding: 0 1rem;
-    width: 100%;
-  }
-  .cta-content h2 {
-    font-size:2rem;
-  }
-}
-
 </style>
