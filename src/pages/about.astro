@@ -1,12 +1,10 @@
 ---
-// src/pages/about-goval.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
 <BaseLayout title="About GoVal – Driving Innovation in Life Science Validation">
   <Navigation />
-
   <!-- Hero / Intro Section -->
   <section class="about-hero">
     <div class="container hero-grid">
@@ -40,6 +38,24 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
+  <!-- Embedded Video Section -->
+  <section class="section video-section">
+    <div class="container">
+      <h1 class="text-center mb-4">GoVal: Paperless Validation solutions for Life Science Industries.</h1>
+      <div class="video-wrapper">
+        <iframe
+          width="100%"
+          height="450"
+          src="https://www.youtube.com/embed/DtwVfiOTdCc?autoplay=1&mute=1"
+          title="What is paperless validation? GoVal is Validation Lifecycle Management tool that helps in validation"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
   <!-- Principles & Values Section -->
   <section class="section principles-values">
     <div class="container pv-grid">
@@ -66,7 +82,6 @@ import Footer from '../components/Footer.astro';
       <a href="/contact-us" class="btn btn-primary btn-lg">Talk to Us</a>
     </div>
   </section>
-
   <Footer />
 </BaseLayout>
 
@@ -83,19 +98,8 @@ import Footer from '../components/Footer.astro';
     gap: 2rem;
     flex-wrap: wrap;
   }
-  .hero-image {
-    order: 2;
-  }
-  .hero-text {
-    order: 1;
-    flex: 1;
-  }
-  .hero-image img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  }
+  .hero-image { order: 2; }
+  .hero-text { order: 1; flex: 1; }
   .hero-text h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -104,6 +108,12 @@ import Footer from '../components/Footer.astro';
   .hero-text p {
     color: #4b5563;
     line-height: 1.6;
+  }
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   }
 
   /* Mission & Vision */
@@ -128,6 +138,23 @@ import Footer from '../components/Footer.astro';
     line-height: 1.6;
   }
 
+  /* Video Section */
+  .video-section .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+  .video-section .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   /* Principles & Values */
   .principles-values .pv-grid {
     display: flex;
@@ -135,14 +162,8 @@ import Footer from '../components/Footer.astro';
     gap: 2rem;
     flex-wrap: wrap;
   }
-  .pv-image {
-    order: 1;
-    flex: 1;
-  }
-  .pv-text {
-    order: 2;
-    flex: 1;
-  }
+  .pv-image { order: 1; flex: 1; }
+  .pv-text { order: 2; flex: 1; }
   .pv-image img {
     width: 100%;
     max-width: 500px;
@@ -163,9 +184,7 @@ import Footer from '../components/Footer.astro';
     font-size: 1rem;
     color: #4b5563;
   }
-  .pv-text li strong {
-    color: #111827;
-  }
+  .pv-text li strong { color: #111827; }
 
   /* CTA */
   .cta-section h2 {
@@ -178,25 +197,19 @@ import Footer from '../components/Footer.astro';
     color: #4b5563;
   }
   .btn-primary {
-  background-color: #ff5722 !important;
-  color: #ffffff !important;
-  border: none;
-  padding: 1rem 2rem;
-  font-weight: 700;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.btn-primary {
-  text-decoration: none !important;
-}
-
-.btn-primary:hover {
-  text-decoration: none !important;
-}
-.btn-primary:hover {
-  background-color: #e64a19 !important;
-  transform: translateY(-2px);
-}
+    background-color: #ff5722 !important;
+    color: #ffffff !important;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none !important;
+  }
+  .btn-primary:hover {
+    background-color: #e64a19 !important;
+    transform: translateY(-2px);
+  }
 
   /* Responsive */
   @media (max-width: 768px) {
@@ -206,5 +219,10 @@ import Footer from '../components/Footer.astro';
       text-align: center;
     }
     .pv-text ul { text-align: left; }
+    .btn-primary {
+      width: auto;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
   }
 </style>
