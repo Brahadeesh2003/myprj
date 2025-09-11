@@ -14,8 +14,8 @@ import Footer from '../components/Footer.astro';
     <div class="contact-form-container">
       <h2>Contact Us</h2>
       <form id="contactForm" class="contact-form" novalidate action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="1342cce4-8f26-4476-a251-697b21d3daf9" />
-        <input type="hidden" name="email_to" value="bdsh2003@gmail.com" />
+        <input type="hidden" name="access_key" value="c0cee22f-7e2a-40f2-83cf-0d2156365945" />
+        <input type="hidden" name="email_to" value="info@govalidation.com" />
         <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you" />
         <div class="form-group">
           <label for="name">Name *</label>
@@ -275,9 +275,7 @@ import Footer from '../components/Footer.astro';
               <span class="contact-label">Email:</span>
               <span class="compact-contact">
                 <strong>Sales Enquiry:</strong> <a href="mailto:info@govalidation.com">info@govalidation.com</a>
-              </span>
-              <span class="compact-contact">
-                <strong>Technical Support:</strong> <a href="mailto:support@govalidation.com">support@govalidation.com</a>
+                <br><strong>Technical Support:</strong> <a href="mailto:support@govalidation.com">support@govalidation.com</a>
               </span>
             </div>
           </div>
@@ -294,8 +292,9 @@ import Footer from '../components/Footer.astro';
               <!-- INDIA -->
               <span class="compact-contact">
                 <strong>INDIA</strong><br/>
-                1st Floor, Prestige Samrah Plaza, St Marks Road, 
-                <br>Shanthala Nagar, Ashok Nagar, 
+                1st Floor, Prestige Samrah Plaza,  
+                <br> St Marks Road, Shanthala Nagar,  
+                <br>Ashok Nagar, 
                 <br>Bengaluru 560 001, India
               </span>
               <span class="compact-contact">
@@ -408,13 +407,37 @@ import Footer from '../components/Footer.astro';
     });
   </script>
   <style>
-    .section-title {
+     .section-title {
       font-size: 2.5rem;
       font-weight: 700;
       text-align: center;
       margin-bottom: 0.5rem;
-      color: #000000;
+    
+
+  
+  /* Floating gradient text effect */
+      background: linear-gradient(45deg, #df2be6, #3B82F6, #df2be6, #3B82F6, #df2be6);
+
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+  
+  /* Animation for floating effect */
+      animation: floatingGradient 8s ease-in-out infinite;
     }
+
+    @keyframes floatingGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @supports not (-webkit-background-clip: text) {
+    .section-title {
+     color: #FF5722;
+     }
+    }
+
     .contact-section {
       display: flex;
       flex-wrap: wrap;
@@ -665,3 +688,4 @@ import Footer from '../components/Footer.astro';
     }
   </style>
 </BaseLayout>
+
