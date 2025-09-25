@@ -9,9 +9,13 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "@microsoft/clarity": "^1.0.0",
     "astro": "^4.16.19",
+    "astro-seo": "^0.8.4",
     "gray-matter": "^4.0.3",
     "marked": "^16.2.1",
+    "seo": "^0.0.15",
     "tslib": "^2.8.1"
   },
   "devDependencies": {

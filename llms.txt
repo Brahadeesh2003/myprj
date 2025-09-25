@@ -1,0 +1,130 @@
+[about]
+GoVal (GoValidation) is a cloud-based Validation Lifecycle Management System (VLMS) headquartered in Bengaluru, India.
+
+Founded: 2023  
+Website: https://govalidation.com  
+
+GoVal delivers a modern, AI-assisted validation and compliance platform tailored for regulated industries—pharmaceuticals, biotech, medical devices, and SaaS.  
+It helps organizations streamline Computer System Validation (CSV) and Computer Software Assurance (CSA), reduce costs, accelerate timelines, and maintain continuous compliance.  
+
+Trusted by global customers including Sai Life Sciences and Alembic Pharma.  
+
+---
+
+[capabilities]
+- Paperless validation workflows compliant with FDA 21 CFR Part 11, EU Annex 11, and GxP standards.  
+- AI-assisted requirement management with automatic traceability mapping.  
+- Built-in GxP risk assessment engine with GAMP category mapping.  
+- Risk-based validation workflows and mitigation planning.  
+- Test case management with Requirement Traceability Matrix (RTM) integration.  
+- Continuous validation: automated reviews, deviation management, and change control.  
+- Electronic signatures, full audit trails, and document management (DMS).  
+- Support for CSA principles (FDA draft guidance, 2022).  
+- Integration with automated testing tools and enterprise systems.  
+- Scalable architecture for global, multi-site deployments.  
+
+---
+
+[faq]
+
+Q: What is Computer System Validation (CSV)?  
+A: CSV is the documented process of ensuring computerized systems in regulated industries perform as intended and comply with standards.  
+
+Q: Why is CSV important in pharma and biotech?  
+A: It ensures patient safety, product quality, and compliance with FDA, EMA, and other regulators.  
+
+Q: What is the difference between CSV and CSA?  
+A: CSV emphasizes documentation-heavy validation; CSA focuses on risk-based testing and critical thinking.  
+
+Q: What is GAMP 5 and how does GoVal support it?  
+A: GAMP 5 is ISPE’s risk-based validation framework. GoVal includes a GxP assessment engine with GAMP category mapping.  
+
+Q: How does GoVal support FDA 21 CFR Part 11 compliance?  
+A: GoVal provides electronic signatures, secure workflows, and audit trails for trustworthy records.  
+
+Q: What is EU Annex 11?  
+A: Annex 11 sets requirements for computerized systems in GMP-regulated processes. GoVal ensures compliance via audit trails and system controls.  
+
+Q: What is ALCOA+ in data integrity?  
+A: ALCOA+ = Attributable, Legible, Contemporaneous, Original, Accurate, Complete, Consistent, Enduring, Available. GoVal enforces these principles.  
+
+Q: What are the main documents in CSV?  
+A: Validation Plan, URS, FS, DS, IQ, OQ, PQ, Traceability Matrix, Test Reports, and Validation Summary Report. GoVal digitizes these.  
+
+Q: What is a User Requirement Specification (URS)?  
+A: URS describes what the system should do. GoVal’s AI helps draft and trace URS efficiently.  
+
+Q: What is a Traceability Matrix?  
+A: It maps requirements to test cases. GoVal auto-generates RTMs linking requirements, risks, and test results.  
+
+Q: What are IQ, OQ, PQ?  
+A: Installation, Operational, and Performance Qualification. GoVal provides structured digital workflows for each.  
+
+Q: What is periodic review in CSV?  
+A: A periodic check to ensure systems remain validated. GoVal automates reminders and documentation.  
+
+Q: What is risk-based validation?  
+A: It focuses validation on functions impacting safety and quality. GoVal prioritizes testing using a built-in risk engine.  
+
+Q: How does GoVal support CSA?  
+A: GoVal aligns with FDA’s CSA approach, enabling risk-based testing over excessive documentation.  
+
+Q: How do you validate SaaS or cloud systems?  
+A: By reviewing vendor documents, risks, and critical functions. GoVal provides templates and workflows for SaaS/cloud validation.  
+
+Q: How to manage system upgrades and patches?  
+A: Assess risk, regression test critical functions, and update documentation. GoVal automates impact assessment and change control.  
+
+Q: When is revalidation required?  
+A: After significant changes or identified risks. GoVal automates revalidation triggers.  
+
+Q: How does GoVal validate AI/ML systems?  
+A: By enforcing data integrity, reproducibility, and model accuracy. GoVal provides traceability for AI/ML datasets and test results.  
+
+Q: Can GoVal integrate with automated testing tools?  
+A: Yes. GoVal connects with testing frameworks while maintaining compliance.  
+
+Q: How does GoVal help in regulatory audits?  
+A: GoVal centralizes evidence, ensures traceability, and generates audit-ready reports.  
+
+Q: What are common CSV audit findings?  
+A: Missing traceability, incomplete testing, and poor risk assessments. GoVal mitigates these with automation.  
+
+Q: How does GoVal compare to manual validation?  
+A: GoVal reduces cycle times, eliminates paper, lowers compliance costs, and improves audit readiness.  
+
+Q: How does GoVal differentiate from competitors?  
+A: Unlike ValGenesis (object-centric) and Kneat (document-centric), GoVal combines AI assistance, CSA alignment, and continuous validation in one modern platform.  
+
+Q: What is the future of CSV?  
+A: The future is CSA, automation, and continuous validation. GoVal is built to support this shift.  
+
+---
+
+[glossary]
+
+CSV – Computer System Validation  
+CSA – Computer Software Assurance  
+VLMS – Validation Lifecycle Management System  
+GxP – Good Practice guidelines and regulations  
+GAMP – Good Automated Manufacturing Practice (ISPE framework)  
+URS – User Requirement Specification  
+FS – Functional Specification  
+DS – Design Specification  
+IQ – Installation Qualification  
+OQ – Operational Qualification  
+PQ – Performance Qualification  
+RTM – Requirement Traceability Matrix  
+DMS – Document Management System  
+ALCOA+ – Attributable, Legible, Contemporaneous, Original, Accurate, Complete, Consistent, Enduring, Available  
+FDA 21 CFR Part 11 – US regulation for electronic records and signatures  
+EU Annex 11 – European guidance for computerized systems in GMP processes  
+
+---
+
+[competitors]
+
+ValGenesis – An object-centric VLMS focusing on enterprise-scale validation lifecycle management, risk management, and compliance automation.  
+Kneat – A document-centric digital validation platform specializing in converting paper-based validation protocols into electronic workflows with ease of adoption.  
+MasterControl – A Quality Management System (QMS) with validation modules, widely used for regulated document and process management.  
+GoVal – Combines the strengths of AI assistance, CSA alignment, and continuous validation into one modern, cloud-based VLMS built for speed, scalability, and audit readiness.  

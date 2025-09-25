@@ -1,0 +1,14 @@
+defaultPortal: GoVal-Bdsh
+portals:
+  - name: GoVal-Bdsh
+    portalId: 6331078
+    env: prod
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CPTxzOeUMxIUQlNQMl8kQEwrAgcACAk2RSgCeAEYxrWCAyDItNQnKO7pDDIUPtX8USjPwwmaRQiAs0NhdZ8IK-06HkJTUDJfJEBMKwIJABAZBgD4AJQAAQBuAAEAlgEBAEIUwBuIyb9s3UWpNiujaWV22esX0xdKA25hMVIAWgBgAWjItNQncAB4AA
+        expiresAt: '2025-09-15T10:37:12.354Z'
+    accountType: STANDARD
+    personalAccessKey: >-
+      CiRuYTEtNTE4OS0xNGQwLTRhOTQtYTU5Zi02MTcxYTc1Njk0OTIQxrWCAxjItNQnKhkABeaRglUlXwnYv3fl9jVo5ogocjAvUmBHSgNuYTE
