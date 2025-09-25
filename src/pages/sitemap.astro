@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+const siteUrl = 'https://www.govalidation.com';
+const pageUrl = `${siteUrl}/sitemap`;
+---
+<BaseLayout title="GoVal Sitemap">
+  <fragment slot="head">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GoVal Sitemap</title>
+    <meta name="description" content="Navigate GoVal's main site pages. GAMP 5 validation software, GxP compliance, and paperless validation solutions sitemap." />
+    <link rel="canonical" href={pageUrl} />
+    <style>
+      h1, h2 {
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 4px;
+        transition: border-color 0.2s ease;
+        margin-right: 1rem;
+        display: inline-block;
+      }
+      a:hover, a:focus {
+        border-color: #f97316; /* orange underline */
+        outline: none;
+      }
+      section {
+        margin-bottom: 3rem;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        columns: 2;
+        column-gap: 3rem;
+      }
+      ul li {
+        margin-bottom: 0.5rem;
+      }
+      @media (max-width: 600px) {
+        ul {
+          columns: 1;
+          column-gap: 0;
+        }
+      }
+    </style>
+  </fragment>
+  <Navigation />
+  <main class="container" style="max-width: 900px; margin: 2rem auto;">
+    <h1>GoVal Sitemap</h1>
+    <section>
+      <h2>Core Pages</h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/solutions/">Solutions</a></li>
+        <li><a href="/goval-ai/">GoVal AI</a></li>
+        <li><a href="/about/">About GoVal</a></li>
+        <li><a href="/contact-us/">Contact Us</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Blog & Stories</h2>
+      <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/customer-stories/">Customer Stories</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>GoVal Features</h2>
+      <ul>
+        <li><a href="/solutions/">SaaS Subscription</a></li> <!-- redirects to Solutions -->
+        <li><a href="/solutions/">On-Premise VLMS</a></li> <!-- redirects to Solutions -->
+        <li><a href="/about/">GxP Compliance Software</a></li> <!-- redirects to About -->
+        <li><a href="/about/">21 CFR Part 11 Guide</a></li> <!-- redirects to About -->
+        <li><a href="/about/">GAMP 5 Validation</a></li> <!-- redirects to About -->
+      </ul>
+    </section>
+    <section>
+      <h2>Legal Information</h2>
+      <ul>
+        <li><a href="/terms-of-use/">Terms of Use</a></li> <!-- redirects to Solutions -->
+        <li><a href="/privacy-policy/">Privacy Policy</a></li> <!-- redirects to Solutions -->
+      </ul>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

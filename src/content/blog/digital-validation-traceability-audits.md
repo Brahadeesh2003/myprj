@@ -5,7 +5,7 @@ author: "Vishnu Priya"
 category: "Paperless Validation"
 readTime: "7 min read"
 excerpt: "In the fast-paced world of life sciences, the transition from paper to digital validation is no longer optional. It’s essential for maintaining audit readiness."
-image: "/images/blog-traceability-audits.png"
+image: "/images/blog-traceability-audits.webp"
 ---
 
 <p style="font-size:1rem; line-height:1.6; margin-bottom:2rem;">

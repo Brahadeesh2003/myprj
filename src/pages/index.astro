@@ -3,7 +3,147 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
-<BaseLayout title="GoVal - Digital Validation Solutions for Life Sciences">
+<BaseLayout 
+  title="GoVal Paperless Validation Solution | Stay Compliant, Stay Ahead"
+  description="GoVal's AI-powered paperless validation solutions replace manual CSV with Risk-Based CSV and VLMS software. Achieve GxP compliance software excellence for life sciences."
+  keywords="paperless validation solutions, gamp 5 validation software, gxp compliance software, risk-based csv, digital validation platform, vlms software, validation lifecycle management"
+>
+  <fragment slot="head">
+    <!-- Additional SEO optimizations -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="GoVal" />
+    <meta name="generator" content="Astro" />
+    
+    <!-- Enhanced Open Graph Tags -->
+    <meta property="og:site_name" content="GoVal" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Article-specific meta -->
+    <meta property="article:publisher" content="https://www.facebook.com/govalidation" />
+    <meta property="article:author" content="GoVal" />
+    
+    <!-- Enhanced Twitter Card -->
+    <meta name="twitter:creator" content="@GoValidation" />
+    
+    <!-- Additional meta for better SEO -->
+    <meta name="theme-color" content="#f63303" />
+    <meta name="msapplication-TileColor" content="#f63303" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.govalidation.com/#organization",
+            "name": "GoVal",
+            "alternateName": "GoValidation",
+            "url": "https://www.govalidation.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://www.govalidation.com/#logo",
+              "url": "https://www.govalidation.com/images/goval-logo.png",
+              "contentUrl": "https://www.govalidation.com/images/goval-logo.png",
+              "width": 200,
+              "height": 60,
+              "caption": "GoVal Logo"
+            },
+            "image": {"@id": "https://www.govalidation.com/#logo"},
+            "description": "AI-powered paperless validation solutions for life sciences, pharma, biotech, and medical device companies. Achieve GxP compliance with automated workflows.",
+            "foundingDate": "2020",
+            "industry": ["Computer Software", "Life Sciences", "Pharmaceutical Technology"],
+            "numberOfEmployees": "11-50",
+            "address": [
+              {
+                "@type": "PostalAddress",
+                "streetAddress": "1st Floor, Prestige Samrah Plaza, St Marks Road",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "Karnataka",
+                "postalCode": "560001",
+                "addressCountry": "IN"
+              },
+              {
+                "@type": "PostalAddress", 
+                "streetAddress": "7232 BROADWAY STE 306",
+                "addressLocality": "Jackson Heights",
+                "addressRegion": "NY",
+                "postalCode": "11372",
+                "addressCountry": "US"
+              }
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91-99000-23710",
+                "contactType": "sales",
+                "areaServed": "IN",
+                "availableLanguage": "en"
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+1-408-457-0086", 
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+              }
+            ],
+            "email": "info@govalidation.com",
+            "sameAs": [
+              "https://www.linkedin.com/company/govalidation",
+              "https://twitter.com/GoValidation"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.govalidation.com/#website",
+            "url": "https://www.govalidation.com/",
+            "name": "GoVal - AI-Powered Paperless Validation",
+            "description": "AI-powered paperless validation solutions for life sciences compliance",
+            "publisher": {"@id": "https://www.govalidation.com/#organization"},
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://www.govalidation.com/search?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://www.govalidation.com/#software",
+            "name": "GoVal Platform",
+            "description": "AI-powered paperless validation software for life sciences companies to achieve GxP compliance with automated workflows and audit trails.",
+            "url": "https://www.govalidation.com/",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "description": "GoVal SaaS and On-Premise Solutions",
+              "price": "Contact for pricing",
+              "priceCurrency": "USD"
+            },
+            "publisher": {"@id": "https://www.govalidation.com/#organization"},
+            "featureList": [
+              "AI-Powered Risk Assessment", 
+              "Automated Workflow Management",
+              "21 CFR Part 11 Compliance",
+              "Electronic Signatures",
+              "Audit Trail Management",
+              "GxP Compliance Tools",
+              "GAMP 5 Validation Software",
+              "Risk-Based CSV",
+              "VLMS Software",
+              "Paperless Validation Solutions"
+            ]
+          }
+        ]
+      }
+    </script>
+  </fragment>
   <Navigation />
   <!-- Hero Section with White Background -->
   <section class="hero">
@@ -14,12 +154,13 @@ import Footer from '../components/Footer.astro';
           [ EXPERT PAPERLESS VALIDATION FOR PHARMA ]
         </div>
         <h1 class="hero-title fade-in-up">
-          Digitize Your Validation Process.<br>
+         GoVal Paperless Validation Solution.<br>
           Stay Compliant,<br>
           <span class="text-primary">Stay Ahead.</span>
         </h1>
         <p class="hero-subtitle fade-in-up">
-          GoVal understands the unique validation challenges of the Life Sciences industry. Our platform is designed to meet the specific needs of pharma, biotech, medical device, CRO, and CMO organizations.
+          GoVal was founded on the principle that validation should be efficient, compliant, and accessible. As the leading GAMP 5 compliant validation software provider, we revolutionize life sciences validation. We recognized the challenges faced by life science companies relying on outdated, paper-based systems. Our Paperless Validation Solutions eliminate paper and streamline GxP compliance.<br />
+          <br>With a team of validation and technology experts, we developed a robust GxP Compliance Software suite designed for 21 CFR Part 11 compliance and Annex 11 validation, delivering comprehensive pharmaceutical validation software. Our modular platform adapts to your workflow, ensuring seamless integration and scalable validation across all your systems. Experience faster audits and fewer errors with built-in best practices and real-time reporting. Our Risk-Based CSV methodology and VLMS software ensure audit-ready documentation and data integrity from requirements through execution.
         </p>
         <div class="hero-buttons fade-in-up">
           <a href="/contact-us" class="btn btn-primary btn-lg">
@@ -34,7 +175,7 @@ import Footer from '../components/Footer.astro';
       <div class="hero-right">
         <div class="hero-image-container fade-in-up">
           <img 
-            src="/images/web-bg-dis.jpg" 
+            src="/images/web-bg-dis.webp" 
             alt="GoVal Digital Validation Platform - Pharma & Life Sciences Solutions" 
             class="hero-image"
             loading="eager"
@@ -50,15 +191,16 @@ import Footer from '../components/Footer.astro';
         <div class="key-benefits-text fade-in-up">
         <p class="subtitle">[ KEY BENEFITS AT A GLANCE ]</p>
         <h2 class="section-title">
-          Why Choose GoVal for Your Paperless Validation System?
+          Key Features of Our GAMP 5 Validation Software.
         </h2>
+        <h3>Why Choose Our Digital Validation Platform Over Paper-Based Methods?</h3>
         <p class="section-subtitle">
           GoVal's digital validation system revolutionizes life science validation with a secure, paperless approach. Achieve rapid GxP compliance through automated workflows and 
           <br>real-time audit trails.
         </p>
       </div>
       
-      <div class="grid grid-cols-1 grid-cols-3">
+      <div class="grid grid-cols-3">
         <!-- Feature Card 1 -->
         <div class="card fade-in-up card-blue">
           <div class="card-header">
@@ -67,7 +209,7 @@ import Footer from '../components/Footer.astro';
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
             </div>
-            <h3 class="card-title">Accelerated GxP Compliance</h3>
+            <h3 class="card-title">Accelerated GxP Compliance Software</h3>
           </div>
           <p class="card-text">Automated workflows and real-time audit trails ensure fast and reliable compliance with regulatory standards.</p>
         </div>
@@ -79,7 +221,7 @@ import Footer from '../components/Footer.astro';
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
               </svg>
             </div>
-            <h3 class="card-title">100% Paperless Validation</h3>
+            <h3 class="card-title">100% Paperless Validation Solutions</h3>
           </div>
           <p class="card-text">Eliminate manual processes and reduce errors with complete digital transformation of your validation workflows.</p>
         </div>
@@ -93,7 +235,7 @@ import Footer from '../components/Footer.astro';
             </div>
             <h3 class="card-title">Enhanced Audit Readiness</h3>
           </div>
-          <p class="card-text">System-generated reports and real-time data access for seamless audits and regulatory inspections.</p>
+          <p class="card-text">Our Risk-Based CSV workflows and validation automation platform automate audit trails and reports, enabling enterprise validation platform capabilities.</p>
         </div>
         <!-- Feature Card 4 -->
         <div class="card fade-in-up card-red">
@@ -103,7 +245,7 @@ import Footer from '../components/Footer.astro';
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
               </svg>
             </div>
-            <h3 class="card-title">Secure Data Integrity</h3>
+            <h3 class="card-title">Secure Data Integrity in Validation Lifecycle Management</h3>
           </div>
           <p class="card-text">Cloud-based platform with robust data management and security protocols ensuring data integrity.</p>
         </div>
@@ -117,7 +259,7 @@ import Footer from '../components/Footer.astro';
             </div>
             <h3 class="card-title">CFR Part 11 & Annex 11 Compliance</h3>
           </div>
-          <p class="card-text">Built-in tools for regulatory adherence and global compliance standards across all regions.</p>
+          <p class="card-text">Built on GAMP 5 validation software principles for risk-based approach. Built-in tools for regulatory adherence and global compliance standards across all regions.</p>
         </div>
         <!-- Feature Card 6 -->
         <div class="card fade-in-up card-indigo">
@@ -127,7 +269,7 @@ import Footer from '../components/Footer.astro';
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
               </svg>
             </div>
-            <h3 class="card-title">Productivity Improvement</h3>
+            <h3 class="card-title">Productivity Improvement with our VLMS software</h3>
           </div>
           <p class="card-text">Optimize workflows and enhance efficiency across your validation processes with intelligent automation.</p>
         </div>
@@ -163,11 +305,9 @@ import Footer from '../components/Footer.astro';
         <p class="cta-subtitle">
           Join leading pharma and other life sciences companies that rely on GoVal for digital validation—paperless VLMS, EDC, and Part 11/Annex 11–ready workflows that keep you audit-ready.
         </p>
-        
-          <a href="/contact-us" class="btn btn-secondary btn-lg">
-            Book a Demo
-            </a>
-        
+        <a href="/contact-us" class="btn btn-secondary btn-lg">
+          Book a Demo
+        </a>
       </div>
     </div>
   </section>
@@ -261,7 +401,7 @@ import Footer from '../components/Footer.astro';
   .hero-image-container {
     position: relative;
     width: 100%;
-    max-width: 550px;
+    max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -5,7 +5,7 @@ author: "Vishnu Priya"
 category: "Computer System Validation"
 readTime: "8 min read"
 excerpt: "In the demanding pharma and life sciences sectors, robust computer system validation is essential for compliance and efficiency. GoVal simplifies the process."
-image: "/images/blog-csv-revolution.png"
+image: "/images/blog-csv-revolution.webp"
 ---
 
 <p style="font-size:1rem; line-height:1.6; margin-bottom:2rem;">

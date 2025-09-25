@@ -5,7 +5,7 @@ author: "Sankar Reddy"
 category: "Artificial Intelligence"
 readTime: "8 min read"
 excerpt: "In the dynamic landscape of the life sciences industry, ensuring the quality and compliance of computer systems is paramount. Traditional validation processes are time-consuming and error-prone."
-image: "/images/blog-ai-validation.png"
+image: "/images/blog-ai-validation.webp"
 ---
 
 <p style="font-size:1rem; line-height:1.6; margin-bottom:2rem;">

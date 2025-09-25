@@ -3,19 +3,119 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
-<BaseLayout title="About GoVal – Driving Innovation in Life Science Validation">
+<BaseLayout title="About GoVal – Digital Validation Platform & GxP Compliance Software">
+  <fragment slot="head">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about GoVal's mission as a leading digital validation platform. Our paperless validation solutions, Risk-Based CSV methodology, and VLMS software drive GAMP 5 excellence." />
+    <meta name="keywords" content="digital validation platform, paperless validation solutions, gamp 5 validation software, gxp compliance software, risk-based csv, vlms software, validation lifecycle management" />
+    <link rel="canonical" href="https://www.govalidation.com/about/" />
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About GoVal – Digital Validation Platform & GxP Compliance Software" />
+    <meta property="og:description" content="Learn about GoVal's mission as a leading digital validation platform. Our paperless validation solutions and GAMP 5 validation software drive excellence." />
+    <meta property="og:url" content="https://www.govalidation.com/about/" />
+    <meta property="og:image" content="https://www.govalidation.com/images/goval-about-og.png" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GoValidation" />
+    <meta name="twitter:title" content="About GoVal – Digital Validation Platform" />
+    <meta name="twitter:description" content="Digital validation platform with paperless validation solutions, GAMP 5 software & Risk-Based CSV methodology." />
+    <meta name="twitter:image" content="https://www.govalidation.com/images/goval-about-twitter.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is GAMP 5?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GAMP 5 (Good Automated Manufacturing Practice) is ISPE's risk-based framework for computerized system validation (CSV). It emphasizes quality by design, categorizes software by risk level, and tailors validation effort to patient safety, product quality, and data integrity requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is paperless validation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paperless validation uses digital tools to replace manual, paper-based processes. It automates document generation, electronic signatures, and audit trails, enabling audit-ready workflows while reducing errors and compliance risk in GxP environments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does GoVal ensure GxP compliance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GoVal enforces GxP compliance with validated electronic signatures, tamper-evident audit trails, role-based access controls, and automated risk-based CSV workflows that align with 21 CFR Part 11, Annex 11, and GAMP 5 requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why adopt risk-based validation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Risk-based validation focuses resources on high-impact systems and processes, reducing documentation burden while ensuring data integrity and compliance. It accelerates CSV by targeting critical areas, improving efficiency and audit readiness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to implement CSV with GoVal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement CSV by defining user requirements, configuring GoVal's risk library, running automated test scripts, and reviewing system-generated audit reports. GoVal's intuitive interface and AI-powered insights streamline execution and documentation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is 21 CFR Part 11?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "21 CFR Part 11 is the FDA regulation governing electronic records and electronic signatures. It requires controls for data integrity, system validation, audit trails, and user authentication in life sciences software systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Annex 11?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Annex 11 is the EU's GMP guideline for computerized systems. It mandates validated software, data integrity controls, electronic signatures, change management, and audit trails to ensure regulatory compliance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of paperless validation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paperless validation increases productivity, enhances data integrity, and improves audit readiness. Automated workflows minimize manual errors, accelerate compliance, and provide real-time visibility into validation activities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is validation lifecycle management (VLM)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VLM is a holistic approach to CSV that spans planning, execution, reporting, and change control. GoVal's VLM platform centralizes requirements, test cases, and audit reports, ensuring consistency and traceability across the entire validation process."
+          }
+        }
+      ]
+    }
+    </script>
+  </fragment>
   <Navigation />
+
   <!-- Hero / Intro Section -->
   <section class="about-hero">
     <div class="container hero-grid">
       <div class="hero-text">
-        <h1>Driving Innovation in Life Science Validation</h1>
+        <h1>Leading GAMP 5 Validation Software Provider | Digital Transformation Validation</h1>
         <p>
           GoVal was founded on the principle that validation should be efficient, compliant, and accessible. We recognized the challenges faced by life science companies relying on outdated, paper-based systems. With a team of validation and technology experts, we developed a robust digital platform to revolutionize the industry.
         </p>
       </div>
       <div class="hero-image">
-        <img src="/images/about1.jpg" alt="Team collaborating on digital validation" />
+        <img src="/images/about1.webp" alt="Team collaborating on digital validation" />
       </div>
     </div>
   </section>
@@ -26,13 +126,13 @@ import Footer from '../components/Footer.astro';
       <div class="mv-card">
         <h2>Our Mission</h2>
         <p>
-          Simplify and streamline validation processes for the life sciences industry, enabling our clients to achieve faster compliance and reduce manual effort.
+          Simplify and streamline GxP compliance software processes for the life sciences industry through our validation automation platform and pharmaceutical validation software solutions, enabling our clients to achieve faster compliance and reduce manual effort.
         </p>
       </div>
       <div class="mv-card">
         <h2>Our Vision</h2>
         <p>
-          Envision a future where digital validation is the standard, driving innovation and ensuring the highest quality standards in life science product development.
+          Envision a future where Paperless Validation Solutions, Validation Lifecycle Management System (VLMS), and digital transformation validation are the standard across life sciences validation, driving innovation and ensuring the highest quality standards in life science product development.
         </p>
       </div>
     </div>
@@ -55,22 +155,86 @@ import Footer from '../components/Footer.astro';
       </div>
     </div>
   </section>
+  
+  <section class="section principles-values">
+    <div class="container">
+      <!-- New Subheading -->
+      <h1>Why Choose Our GAMP 5 Validation Software?</h1>
+      <p>
+        GoVal's GAMP 5 Validation Software is built on industry best practices and ISPE guidelines. Our platform
+        accelerates CSV projects by automating risk-based activities, ensuring compliance with Annex 11 and
+        21 CFR Part 11, and reducing manual effort by up to 60%.
+      </p>
+    </div>
+  </section>
 
   <!-- Principles & Values Section -->
   <section class="section principles-values">
     <div class="container pv-grid">
       <div class="pv-image">
-        <img src="/images/about2.png" alt="Validation experts collaborating" />
+        <img src="/images/about2.webp" alt="Validation experts collaborating" />
       </div>
       <div class="pv-text">
-        <h2>Guiding Principles for Validation Excellence</h2>
+        <h3>Guiding Principles for Validation Excellence</h3>
         <ul>
           <li><strong>Accelerated GxP Compliance</strong>: Ensuring adherence to CFR Part 11, Annex 11.</li>
           <li><strong>Innovation</strong>: Continuously improving our platform and services.</li>
           <li><strong>Integrity</strong>: Maintaining transparency and trust in all our interactions.</li>
           <li><strong>Customer Focus</strong>: Prioritizing the needs and success of our clients.</li>
+          <li><strong>Risk-Based CSV Methodology</strong>: Focusing validation efforts on critical systems while reducing burden on low-risk components.</li>
+          <li><strong>AI-Driven Validation Automation</strong>: Leveraging machine learning to accelerate test protocol generation and risk assessments.</li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions (FAQ's) about GoVal</h2>
+      <div class="faq-item">
+        <h3>What is GAMP 5?</h3>
+        <p>GAMP 5 (Good Automated Manufacturing Practice) is ISPE's risk-based framework for computerized system validation (CSV). It emphasizes quality by design, categorizes software by risk level, and tailors validation effort to patient safety, product quality, and data integrity requirements.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is paperless validation?</h3>
+        <p>Paperless validation uses digital tools to replace manual, paper-based processes. It automates document generation, electronic signatures, and audit trails, enabling audit-ready workflows while reducing errors and compliance risk in GxP environments.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How does GoVal ensure GxP compliance?</h3>
+        <p>GoVal enforces GxP compliance with validated electronic signatures, tamper-evident audit trails, role-based access controls, and automated risk-based CSV workflows that align with 21 CFR Part 11, Annex 11, and GAMP 5 requirements.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why adopt risk-based validation?</h3>
+        <p>Risk-based validation focuses resources on high-impact systems and processes, reducing documentation burden while ensuring data integrity and compliance. It accelerates CSV by targeting critical areas, improving efficiency and audit readiness.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How to implement CSV with GoVal?</h3>
+        <p>GoVal's Validation Lifecycle Management System (VLMS) makes implementing Computerized System Validation (CSV) seamless and compliant. Define user requirements and functional specifications within the platform, configure document templates to match your SOPs, and apply risk assessments in line with GAMP 5 and regulatory guidance.<br />
+
+        <br>Execute and manage test scripts digitally with real-time collaboration, and automatically capture system-generated audit trails for inspection readiness. GoVal's intuitive interface and AI-powered insights streamline every step — from planning to execution — reducing validation cycle time, improving data integrity, and ensuring teams stay audit-ready at all times.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is 21 CFR Part 11?</h3>
+        <p>21 CFR Part 11 is the FDA regulation governing electronic records and electronic signatures. It requires controls for data integrity, system validation, audit trails, and user authentication in life sciences software systems.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is Annex 11?</h3>
+        <p>Annex 11 is the EU's GMP guideline for computerized systems. It mandates validated software, data integrity controls, electronic signatures, change management, and audit trails to ensure regulatory compliance.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What are the benefits of paperless validation?</h3>
+        <p>Paperless validation increases productivity, enhances data integrity, and improves audit readiness. Automated workflows minimize manual errors, accelerate compliance, and provide real-time visibility into validation activities.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is a Validation Lifecycle Management System (VLMS)?</h3>
+        <p>A VLMS software centralizes requirements, test cases, and audit trails into one Digital Validation Platform, ensuring traceability and audit readiness across GxP processes.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is a SaaS validation platform for life sciences?</h3>
+        <p>A SaaS validation platform life sciences solution provides cloud-based GxP compliance automation tools, enabling organizations to implement risk-based validation approach methodologies without infrastructure overhead.</p>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -78,10 +242,11 @@ import Footer from '../components/Footer.astro';
   <section class="section bg-light cta-section">
     <div class="container text-center">
       <h2>Ready to Transform Your Validation Journey?</h2>
-      <p>Join leading life science organizations who trust GoVal for their digital validation solutions. Let’s get started!</p>
+      <p>Join leading life science organizations who trust GoVal for their digital validation solutions. Let's get started!</p>
       <a href="/contact-us" class="btn btn-primary btn-lg">Talk to Us</a>
     </div>
   </section>
+
   <Footer />
 </BaseLayout>
 
@@ -185,6 +350,29 @@ import Footer from '../components/Footer.astro';
     color: #4b5563;
   }
   .pv-text li strong { color: #111827; }
+
+  /* FAQ Section */
+  .faq-section {
+    background: #ffffff;
+  }
+  .faq-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #111827;
+  }
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+  .faq-item h3 {
+    font-size: 1rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+  }
+  .faq-item p {
+    color: #4b5563;
+    line-height: 1.6;
+  }
+ 
 
   /* CTA */
   .cta-section h2 {

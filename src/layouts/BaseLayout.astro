@@ -1,97 +1,122 @@
 ---
+import { SEO } from "astro-seo";
+
 export interface Props {
-
   title: string;
-
+  description?: string;
+  keywords?: string;
 }
 
-
-
-// Extend the Window interface to include dataLayer
-
-declare global {
-
-  interface Window {
-
-    dataLayer: any[];
-
-  }
-
-}
-
-
-
-const { title } = Astro.props;
-
+const { title, description, keywords } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
+        <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "9fsc9hqm3p");
-    </script>
-        <!-- Google tag (gtag.js) - Add this FIRST -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2ZTSGGPYN"></script>
-    <script>
-      // @ts-ignore
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments);}
-      gtag();
-      gtag();
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "9fsc9hqm3p");
     </script>
 
+    <!-- Basic Meta -->
     <meta charset="UTF-8" />
-    <meta name="description" content="GoVal - Digital Validation Solutions" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    
-    <!-- Google Fonts - Add this -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <title>{title}</title>
-    
+
+    <!-- Page-specific SEO -->
+    <slot name="head" />
+
+    <!-- SEO Component -->
+    <SEO
+      title={title}
+      description={description}
+      keywords={keywords}
+      canonical="https://govalidation.com"
+      openGraph={{
+        basic: {
+          title,
+          type: "website",
+          url: "https://govalidation.com",
+          image: "/images/goval-social-share.jpg"
+        }
+      }}
+      twitter={{
+        card: "summary_large_image",
+        site: "@GoValidation",
+        title,
+        description
+      }}
+    />
+
+
+
+    <!-- Preload critical resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+    <!-- HTTP Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
     <!-- Global Styles -->
     <style>
+      /* System font stack */
       * {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
-      
       html, body {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
+        margin: 0;
+        padding: 0;
         font-weight: 400;
+        color: #333;
       }
-      
       h1, h2, h3, h4, h5, h6 {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
         font-weight: 700;
+        margin: 0;
       }
-      
-      .btn {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
-        font-weight: 600;
+      a {
+        text-decoration: none;
+        color: inherit;
       }
     </style>
 
-    <!-- ✅ HubSpot Tracking Code -->
-    <script
-      type="text/javascript"
-      id="hs-script-loader"
-      async
-      defer
-      src="https://js.hs-scripts.com/6331078.js">
+    <!-- Analytics & Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2ZTSGGPYN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y2ZTSGGPYN');
     </script>
+
+    <!-- HubSpot Chat widget -->
+    <script type="text/javascript">
+      window.hsConversationsSettings = {
+        loadImmediately: true,
+        prechatForm: {
+          fields: [
+            { name: 'firstname', label: 'First name', required: true },
+            { name: 'lastname', label: 'Last name', required: true },
+            { name: 'email', label: 'Email', required: true },
+            { name: 'company', label: 'Company', required: true }
+          ]
+        }
+      };
+    </script>
+    <script id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/6331078.js"></script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6331078.js"></script>
+<!-- End of HubSpot Embed Code -->
+    
   </head>
   <body>
     <slot />
   </body>
 </html>
-

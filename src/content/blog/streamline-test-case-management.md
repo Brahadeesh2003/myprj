@@ -5,7 +5,7 @@ author: "Sundar Raman"
 category: "Paperless Validation, Computer System Validation"
 readTime: "6 min read"
 excerpt: "In the world of computer system validation (CSV), efficient test case management is paramount. Manual processes are often riddled with delays and inconsistencies."
-image: "/images/blog-test-case-management.png"
+image: "/images/blog-test-case-management.webp"
 ---
 
 <p style="font-size:1rem; line-height:1.6; margin-bottom:2rem;">

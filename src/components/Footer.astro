@@ -1,5 +1,5 @@
 ---
-// src/components/Footer.astro
+ // src/components/Footer.astro
 ---
 <footer class="footer">
   <div class="footer-container">
@@ -66,6 +66,7 @@
             <li><a href="/goval-ai" class="footer-link">GoVal AI</a></li>
             <li><a href="/solutions" class="footer-link">Solutions</a></li>
             <li><a href="/about" class="footer-link">About GoVal</a></li>
+            
           </ul>
         </div>
         <div class="nav-column">
@@ -94,6 +95,17 @@
           />
         </div>
       </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; {new Date().getFullYear()} GoVal</span>
+      <nav class="footer-bottom-nav">
+        <a href="/terms-of-use" class="footer-bottom-link">Terms of Use</a>
+        <a href="/privacy-policy" class="footer-bottom-link">Privacy Policy</a>
+        <a href="/sitemap" class="footer-bottom-link">Sitemap</a>
+      </nav>
+      
     </div>
   </div>
 </footer>
@@ -139,7 +151,7 @@
   .footer-description {
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;  
     font-size: 0.95rem;
     font-weight: 400;
   }
@@ -245,6 +257,39 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
+  /* Footer Bottom Bar */
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding: 1rem 0 0;
+    margin-top: 2rem;
+  }
+
+  .footer-copy {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .footer-bottom-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom-link {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom-link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .footer-social-inline { display: none; }
+
   /* Mobile responsive */
   @media (max-width: 1024px) {
     .footer-content {
@@ -269,6 +314,13 @@
     .social-links {
       justify-content: center;
     }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-social-inline { display: flex; gap: 1rem; }
   }
 
   @media (max-width: 768px) {

@@ -4,6 +4,152 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 ---
 <BaseLayout title="GoVal AI - Intelligent Validation Automation">
+    <Fragment slot="head">
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="GoVal AI revolutionizes pharmaceutical validation with artificial intelligence. Automate GxP compliance, reduce validation cycle times by 50%, and ensure 21 CFR Part 11 compliance with our AI-powered validation platform." />
+    <meta name="keywords" content="AI validation software, artificial intelligence pharmaceutical validation, AI GxP compliance, machine learning validation, AI computer system validation, automated validation processes, AI regulatory compliance" />
+    <link rel="canonical" href="https://www.govalidation.com/goval-ai/" />
+
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="GoVal AI - Artificial Intelligence for Pharmaceutical Validation" />
+    <meta property="og:description" content="Transform your validation processes with AI. GoVal AI automates GxP compliance, reduces cycle times, and ensures regulatory adherence for life sciences companies." />
+    <meta property="og:url" content="https://www.govalidation.com/goval-ai/" />
+    <meta property="og:image" content="https://www.govalidation.com/images/goval-ai-social-share.png" />
+    <meta property="og:type" content="product" />
+    <meta property="og:site_name" content="GoVal" />
+
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GoValidation" />
+    <meta name="twitter:title" content="GoVal AI - AI-Powered Pharmaceutical Validation Platform" />
+    <meta name="twitter:description" content="Reduce validation cycle times by 50% with GoVal AI. Automate GxP compliance and ensure 21 CFR Part 11 adherence using artificial intelligence." />
+    <meta name="twitter:image" content="https://www.govalidation.com/images/goval-ai-twitter-card.png" />
+
+
+    <!-- Advanced Meta Tags -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="GoVal" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+
+
+    <!-- Structured Data - SoftwareApplication with AI Focus -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "GoVal AI",
+      "description": "GoVal AI is an artificial intelligence-powered validation platform for pharmaceutical and life sciences companies, automating GxP compliance and reducing validation cycle times through machine learning and intelligent automation.",
+      "url": "https://www.govalidation.com/goval-ai/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "ValidationSoftware",
+      "operatingSystem": "Web-based",
+      "offers": {
+        "@type": "Offer",
+        "price": "Contact for pricing",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "featureList": [
+        "AI-Powered Validation Automation",
+        "Machine Learning Risk Assessment", 
+        "Intelligent Document Generation",
+        "Automated GxP Compliance Monitoring",
+        "AI-Driven Audit Trail Analysis",
+        "Predictive Validation Analytics",
+        "Natural Language Processing for Regulatory Documents"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "GoVal",
+        "url": "https://www.govalidation.com"
+      }
+    }
+    </script>
+
+
+    <!-- Structured Data - Product -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "GoVal AI",
+      "description": "Artificial intelligence platform for pharmaceutical validation and GxP compliance automation",
+      "category": "AI Validation Software",
+      "brand": {
+        "@type": "Brand",
+        "name": "GoVal"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "GoVal",
+        "url": "https://www.govalidation.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.govalidation.com/goval-ai/",
+        "priceCurrency": "USD",
+        "price": "Contact for pricing",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "GoVal"
+        }
+      }
+    }
+    </script>
+
+
+    <!-- FAQ Structured Data for AI-related questions -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does AI improve pharmaceutical validation processes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI improves pharmaceutical validation by automating manual processes, reducing cycle times by up to 50%, enhancing accuracy through machine learning, and providing predictive analytics for risk assessment and compliance monitoring."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "Is GoVal AI compliant with 21 CFR Part 11 regulations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, GoVal AI is designed to meet 21 CFR Part 11 requirements with built-in electronic signatures, audit trails, data integrity controls, and validation protocols specifically for AI systems in GxP environments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of validation can GoVal AI automate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GoVal AI can automate computer system validation, equipment qualification, process validation, data integrity assessments, risk-based validation approaches, and regulatory documentation generation across pharmaceutical and life sciences operations."
+          }
+        }
+      ]
+    }
+    </script>
+
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="US" />
+    <meta name="geo.placename" content="United States" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    
+    <!-- Preconnect to improve performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+  </Fragment>
+
+
+
   <Navigation />
   <!-- Hero Section -->
   <section class="hero-ai">
@@ -13,11 +159,11 @@ import Footer from '../components/Footer.astro';
           <div class="hero-badge">[ Next Generation AI-Powered Validation ]</div>
           <h1>
             GoVal AI<img src="/images/ai-stars1.jpg" alt="AI Icon" class="ai-header-icon" /><br/>
-            Intelligent Validation<br/>
+            GxP Compliance Automation Tools & Intelligent Validation
             at Scale
           </h1>
           <p class="hero-description">
-            With GoVal AI, validation teams can reduce manual effort, improve traceability, and gain actionable insights across the entire lifecycle. From URS and functional specifications to final execution and reporting, every step is optimized for speed, consistency, and compliance. The result is a streamlined, audit-ready process that helps pharma and other life sciences organizations meet regulatory requirements with confidence.
+            With GoVal AI, validation teams can reduce manual effort, improve traceability, and gain actionable insights across the entire lifecycle. Our GxP compliance automation tools leverage AI-driven validation automation to streamline Computerized System Validation (CSV) processes. From URS and functional specifications to final execution and reporting, every step is optimized for speed, consistency, and compliance. The result is a streamlined, audit-ready process that helps pharma and other life sciences organizations meet regulatory requirements with confidence.
           </p>
         </div>
       </div>
@@ -44,7 +190,7 @@ import Footer from '../components/Footer.astro';
             </svg>
           </div>
           <h3>AI-Driven Risk Assessment</h3>
-          <p>Automatically categorize GxP risk levels using machine learning models trained on thousands of validation projects.</p>
+          <p>Automatically categorize GxP risk levels using machine learning models trained on thousands of validation projects, supporting risk-based validation approach methodologies for life sciences validation</p>
         </div>
         <div class="capability-card card-yellow">
           <div class="card-icon">
@@ -64,11 +210,28 @@ import Footer from '../components/Footer.astro';
           <h3>Intelligent Insights</h3>
           <p>GoVal AI empowers you to query validation records and deliver an analytical edge to your validation process.</p>
         </div>
+        <div class="capability-card card-orange">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.002 4.002 0 003 15z"/>
+            </svg>
+          </div>
+          <h3>SaaS Based AI Platform</h3>
+          <p>Our SaaS validation platform life sciences solution integrates seamlessly with existing GAMP 5 validation software frameworks, enabling digital transformation validation across pharmaceutical validation software ecosystems.</p>
+        </div>
+        <div class="capability-card card-indigo">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M9 12l2 2 4-4m-7 5a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2H5zm12-8a3 3 0 100-6 3 3 0 000 6z"/>
+            </svg>
+          </div>
+          <h3>Enterprise Grade Compliance</h3>
+          <p>Benefit from around-the-clock enterprise support, automatic version upgrades, and secure cloud hosting—ensuring your validation projects always run on the most up-to-date, fully compliant platform.</p>
+        </div>
       </div>
     </div>
   </section>
-  <!-- CTA Section -->
-  <section class="section cta-ai">
+   <section class="faq-section">
     <div class="container">
       <div class="cta-content">
         <h2>Ready to Accelerate Your Validation?</h2>
@@ -76,9 +239,101 @@ import Footer from '../components/Footer.astro';
         <a href="/contact-us" class="btn btn-ai-blue btn-lg">Book a Demo</a>
       </div>
     </div>
-  </section>
+ </section>
+
+  <section style="max-width: 950px; margin: 3rem auto 4rem auto;">
+  <h2 style="text-align: center; font-size: 1.8rem; font-weight: 700; margin-bottom: 2.5rem;">Frequently Asked Questions (FAQ's) about GoVal AI</h2>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Which large language models (LLMs) does GoVal AI use?</h3>
+    <p style="margin: 0;">GoVal AI is model-agnostic. We integrate with leading LLM APIs—including OpenAI (GPT-4/4o), Google Gemini, and Azure OpenAI (the same model family used by Microsoft Copilot). Customers can bring their own API keys, pin regions for data residency, and enforce no-training-on-customer-data by default. We can also add a customer-preferred provider on request.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Can we restrict GoVal AI to a single LLM vendor?</h3>
+    <p style="margin: 0;">Yes. You can lock usage to one provider (e.g., Azure OpenAI only) and disable others per policy.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Does GoVal AI support on-prem or private cloud models?</h3>
+    <p style="margin: 0;">Yes. We support models for private or on-prem deployments when data cannot leave your network.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">How does GoVal choose which model to use?</h3>
+    <p style="margin: 0;">We route by task (reasoning vs. extraction), document size, latency/cost targets, and your vendor policy.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Is customer data used to train models?</h3>
+    <p style="margin: 0;">No. By default, prompts and outputs are not used to train third-party models. BYO credentials and provider settings are honored.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Where is our data processed and stored?</h3>
+    <p style="margin: 0;">You can pin regions (e.g., EU/US) at the provider level. All records, e-signatures, and audit trails remain in the VLMS.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">How does GoVal align with 21 CFR Part 11 and EU Annex 11?</h3>
+    <p style="margin: 0;">GoVal provides electronic records & signatures, role-based access, versioning, and complete audit trails to help meet Part 11/Annex 11 expectations.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Can we get a full audit trail of every AI action?</h3>
+    <p style="margin: 0;">Yes. Inputs, outputs, versions, and approver actions are logged and available for reporting.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">What documents can GoVal AI read?</h3>
+    <p style="margin: 0;">URS, FS/DS, SOPs, protocols (IQ/OQ/PQ), deviations/CAPA, supplier docs, and prior reports—common formats include PDF, DOCX, XLSX, and CSV.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Can GoVal AI generate test cases from URS/FS/DS?</h3>
+    <p style="margin: 0;">Yes. It proposes risk-based, scenario-driven tests and highlights gaps or redundant steps.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">How does GoVal reduce hallucinations?</h3>
+    <p style="margin: 0;">We use retrieval-augmented generation (RAG) from approved documents, constraining AI output to governed templates for accuracy.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Does GoVal AI support multiple languages?</h3>
+    <p style="margin: 0;">Yes. Specifications can be multilingual while UI language depends on deployment settings.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">How does GoVal support the transition from CSV to CSA?</h3>
+    <p style="margin: 0;">We emphasize intended use and risk, enabling adaptive testing and producing appropriately sized documentation with full traceability.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Do AI outputs require human approval?</h3>
+    <p style="margin: 0;">Yes. Approval gates and e-signatures enforce mandatory review of AI-generated steps or tags before use.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Will GoVal AI assist with periodic reviews?</h3>
+    <p style="margin: 0;">Yes. The system flags impacted items, suggests minimal re-validation, and schedules reminders for reviews.</p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Can GoVal AI integrate with Jira, ServiceNow, or SharePoint?</h3>
+    <p style="margin: 0;">Yes. Integrations cover ticketing, content sources, and evidence storage. Custom connectors are also available.</p>
+  </div>
+
+  <div>
+    <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">What happens if a LLM provider is down or rate-limited?</h3>
+    <p style="margin: 0;">We failover to approved backups per policy, respecting data residency requirements.</p>
+  </div>
+</section>
+
   <Footer />
 </BaseLayout>
+
+
 <style>
   .container {
     max-width: 1200px;
@@ -182,10 +437,14 @@ import Footer from '../components/Footer.astro';
   .card-green .card-icon { background: #10b981; }
   .card-yellow .card-icon { background: #f59e0b; }
   .card-purple .card-icon { background: #8b5cf6; }
+  .card-orange .card-icon { background: #f97316; }
+  .card-indigo .card-icon { background: #e748a5; }
   .capability-card.card-blue:hover { background-color: #3b82f6; }
   .capability-card.card-green:hover { background-color: #10b981; }
   .capability-card.card-yellow:hover { background-color: #f59e0b; }
   .capability-card.card-purple:hover { background-color: #8b5cf6; }
+  .capability-card.card-orange:hover { background-color: #f97316; }
+  .capability-card.card-indigo:hover { background-color: #f163d2; }
   .capability-card:hover .card-icon { background-color: white; }
   .capability-card:hover .icon-svg { fill: currentColor; }
   .capability-card:hover h3,
@@ -243,6 +502,25 @@ import Footer from '../components/Footer.astro';
   }
   .btn-ai-blue:hover::before { left:100%; }
 
+ .faq-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #111827;
+  }
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+  .faq-item h3 {
+    font-size: 1rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+  }
+  .faq-item p {
+    color: #4b5563;
+    line-height: 1.6;
+  }
+ 
+
   /* Mobile adjustments */
   @media (max-width: 768px) {
     .cta-content {
@@ -259,5 +537,26 @@ import Footer from '../components/Footer.astro';
     .hero-text h1 { font-size: 2.5rem; }
     .ai-header-icon { width: 2.5rem; height: 2.5rem; margin-left: 0.1rem; }
     .btn { width: 100%; justify-content: center; }
+  section.faq-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+    margin: 2rem auto;
+  }
+  section.faq-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  section.faq-section h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  section.faq-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+    
   }
 </style>

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://www.govalidation.com/sitemap-index.xml
+Sitemap: https://www.govalidation.com/sitemap-0.xml
+
+# Crawl delay for specific bots
+User-agent: Bingbot
+Crawl-delay: 1

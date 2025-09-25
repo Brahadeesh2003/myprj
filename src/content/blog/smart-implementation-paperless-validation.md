@@ -5,7 +5,7 @@ author: "Sundar Raman"
 category: "Paperless Validation"
 readTime: "7 min read"
 excerpt: "Implementing a paperless validation solution is crucial for modern life science organizations seeking to streamline GxP compliance and enhance efficiency. This article outlines a smart, risk-based approach to ensure a successful transition to digital validation, optimizing your validation lifecycle management (VLMS)."
-image: "/images/blog-paperless-strategy.png"
+image: "/images/blog-paperless-strategy.webp"
 ---
 
 Implementing a paperless validation solution is crucial for modern life science organizations seeking to streamline GxP compliance and enhance efficiency. This article outlines a smart, risk-based approach to ensure a successful transition to digital validation, optimizing your validation lifecycle management (VLMS).
