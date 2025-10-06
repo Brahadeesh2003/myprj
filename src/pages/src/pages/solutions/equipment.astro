@@ -1,0 +1,367 @@
+---
+// src/pages/solutions/equipment-validation.astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+---
+<BaseLayout title="GoVal - Equipment Validation & Qualification (IQ OQ PQ)">
+    <Fragment slot="head">
+    <meta name="description" content="Streamline your Equipment Validation lifecycle with GoVal. Automate IQ, OQ, and PQ protocols, ensure GxP compliance, and eliminate paper-based qualification processes for pharmaceutical and lab equipment." />
+    <meta name="keywords" content="Equipment Validation, Equipment Qualification, IQ OQ PQ, Installation Qualification, Operational Qualification, Performance Qualification, 21 CFR Part 11, GxP Compliance, paperless qualification" />
+    <link rel="canonical" href="https://www.govalidation.com/solutions/equipment-validation/" />
+
+    <meta property="og:title" content="GoVal | Automated Equipment Validation & Qualification (IQ OQ PQ)" />
+    <meta property="og:description" content="GoVal's platform digitizes and automates the entire equipment qualification process, from IQ to PQ, ensuring data integrity and accelerating compliance." />
+    <meta property="og:url" content="https://www.govalidation.com/solutions/equipment-validation/" />
+    <meta property="og:image" content="https://www.govalidation.com/images/goval-equipment-validation-social.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GoVal" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GoValidation" />
+    <meta name="twitter:title" content="GoVal - Efficient Equipment Qualification (IQ OQ PQ)" />
+    <meta name="twitter:description" content="Automate IQ, OQ, and PQ protocols with GoVal. Ensure GxP compliance and eliminate paper-based qualification for all your life sciences equipment." />
+    <meta name="twitter:image" content="https://www.govalidation.com/images/goval-equipment-validation-twitter.png" />
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Equipment Validation and Qualification Service",
+      "name": "GoVal Equipment Validation Platform",
+      "description": "A software platform for managing the entire equipment qualification lifecycle (IQ, OQ, PQ) in a paperless, GxP-compliant manner, featuring electronic signatures, automated protocol execution, and centralized data management for the life sciences industry.",
+      "provider": {
+        "@type": "Organization",
+        "name": "GoVal",
+        "url": "https://www.govalidation.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Validation Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Installation Qualification (IQ) Automation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Operational Qualification (OQ) Automation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Performance Qualification (PQ) Automation"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+  </Fragment>
+
+  <Navigation />
+  
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-eyebrow">Digital Equipment Qualification</span>
+          <h1 class="hero-title">Automated IQ, OQ, PQ Validation</h1>
+          <p class="hero-description">
+            Modernize your equipment qualification process. GoVal replaces inefficient, paper-based protocols with a streamlined digital workflow, ensuring your lab and manufacturing equipment is installed, operating, and performing exactly as required.
+          </p>
+          <div class="hero-buttons">
+            <a href="/contact-us" class="btn btn-orange-gradient">Request a Demo</a>
+            <a href="/about" class="btn btn-secondary">Why GoVal?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">The High Cost of Manual Qualification</h2>
+          <p class="section-subtitle">
+            Traditional equipment qualification is a major source of delays and compliance risk. Manual execution of IQ, OQ, and PQ protocols is slow, prone to documentation errors, and makes audit preparation a significant burden.
+          </p>
+        </div>
+        <div class="capabilities-grid">
+          <div class="capability-card card-blue">
+            <div class="card-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3>Lengthy Downtime</h3>
+            <p>Paper-based protocols are slow to execute and approve, keeping critical equipment offline longer than necessary and impacting productivity.</p>
+          </div>
+          <div class="capability-card card-green">
+            <div class="card-icon">
+             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3>Documentation Errors</h3>
+            <p>Manual data entry, missing signatures, and inconsistent records create data integrity gaps that lead to audit findings and rework.</p>
+          </div>
+          <div class="capability-card card-yellow">
+            <div class="card-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7v8a2 2 0 002 2h4M8 7a2 2 0 012-2h4a2 2 0 012 2v8a2 2 0 01-2 2h-4a2 2 0 01-2-2z"></path></svg>
+            </div>
+            <h3>Poor Traceability</h3>
+            <p>Connecting qualification activities to requirements, calibration records, and maintenance schedules is difficult, making it hard to prove a state of control.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Complete Digital Qualification Lifecycle</h2>
+                <p class="section-subtitle">
+                    GoVal provides a single, centralized platform to manage all your equipment qualification needs with unmatched efficiency and compliance.
+                </p>
+            </div>
+            <div class="capabilities-grid solution-grid">
+                <div class="capability-card card-blue">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3>Installation Qualification (IQ)</h3>
+                    <p>Digitize your IQ protocols. Verify and document that equipment is installed correctly against specifications with digital forms, checklists, and mandatory photo evidence capture.</p>
+                </div>
+                <div class="capability-card card-green">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3>Operational Qualification (OQ)</h3>
+                    <p>Execute OQ test scripts electronically. Document that your equipment systems and subsystems operate as intended throughout all specified operational ranges.</p>
+                </div>
+                <div class="capability-card card-yellow">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2 1M4 7l2-1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+                    </div>
+                    <h3>Performance Qualification (PQ)</h3>
+                    <p>Verify and document that equipment consistently performs according to specifications under real-world conditions. Link PQ protocols directly to batch records or process data.</p>
+                </div>
+                <div class="capability-card card-purple">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path></svg>
+                    </div>
+                    <h3>Centralized Management</h3>
+                    <p>Manage all equipment assets, qualification status, calibration schedules, and maintenance records in a single, auditable repository for complete lifecycle control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Bring Speed and Control to Your Equipment Qualification</h2>
+          <p>Eliminate paper, reduce equipment downtime, and face your next audit with confidence. See how GoVal can revolutionize your approach to IQ, OQ, and PQ.</p>
+          <a href="/contact-us" class="btn btn-orange-gradient btn-lg">Schedule a Demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  :root {
+    --primary-color: #4F46E5;
+    --dark-blue: #1f2937;
+  }
+  .section {
+    padding: 5rem 0;
+    background: #fbfbfb;
+  }
+  .section-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 3rem auto;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: #4b5563;
+    line-height: 1.7;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    background: #ffffff;
+    padding: 6rem 0;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .hero-eyebrow {
+    display: inline-block;
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    background-color: #eef2ff;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #111827;
+  }
+  .hero-description {
+    font-size: 1.25rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Shared Card Styles */
+  .challenge-section { background-color: white; }
+  .solution-section { background-color: #fbfbfb; }
+
+  .capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .solution-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .capability-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .capability-card .card-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+  }
+  .capability-card .card-icon svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: white;
+  }
+  .capability-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+  }
+  .capability-card p { color: #4b5563; line-height: 1.6; }
+
+  .card-blue .card-icon { background: #3b82f6; }
+  .card-green .card-icon { background: #10b981; }
+  .card-yellow .card-icon { background: #f59e0b; }
+  .card-purple .card-icon { background: #8b5cf6; }
+  
+  .capability-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    border-color: #d1d5db;
+  }
+
+  /* CTA Section */
+  .cta-section { background: #fbfbfb; }
+  .cta-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  .cta-content p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #4b5563;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.75rem;
+    border-radius: 0.625rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  .btn-lg { padding: 1rem 2.5rem; font-size: 1.125rem; }
+  
+  .btn-orange-gradient {
+    background: linear-gradient(135deg, #eb3525 0%, #e22d04 50%, #eb5504 100%);
+    color: white;
+    box-shadow: 0 6px 20px rgba(211, 101, 46, 0.3);
+  }
+  .btn-orange-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(202, 149, 128, 0.919);
+  }
+  
+  .btn-secondary {
+    background-color: white;
+    color: #374151;
+    border-color: #d1d5db;
+  }
+  .btn-secondary:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+  }
+ 
+  /* Responsive */
+  @media (max-width: 992px) {
+    .capabilities-grid { grid-template-columns: 1fr; }
+    .solution-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .section { padding: 4rem 0; }
+    .section-title, .cta-content h2 { font-size: 2rem; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-buttons { flex-direction: column; align-items: center; }
+    .btn { width: 100%; max-width: 320px; }
+  }
+</style>

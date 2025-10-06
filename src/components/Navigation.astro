@@ -1,9 +1,11 @@
 ---
 // src/components/Navigation.astro
 ---
+
+
+
 <nav class="navbar">
   <div class="nav-container">
-    <!-- Logo -->
     <a href="/" class="nav-logo">
       <img
         src="/images/goval-logo.png"
@@ -11,17 +13,210 @@
         class="logo-image"
       />
     </a>
-    <!-- Navigation Links -->
     <ul class="nav-menu" id="nav-menu">
       <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="/goval-ai" class="nav-link">GoVal AI</a></li>
-      <li class="nav-item"><a href="/solutions" class="nav-link">Solutions</a></li>
+
+      <li class="nav-item has-dropdown">
+        <a href="/goval-ai" class="nav-link">GoVal AI</a>
+        <div class="dropdown-menu">
+            <h5 class="dropdown-heading">Features</h5>
+            <ul>
+                <li>
+                  <a href="/goval-ai" class="dropdown-link">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM13.24 7.635a.75.75 0 00-1.32-.87L8.25 12h2.25a.75.75 0 01.743.648l.515 3.43a.75.75 0 001.32.87l3.67-5.25h-2.25a.75.75 0 01-.743-.648l-.515-3.43z" clip-rule="evenodd" />
+                    </svg>
+                    <span>GoVal AI</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/goval-ai#analytics-section" class="dropdown-link">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd" d="M2.25 2.25a.75.75 0 00-.75.75v18c0 .414.336.75.75.75h19.5a.75.75 0 00.75-.75V3a.75.75 0 00-.75-.75H2.25zM6 18a.75.75 0 01-.75-.75V9a.75.75 0 011.5 0v8.25A.75.75 0 016 18zm4.5 0a.75.75 0 01-.75-.75V12a.75.75 0 011.5 0v5.25a.75.75 0 01-.75.75zm4.5 0a.75.75 0 01-.75-.75V6a.75.75 0 011.5 0v11.25a.75.75 0 01-.75.75z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Validation Data Analytics</span>
+                  </a>
+                </li>
+            </ul>
+        </div>
+      </li>
+      
+      <li class="nav-item has-megamenu">
+        <a href="/solutions" class="nav-link">Solutions</a>
+        <div class="megamenu">
+          <div class="megamenu-container">
+            <div class="megamenu-left">
+              <div class="menu-category" data-category="csv">
+                <div class="category-header">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  <div class="category-content">
+                    <span>Computer System Validation (CSV)</span>
+                    <div class="category-description"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="menu-category" data-category="csa">
+                <div class="category-header">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                  </svg>
+                  <div class="category-content">
+                    <span>Computer Software Assurance (CSA)</span>
+                    <div class="category-description"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="menu-category" data-category="equipment-validation">
+                <div class="category-header">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                  </svg>
+                  <div class="category-content">
+                    <span>Equipment Validation</span>
+                    <div class="category-description"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="menu-category" data-category="deployment">
+                <div class="category-header">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.002 4.002 0 003 15z"/>
+                  </svg>
+                  <div class="category-content">
+                    <span>Deployment Models</span>
+                    <div class="category-description"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="megamenu-center">
+              <div class="submenu-content" data-submenu="csv">
+                <div class="megamenu-center-top-card">
+                  <h4>Computer System Validation (CSV)</h4>
+                  <p>Support your GxP-regulated systems with automated, compliant validation workflows to ensure data integrity.</p>
+                  <a href="/solutions/csv">Learn more about CSV →</a>
+                </div>
+                <div class="megamenu-center-bottom-section">
+                  <div class="submenu-links">
+                    <div class="submenu-section"><h5>Core Solutions</h5><ul><li><a href="/solutions/csv"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Computer System Validation</a></li><li><a href="/solutions/csv"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Equipment Qualification</a></li><li><a href="/solutions/csv"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Process Validation</a></li><li><a href="/solutions/data-integrity"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Data Integrity</a></li></ul></div>
+                    <div class="submenu-section"><h5>Advanced Features</h5><ul><li><a href="/solutions/csv"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Automated Testing</a></li><li><a href="/solutions/csv"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Risk Assessment</a></li><li><a href="/solutions/csv"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Validation Planning</a></li></ul></div>
+                  </div>
+                </div>
+              </div>
+              <div class="submenu-content" data-submenu="csa">
+                 <div class="megamenu-center-top-card">
+                  <h4>Computer Software Assurance (CSA)</h4>
+                  <p>Modernize your validation with a risk-based approach that focuses on critical thinking and patient safety.</p>
+                  <a href="/blog/hybrid-validation-csa-with-goval">Learn more about CSA →</a>
+                </div>
+                <div class="megamenu-center-bottom-section">
+                  <div class="submenu-links">
+                    <div class="submenu-section"><h5>Compliance</h5><ul><li><a href="/blog/21-cfr-part11-regulation"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>21 CFR Part 11</a></li><li><a href="/blog/hybrid-validation-csa-with-goval"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>EU Annex 11</a></li><li><a href="/blog/hybrid-validation-csa-with-goval"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Audit Trail Management</a></li><li><a href="/blog/hybrid-validation-csa-with-goval"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Electronic Signatures</a></li></ul></div>
+                    <div class="submenu-section"><h5>Documentation</h5><ul><li><a href="/blog/hybrid-validation-csa-with-goval"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>SOP Management</a></li><li><a href="/blog/hybrid-validation-csa-with-goval"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Change Control</a></li></ul></div>
+                  </div>
+                </div>
+              </div>
+              <div class="submenu-content" data-submenu="equipment-valid">
+                <div class="megamenu-center-top-card">
+                  <h4>Equipment Validation</h4>
+                  <p>Manage the entire lifecycle of your equipment from qualification (IQ/OQ/PQ) to calibration and maintenance.</p>
+                  <a href="/solutions/equipment-validation">Learn more about Equipment →</a>
+                </div>
+                <div class="megamenu-center-bottom-section">
+                   <div class="submenu-links">
+                    <div class="submenu-section"><h5>Qualification</h5><ul><li><a href="/solutions/equipment-validation"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>IQ/OQ/PQ</a></li><li><a href="/solutions/equipment-validation"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Calibration Management</a></li><li><a href="/solutions/equipment-validation"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Maintenance Scheduling</a></li></ul></div>
+                    <div class="submenu-section"><h5>Enterprise</h5><ul><li><a href="/solutions/equipment-validation"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Multi-Site Management</a></li><li><a href="/solutions/equipment-validation"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Vendor Management</a></li><li><a href="/solutions/equipment-validation"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Advanced Reporting</a></li></ul></div>
+                  </div>
+                </div>
+              </div>
+              <div class="submenu-content" data-submenu="deployment">
+                <div class="megamenu-center-top-card">
+                  <h4>Deployment Models</h4>
+                  <p>Choose the right deployment model for your organization, from fully-managed SaaS to on-premise solutions.</p>
+                  <a href="/solutions">Learn more about Deployment →</a>
+                </div>
+                <div class="megamenu-center-bottom-section">
+                  <div class="submenu-links">
+                    <div class="submenu-section"><h5>Cloud Solutions</h5><ul><li><a href="/solutions"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>GoVal SaaS</a></li><li><a href="/solutions"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Cloud Migration</a></li><li><a href="/solutions"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Hybrid Deployment</a></li></ul></div>
+                    <div class="submenu-section"><h5>On-Premise</h5><ul><li><a href="/solutions"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>On-Premise Installation</a></li><li><a href="/solutions"><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Private Cloud</a></li></ul></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="megamenu-right">
+                <div id="stories-slider" class="customer-stories-slider">
+                    <div class="slider-header">
+                        <h4>Customer Stories</h4>
+                        <div class="slider-controls">
+                            <button class="slider-btn prev" id="prevBtn">‹</button>
+                            <button class="slider-btn next" id="nextBtn">›</button>
+                        </div>
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-track" id="sliderTrack">
+                            <div class="case-study-card">
+                                <div class="case-study-image">
+                                    <img src="/images/pharma.jpg" alt="India Pharma Paperless Validation" />
+                                    <span class="case-study-badge">Case study</span>
+                                </div>
+                                <div class="case-study-content">
+                                    <h4>India Pharma Paperless Validation Success</h4>
+                                    <a href="/paperless-validation-gxp-compliance/">See customer story →</a>
+                                </div>
+                            </div>
+                            <div class="case-study-card">
+                                <div class="case-study-image">
+                                    <img src="/images/equipment-hero.jpg" alt="Equipment Validation with IoT" />
+                                    <span class="case-study-badge">Case study</span>
+                                </div>
+                                <div class="case-study-content">
+                                    <h4>Equipment Validation with IoT</h4>
+                                    <a href="/portfolios/equipment-validation-iot-edc/">See customer story →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                    </div>
+                </div>
+
+                <div class="discover-card">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+                    <div class="discover-content">
+                        <h5>Discover GoVal AI</h5>
+                        <p>Grow faster with AI-driven validation and tailored optimization.</p>
+                    </div>
+                </div>
+                <div class="megamenu-actions">
+                    <a href="https://youtu.be/DtwVfiOTdCc?si=DHMOKmNDJPD3qcBb" class="action-link">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>
+                        <span>Watch Video</span>
+                    </a>
+                    <a href="/contact-us" class="action-link">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                        <span>Contact Sales</span>
+                    </a>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </li>
+      
       <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
       <li class="nav-item"><a href="/customer-stories" class="nav-link">Customer Stories</a></li>
       <li class="nav-item"><a href="/about" class="nav-link">About GoVal</a></li>
       <li class="nav-item cta-item"><a href="/contact-us" class="nav-cta">Contact Us</a></li>
     </ul>
-    <!-- Mobile Toggle -->
     <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
       <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -30,231 +225,256 @@
     </button>
   </div>
 </nav>
+
 <style>
-  .navbar {
-    background: rgba(255,255,255,0.98);
-    backdrop-filter: blur(12px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  /* Base styles remain the same */
+  .navbar { background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; height: 9rem; display: flex; align-items: center; justify-content: space-between; }
+  .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo .logo-image { height: 7rem; max-width: 700px; width: auto; object-fit: contain; transition: transform 0.2s ease; }
+  .nav-logo:hover .logo-image { transform: scale(1.02); }
+  .nav-menu { list-style: none; margin: 0; padding: 0; display: none; flex-direction: column; gap: 1.5rem; position: fixed; top: 9rem; left: 0; right: 0; background: #fff; padding: 2rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); max-height: calc(100vh - 9rem); overflow-y: auto; }
+  .nav-menu.active { display: flex; }
+  @media (min-width: 1024px) { .nav-menu { display: flex !important; position: static; flex-direction: row; gap: 1.5rem; background: none; padding: 0; box-shadow: none; max-height: none; overflow: visible; align-items: center; } }
+  .nav-item { margin: 0; position: relative; }
+  .nav-link { display: block; padding: 0.5rem 0; color: #374151; font-weight: 500; font-size: 0.95rem; text-decoration: none; transition: all 0.2s ease; border-bottom: 2px solid transparent; position: relative; }
+  .has-megamenu > .nav-link::after, .has-dropdown > .nav-link::after { content: "▾"; margin-left: 0.5rem; font-size: 0.7rem; transition: transform 0.2s ease; }
+  @media (min-width: 1024px) { .has-megamenu:hover > .nav-link::after, .has-dropdown:hover > .nav-link::after { transform: rotate(180deg); } }
+  .nav-link:hover, .nav-link.active { color: #3B82F6; border-bottom-color: #3B82F6; }
+  .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: white; box-shadow: 0 8px 25px rgba(0,0,0,0.1); border-radius: 8px; padding: 0.5rem; min-width: 240px; z-index: 1200; border: 1px solid #e5e7eb; }
+  .dropdown-menu ul { list-style: none; margin: 0; padding: 0; }
+  .dropdown-heading {
+    padding: 0.75rem 1rem 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
-  .nav-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    height: 9rem;
+  .dropdown-link {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-  .nav-logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  .nav-logo .logo-image {
-    height: 7rem;
-    max-width: 700px;
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.2s ease;
-  }
-  .nav-logo:hover .logo-image {
-    transform: scale(1.02);
-  }
-  .nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: none;
-    flex-direction: column;
-    gap: 1.5rem;
-    position: fixed;
-    top: 9rem;
-    left: 0;
-    right: 0;
-    background: #fff;
-    padding: 2rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    max-height: calc(100vh - 9rem);
-    overflow-y: auto;
-  }
-  .nav-menu.active {
-    display: flex;
-  }
-  @media (min-width: 1024px) {
-    .nav-menu {
-      display: flex !important;
-      position: static;
-      flex-direction: row;
-      gap: 1.5rem;
-      background: none;
-      padding: 0;
-      box-shadow: none;
-      max-height: none;
-      overflow: visible;
-      align-items: center;
-    }
-  }
-  .nav-item {
-    margin: 0;
-  }
-  .nav-link {
-    display: block;
-    padding: 0.5rem 0;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
     color: #374151;
-    font-weight: 500;
-    font-size: 0.95rem;
     text-decoration: none;
-    transition: all 0.2s ease;
-    border-bottom: 2px solid transparent;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: color 0.2s ease;
+    position: relative;
   }
-  .nav-link:hover,
-  .nav-link.active {
-    color: #3B82F6;
-    border-bottom-color: #3B82F6;
+  .dropdown-link svg {
+      flex-shrink: 0;
+      color: #4F46E5;
   }
-  .nav-cta {
-    display: inline-block !important;
-    background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%) !important;
-    color: #ffffff !important;
-    padding: 0.75rem 1.5rem !important;
-    border-radius: 50px !important;
-    font-weight: 700 !important;
-    font-size: 1.0rem !important;
-    text-decoration: none !important;
-    transition: all 0.3s ease !important;
-    border: 3px solid transparent !important;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3) !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
+  .dropdown-link:hover {
+      color: #1f2937;
   }
-  .nav-cta:hover {
-    background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%) !important;
-    transform: translateY(-3px) !important;
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4) !important;
-    border-color: #93C5FD !important;
+  .dropdown-link::after {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    bottom: 0.5rem;
+    width: calc(100% - 2rem);
+    height: 1.5px;
+    background: #F97316;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
   }
-  .cta-item {
-    margin-left: 0.5rem;
+  .dropdown-link:hover::after {
+      transform: scaleX(1);
   }
-  @media (max-width: 1023px) {
-    .nav-cta {
-      margin-top: 1rem !important;
-      text-align: center !important;
-      width: 100% !important;
-    }
-  }
-  .nav-toggle {
-    display: block;
-    background: none;
-    border: 2px solid #374151;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #374151;
-    padding: 0.5rem;
-    transition: all 0.2s ease;
-  }
-  .nav-toggle:hover {
-    background: #F3F4F6;
-    border-color: #3B82F6;
-    color: #3B82F6;
-  }
-  @media (min-width: 1024px) {
-    .nav-toggle {
-      display: none;
-    }
-  }
-  /* Tablet Adjustments */
-  @media (max-width: 1023px) and (min-width: 768px) {
-    .nav-container {
-      height: 7rem;
-      padding: 0 1.5rem;
-    }
-    .nav-logo .logo-image {
-      height: 5rem;
-      max-width: 300px;
-    }
-    .nav-menu {
-      top: 7rem;
-    }
-  }
-  /* Mobile Adjustments */
-  @media (max-width: 767px) {
-    .nav-container {
-      height: 6rem;
-      padding: 0 1rem;
-    }
-    .nav-logo .logo-image {
-      height: 4rem;
-      max-width: 220px;
-    }
-    .nav-menu {
-      top: 6rem;
-      padding: 1.5rem;
-    }
-    .nav-link {
-      font-size: 0.9rem;
-      padding: 0.75rem 0;
-    }
-    .nav-cta {
-      font-size: 0.9rem !important;
-      padding: 0.75rem 1.5rem !important;
-    }
-    /* Reduced Contact Us button on mobile */
-    .nav-cta {
-      padding: 0.3rem 0.6rem !important;
-      font-size: 0.8rem !important;
-      border-radius: 0.25rem !important;
-      margin: 0.5rem auto 0 !important;
-      width: auto !important;
-      display: inline-block !important;
-    }
-    .nav-cta:hover {
-      transform: translateY(0) !important;
-    }
-  }
-  /* Extra Small Mobile */
-  @media (max-width: 480px) {
-    .nav-container {
-      height: 5.5rem;
-      padding: 0 0.75rem;
-    }
-    .nav-logo .logo-image {
-      height: 3.5rem;
-      max-width: 200px;
-    }
-    .nav-menu {
-      top: 5.5rem;
-    }
-  }
+  @media (min-width: 1024px) { .nav-item.has-dropdown:hover .dropdown-menu { display: block; } }
+  
+  /* Megamenu styles */
+  .megamenu { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: white; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); border-radius: 12px; z-index: 1100; width: 1150px; max-width: 95vw; border: 1px solid #e5e7eb; overflow: hidden; }
+  .megamenu-container { display: flex; min-height: 480px; padding: 1rem; gap: 1rem; }
+  .megamenu-left { flex: 0.45; padding: 1rem; background: white; }
+  .megamenu-center { flex: 0.7; padding: 0; background: transparent; border: 1px solid #d1d5db; border-radius: 8px; }
+  .megamenu-right { flex: 0.45; padding: 1.5rem; background: white; display: flex; flex-direction: column; gap: 1.5rem; border: 1px solid #d1d5db; border-radius: 8px; }
+  
+  /* Left Panel */
+  .menu-category { padding: 0.75rem 1.25rem; border-radius: 8px; cursor: pointer; transition: all 0.2s ease; position: relative; }
+  .menu-category::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleY(0); width: 3px; height: 60%; background-color: #F97316; border-radius: 2px; transition: transform 0.2s ease-out; }
+  .menu-category:hover, .menu-category.active { background: #f0f2f5; }
+  .menu-category.active::before, .menu-category:hover::before { transform: translateY(-50%) scaleY(1); }
+  .category-header { display: flex; align-items: flex-start; gap: 0.75rem; }
+  .category-header svg { color: #4F46E5; flex-shrink: 0; margin-top: 0.2rem; }
+  .category-content span { font-weight: 600; font-size: 0.9rem; line-height: 1.3; display: block; margin-bottom: 0.25rem; color: #1f2937; }
+  .category-description { font-size: 0.8rem; color: #6b7280; line-height: 1.4; }
+
+  /* Center Panel */
+  .submenu-content { display: none; animation: fadeIn 0.3s ease; height: 100%; }
+  .submenu-content.active { display: flex; flex-direction: column; }
+  .megamenu-center-top-card { background: white; border-bottom: 1px solid #d1d5db; border-radius: 8px 8px 0 0; padding: 1.25rem; }
+  .megamenu-center-top-card h4 { font-size: 1rem; font-weight: 600; color: #1f2937; margin: 0 0 0.5rem; }
+  .megamenu-center-top-card p { font-size: 0.9rem; color: #6b7280; line-height: 1.5; margin: 0 0 1rem; }
+  .megamenu-center-top-card a { color: #4F46E5; font-weight: 500; text-decoration: none; font-size: 0.9rem; }
+  .megamenu-center-top-card a:hover { text-decoration: underline; }
+  .megamenu-center-bottom-section { padding: 1.25rem; background: #f8fafc; flex-grow: 1; border-radius: 0 0 8px 8px; }
+  .submenu-links { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; }
+  .submenu-section h5 { font-size: 0.8rem; font-weight: 700; color: #374151; margin: 0 0 0.75rem 0; text-transform: uppercase; letter-spacing: 0.05em; padding-bottom: 0.5rem; border-bottom: 1px solid #dde1e6; }
+  .submenu-section ul { list-style: none; padding: 0; margin: 0; }
+  .submenu-section li { margin-bottom: 0.25rem; }
+  .submenu-section a { color: #4b5563; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0; position: relative; }
+  .submenu-section a svg { color: #4F46E5; flex-shrink: 0; }
+  .submenu-section a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1.5px; background: #F97316; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
+  .submenu-section a:hover { color: #1f2937; }
+  .submenu-section a:hover::after { transform: scaleX(1); }
+  
+  /* Right Panel */
+  .customer-stories-slider { display: flex; flex-direction: column; }
+  .slider-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-shrink: 0; }
+  .slider-header h4 { font-size: 1rem; font-weight: 600; color: #1f2937; }
+  .slider-controls { display: flex; gap: 0.5rem; }
+  .slider-btn { width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.1rem; transition: all 0.2s ease; border: 1px solid #e5e7eb; background: white; color: #6b7280; }
+  .slider-btn:hover { background: #f3f4f6; color: #1f2937; }
+  .slider-container { position: relative; overflow: hidden; border-radius: 8px; flex-grow: 1; }
+  .slider-track { display: flex; transition: transform 0.5s ease; height: 100%; }
+  .slider-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; flex-shrink: 0; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background-color: #d1d5db; cursor: pointer; transition: background-color 0.2s ease; }
+  .dot.active { background-color: #4F46E5; }
+  .slider-track .case-study-card { min-width: 100%; box-sizing: border-box; }
+  .case-study-card { border-radius: 8px; overflow: hidden; border: 1px solid #e5e7eb; background: #f8fafc; transition: box-shadow 0.2s ease; }
+  .case-study-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .case-study-image { position: relative; }
+  .case-study-image img { width: 100%; height: 100px; object-fit: cover; display: block; }
+  .case-study-badge { position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(255,255,255,0.9); backdrop-filter: blur(5px); color: #4F46E5; padding: 0.25rem 0.5rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; }
+  .case-study-content { padding: 1rem; }
+  .case-study-content h4 { font-size: 0.95rem; font-weight: 600; color: #1f2937; margin: 0 0 0.75rem; }
+  .case-study-content a { font-size: 0.85rem; color: #4F46E5; text-decoration: none; font-weight: 500; }
+  .case-study-content a:hover { text-decoration: underline; }
+  
+  .discover-card { display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; border: 1px solid #e5e7eb; border-radius: 8px; }
+  .discover-card svg { color: #4F46E5; flex-shrink: 0; margin-top: 2px; }
+  .discover-content h5 { margin: 0 0 0.25rem; font-size: 0.95rem; font-weight: 600; color: #1f2937; }
+  .discover-content p { margin: 0; font-size: 0.85rem; color: #6b7280; line-height: 1.4; }
+
+  .megamenu-actions { margin-top: auto; border-top: 1px solid #e5e7eb; padding-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+  .action-link { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 0.9rem; color: #374151; font-weight: 500; }
+  .action-link svg { color: #6b7280; }
+  .action-link:hover { color: #4F46E5; }
+  .action-link:hover svg { color: #4F46E5; }
+  
+  /* --- OTHER STYLES --- */
+  @keyframes fadeIn { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: translateX(0); } }
+  @media (min-width: 1024px) { .nav-item.has-megamenu:hover .megamenu { display: block; animation: fadeInUp 0.3s ease; } }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateX(-50%) translateY(10px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+  .cta-item { margin-left: 0.5rem; }
+  .nav-toggle { display: block; background: none; border: none; cursor: pointer; color: #374151; padding: 0.5rem; }
+  @media (min-width: 1024px) { .nav-toggle { display: none; } }
+  @media (max-width: 1023px) { /* Mobile styles remain the same */ }
+
+  /* --- HEADER CTA BUTTON STYLES (Unchanged) --- */
+  .nav-cta { display: inline-block; background: #3B82F6; color: #ffffff; padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all 0.3s ease; border: none; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2); text-transform: uppercase; letter-spacing: 0.5px; }
+  .nav-cta:hover { background: #2563EB; transform: translateY(-2px); box-shadow: 0 7px 20px rgba(59, 130, 246, 0.3); }
 </style>
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('nav-toggle');
-    const menu   = document.getElementById('nav-menu');
+    const menu = document.getElementById('nav-menu');
+
     if (toggle && menu) {
       toggle.addEventListener('click', () => {
         menu.classList.toggle('active');
       });
-      menu.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => {
-          menu.classList.remove('active');
+
+      menu.querySelectorAll('.has-dropdown > .nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth < 1024) {
+                e.preventDefault();
+                link.parentElement.classList.toggle('mobile-active');
+            }
         });
       });
-      document.addEventListener('click', (e) => {
-        if (!toggle.contains(e.target) && !menu.contains(e.target)) {
-          menu.classList.remove('active');
+
+      menu.querySelectorAll('.has-megamenu > .nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          if (window.innerWidth < 1024) {
+            e.preventDefault();
+            link.parentElement.classList.toggle('mobile-active');
+          }
+        });
+      });
+    }
+
+    const categories = document.querySelectorAll('.menu-category');
+    const submenuContents = document.querySelectorAll('.submenu-content');
+
+    if (categories.length > 0) {
+      categories[0].classList.add('active');
+    }
+    if (submenuContents.length > 0) {
+      submenuContents[0].classList.add('active');
+    }
+
+    categories.forEach((category) => {
+      category.addEventListener('mouseenter', () => {
+        if (window.innerWidth >= 1024) {
+          categories.forEach(cat => cat.classList.remove('active'));
+          submenuContents.forEach(content => content.classList.remove('active'));
+          
+          category.classList.add('active');
+          const categoryType = category.getAttribute('data-category');
+          const targetSubmenu = document.querySelector(`[data-submenu="${categoryType}"]`);
+          if (targetSubmenu) {
+            targetSubmenu.classList.add('active');
+          }
         }
       });
-      const path = window.location.pathname;
-      menu.querySelectorAll('.nav-link').forEach(a => {
-        if (a.getAttribute('href') === path) {
-          a.classList.add('active');
+      category.addEventListener('click', () => {
+        if (window.innerWidth >= 1024) {
+          const categoryType = category.getAttribute('data-category');
+          
+          if (categoryType === 'csa') {
+            window.location.href = '/blog/hybrid-validation-csa-with-goval/';
+          } else if (categoryType === 'deployment') {
+            window.location.href = '/solutions/';
+          } else {
+            window.location.href = `/solutions/${categoryType}/`;
+          }
         }
       });
+    });
+
+    const sliderTrack = document.getElementById('sliderTrack');
+    if (sliderTrack) {
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dots = document.querySelectorAll('.megamenu-right .dot');
+        let currentSlide = 0;
+        const totalSlides = sliderTrack.children.length;
+
+        function goToSlide(slideIndex) {
+          if (slideIndex < 0 || slideIndex >= totalSlides) return;
+          currentSlide = slideIndex;
+          sliderTrack.style.transform = `translateX(${-slideIndex * 100}%)`;
+          dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === slideIndex);
+          });
+        }
+
+        function nextSlide() {
+          const newSlide = (currentSlide + 1) % totalSlides;
+          goToSlide(newSlide);
+        }
+
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+        if (prevBtn) prevBtn.addEventListener('click', () => {
+          const newSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          goToSlide(newSlide);
+        });
+
+        dots.forEach((dot) => {
+          dot.addEventListener('click', (e) => {
+            const slideIndex = parseInt(e.target.getAttribute('data-slide'));
+            goToSlide(slideIndex);
+          });
+        });
+        
+        setInterval(nextSlide, 5000); // Auto-slide every 5 seconds
     }
   });
 </script>

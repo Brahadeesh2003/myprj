@@ -1,0 +1,404 @@
+---
+// src/pages/solutions/csv.astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+---
+<BaseLayout title="GoVal - Computer System Validation (CSV)">
+    <Fragment slot="head">
+    <meta name="description" content="GoVal delivers the ultimate paperless Computer System Validation (CSV) solution for Life Sciences. Streamline GxP processes, ensure 21 CFR Part 11 compliance, and accelerate your time-to-market." />
+    <meta name="keywords" content="Computer System Validation, CSV, paperless validation, GxP compliance, 21 CFR Part 11, life sciences validation, pharmaceutical validation software, automated validation" />
+    <link rel="canonical" href="https://www.govalidation.com/solutions/csv/" />
+
+    <meta property="og:title" content="GoVal | Intelligent Computer System Validation (CSV)" />
+    <meta property="og:description" content="Replace cumbersome paper-based processes with an efficient, automated, and fully compliant digital platform. GoVal streamlines the entire validation lifecycle." />
+    <meta property="og:url" content="https://www.govalidation.com/solutions/csv/" />
+    <meta property="og:image" content="https://www.govalidation.com/images/goval-csv-social-share.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GoVal" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GoValidation" />
+    <meta name="twitter:title" content="GoVal - Paperless Computer System Validation (CSV)" />
+    <meta name="twitter:description" content="Achieve flawless GxP compliance and accelerate your validation cycles with GoVal's intelligent, automated CSV solution for the Life Sciences industry." />
+    <meta name="twitter:image" content="https://www.govalidation.com/images/goval-csv-twitter-card.png" />
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "GoVal Computer System Validation (CSV) Platform",
+      "image": "https://www.govalidation.com/images/goval-csv-product-image.png",
+      "description": "GoVal's CSV platform is a paperless validation solution for Life Sciences, automating GxP compliance, streamlining validation lifecycles, and ensuring adherence to 21 CFR Part 11.",
+      "url": "https://www.govalidation.com/solutions/csv/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "ValidationSoftware",
+      "operatingSystem": "Web-based",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      },
+      "featureList": [
+        "Paperless Validation Workflow",
+        "Automated GxP & Risk Assessment",
+        "Master Validation Planning",
+        "21 CFR Part 11 Compliant Electronic Signatures",
+        "Automated Requirement Traceability Matrix",
+        "Single-Click Compliance Reporting"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "GoVal",
+        "url": "https://www.govalidation.com"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Computer System Validation (CSV)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Computer System Validation (CSV) is the documented process that proves a GxP computerized system consistently meets regulatory guidelines (like FDA 21 CFR Part 11) and performs as intended, ensuring product quality and patient safety in regulated industries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does GoVal's paperless validation system improve efficiency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GoVal improves efficiency by automating document generation, reviews, and approvals with electronic signatures. It eliminates the costs and delays of printing, storing, and managing physical paper, reducing validation cycle times by up to 60%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the GoVal platform compliant with GxP and 21 CFR Part 11?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, GoVal is built from the ground up for GxP compliance. It features built-in controls for FDA 21 CFR Part 11 and EU Annex 11, including secure electronic signatures, user access management, and immutable audit trails."
+          }
+        }
+      ]
+    }
+    </script>
+  </Fragment>
+
+  <Navigation />
+  
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-eyebrow">The Ultimate Paperless Solution</span>
+          <h1 class="hero-title">Intelligent Computer System Validation</h1>
+          <p class="hero-description">
+            Achieve flawless GxP compliance and accelerate your time-to-market. GoVal streamlines the entire validation lifecycle, replacing cumbersome paper-based processes with an efficient, automated, and fully compliant digital platform.
+          </p>
+          <div class="hero-buttons">
+            <a href="/contact-us" class="btn btn-orange-gradient">Request a Demo</a>
+            <a href="/about" class="btn btn-secondary">Learn More About GoVal</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Traditional CSV Fails in a Digital World</h2>
+          <p class="section-subtitle">
+            In the highly regulated Life Sciences industry, ensuring data integrity and compliance is paramount. Yet, many organizations are held back by outdated, paper-based validation methods that are slow, costly, and fraught with risk.
+          </p>
+        </div>
+        <div class="capabilities-grid">
+          <div class="capability-card card-blue">
+            <div class="card-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            </div>
+            <h3>Manual Document Overload</h3>
+            <p>Endless cycles of printing, scanning, and physically routing documents create significant delays and increase the risk of human error.</p>
+          </div>
+          <div class="capability-card card-green">
+            <div class="card-icon">
+             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3>Compliance & Data Integrity Risks</h3>
+            <p>Maintaining a clear, auditable trail is nearly impossible with paper, creating significant vulnerabilities during regulatory inspections.</p>
+          </div>
+          <div class="capability-card card-yellow">
+            <div class="card-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01"></path></svg>
+            </div>
+            <h3>High Operational Costs</h3>
+            <p>The resources spent on paper, printing, storage, and manual labor translate into significant and unnecessary operational expenses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Automate, Integrate, and Accelerate Validation</h2>
+                <p class="section-subtitle">
+                    GoVal transforms your validation process with a suite of powerful, integrated features designed for maximum efficiency and uncompromising compliance.
+                </p>
+            </div>
+            <div class="capabilities-grid solution-grid">
+                <div class="capability-card card-blue">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    </div>
+                    <h3>Master Planning & Requirements</h3>
+                    <p>Easily define User Requirements (URS) and create a comprehensive Master Validation Plan to map out strategies and testing in one place.</p>
+                </div>
+                <div class="capability-card card-green">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3>Simplified GxP Assessment</h3>
+                    <p>Our GxP assessment tool helps determine your system's GAMP category and automatically suggests the required validation documents and processes.</p>
+                </div>
+                <div class="capability-card card-yellow">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                    </div>
+                    <h3>Automated Traceability Matrix</h3>
+                    <p>GoVal automatically generates a complete Requirement Traceability Matrix (RTM), linking every requirement to its corresponding test cases and risks.</p>
+                </div>
+                <div class="capability-card card-purple">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H5v-2H3v-2H1.25865L11 7.25865A6 6 0 0119 7z"></path></svg>
+                    </div>
+                    <h3>Risk-Based Validation</h3>
+                    <p>Implement a true risk-based approach. Design and execute testing strategies based on the severity and probability of potential risks.</p>
+                </div>
+                <div class="capability-card card-orange">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"></path></svg>
+                    </div>
+                    <h3>Single-Click Reporting</h3>
+                    <p>Generate comprehensive Validation Summary Reports, Part 11 compliance certificates, and other critical documentation instantly.</p>
+                </div>
+                <div class="capability-card card-indigo">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3>Electronic Signatures & Workflow</h3>
+                    <p>Our 21 CFR Part 11 compliant workflow manages document reviews and approvals with secure electronic signatures and a complete audit trail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Transform Your Validation Lifecycle Today</h2>
+          <p>Step into the future of Computer System Validation. Discover how GoVal can empower your organization with unparalleled efficiency, data integrity, and compliance.</p>
+          <a href="/contact-us" class="btn btn-orange-gradient btn-lg">Schedule Your Personalized Demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .section {
+    padding: 5rem 0;
+    background: #fbfbfb;
+  }
+  .section-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 3rem auto;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: #4b5563;
+    line-height: 1.7;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    background: #ffffff;
+    padding: 6rem 0;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .hero-eyebrow {
+    display: inline-block;
+    color: #4F46E5;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    background-color: #eef2ff;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #111827;
+  }
+  .hero-description {
+    font-size: 1.25rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .hero-image { display: none; } /* Simplified hero style */
+
+  /* Capabilities Section */
+  .challenge-section { background-color: white; }
+  .solution-section { background-color: #fbfbfb; }
+
+  .capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .solution-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .capability-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .capability-card .card-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+  }
+  .capability-card .card-icon svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: white;
+  }
+  .capability-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+  }
+  .capability-card p { color: #4b5563; line-height: 1.6; }
+
+  .card-blue .card-icon { background: #3b82f6; }
+  .card-green .card-icon { background: #10b981; }
+  .card-yellow .card-icon { background: #f59e0b; }
+  .card-purple .card-icon { background: #8b5cf6; }
+  .card-orange .card-icon { background: #f97316; }
+  .card-indigo .card-icon { background: #6366f1; }
+  
+  .capability-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    border-color: #d1d5db;
+  }
+
+  /* CTA Section */
+  .cta-section { background: #fbfbfb; }
+  .cta-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  .cta-content p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #4b5563;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.75rem;
+    border-radius: 0.625rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  .btn-lg { padding: 1rem 2.5rem; font-size: 1.125rem; }
+  
+  .btn-orange-gradient {
+    background: linear-gradient(135deg, #eb3525 0%, #e22d04 50%, #eb5504 100%);
+    color: white;
+    box-shadow: 0 6px 20px rgba(211, 101, 46, 0.3);
+  }
+  .btn-orange-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(202, 149, 128, 0.919);
+  }
+  
+  .btn-secondary {
+    background-color: white;
+    color: #374151;
+    border-color: #d1d5db;
+  }
+  .btn-secondary:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+  }
+ 
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .capabilities-grid { grid-template-columns: repeat(2, 1fr); }
+    .solution-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .section { padding: 4rem 0; }
+    .section-title, .cta-content h2 { font-size: 2rem; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-buttons { flex-direction: column; align-items: center; }
+    .btn { width: 100%; max-width: 320px; }
+    .capabilities-grid { grid-template-columns: 1fr; }
+  }
+</style>

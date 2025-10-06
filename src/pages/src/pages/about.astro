@@ -141,14 +141,25 @@ import Footer from '../components/Footer.astro';
   <!-- BRAND LOGO SECTION (TIDIO STYLE) -->
   <section class="section brand-logo-section">
     <div class="container">
-        <h2 class="brand-title"></h2>
-        <div class="logo-grid">
-            <div class="logo-card"><img src="/images/logos/logo1-about.png" alt="Alembic Pharmaceuticals Logo" /></div>
-            <div class="logo-card"><img src="/images/logos/logo2-about.png" alt="Sai Life Sciences Logo" /></div>
-            <div class="logo-card"><img src="/images/logos/logo3-about.png" alt="Pfizer Logo" /></div>
-            <div class="logo-card"><img src="/images/logos/logo4-about.png" alt="Novartis Logo" /></div>
-            <div class="logo-card"><img src="/images/logos/logo5-about.png" alt="Johnson & Johnson Logo" /></div>
-            
+        <h2 class="brand-title">The World's Most Demanding Brands Trust GoVal</h2>
+        <div class="logo-scroller" data-speed="slow">
+            <div class="logo-grid scroller__inner">
+                <!-- Set 1 of Logos -->
+                <div class="logo-card"><img src="/images/logos/logo1-about.png" alt="Alembic Pharmaceuticals Logo" /></div>
+                <div class="logo-card"><img src="/images/logos/logo2-about.png" alt="Sai Life Sciences Logo" /></div>
+                <div class="logo-card"><img src="/images/logos/logo3-about.png" alt="Pfizer Logo" /></div>
+                <div class="logo-card"><img src="/images/logos/logo4-about.png" alt="Novartis Logo" /></div>
+                <div class="logo-card"><img src="/images/logos/logo5-about.png" alt="Johnson & Johnson Logo" /></div>
+                
+                
+                <!-- Set 2 of Logos (for seamless loop) -->
+                <div class="logo-card"><img src="/images/logos/logo1-about.png" alt="Alembic Pharmaceuticals Logo" /></div>
+                <div class="logo-card"><img src="/images/logos/logo2-about.png" alt="Sai Life Sciences Logo" /></div>
+                <div class="logo-card"><img src="/images/logos/logo3-about.png" alt="Pfizer Logo" /></div>
+                <div class="logo-card"><img src="/images/logos/logo4-about.png" alt="Novartis Logo" /></div>
+                <div class="logo-card"><img src="/images/logos/logo5-about.png" alt="Johnson & Johnson Logo" /></div>
+                
+            </div>
         </div>
     </div>
   </section>
@@ -287,7 +298,7 @@ import Footer from '../components/Footer.astro';
 
   /* --- UPDATED BRAND LOGO SECTION STYLES --- */
   .brand-logo-section {
-    background-color: #0d1a2e;
+    background-color: #c6c9cd;
     background-image: radial-gradient(ellipse at 50% 0%, rgba(22, 64, 125, 0.5) 0%, transparent 70%);
     padding: 5rem 0;
     position: relative;
@@ -300,12 +311,21 @@ import Footer from '../components/Footer.astro';
     font-weight: 700;
     margin-bottom: 3.5rem;
   }
-  .logo-grid {
+  .logo-scroller {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+  }
+  .scroller__inner {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+  }
+  @keyframes scroll {
+    to {
+      transform: translateX(-50%);
+    }
   }
   .logo-card {
     background-color: white;
@@ -317,6 +337,7 @@ import Footer from '../components/Footer.astro';
     width: 200px;
     height: 100px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0 1rem;
     transition: transform 0.2s ease-in-out;
   }
   .logo-card:hover {
@@ -328,7 +349,6 @@ import Footer from '../components/Footer.astro';
     object-fit: contain;
     filter: none; /* Shows original color */
   }
-
 
   /* Video Section */
   .video-section .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 1rem; }
@@ -367,4 +387,20 @@ import Footer from '../components/Footer.astro';
     .logo-card { width: 150px; height: 75px; padding: 1rem; }
   }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const scrollers = document.querySelectorAll(".logo-scroller");
+
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            addAnimation();
+        }
+
+        function addAnimation() {
+            scrollers.forEach((scroller) => {
+                scroller.setAttribute("data-animated", true);
+            });
+        }
+    });
+</script>
 
